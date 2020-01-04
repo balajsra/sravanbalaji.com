@@ -15,20 +15,17 @@ This is the repository for my personal website. This includes all linked files a
     - [ ] Projects
     - [x] Coursework
 - [ ] Product Recommendations
-    - [ ] Software
+    - [x] Software
         - [x] Link
         - [x] Platform(s)
-        - [ ] Description
-        - [ ] Pros / Cons
-    - [ ] Hardware
+        - [x] Discussion
+    - [x] Hardware
         - [x] Device type
         - [x] Specs
-        - [ ] Pros / Cons
+        - [x] Discussion
     - [ ] Favorite Games
-        - [ ] Ranked List
-        - [x] Link
-        - [ ] Genre
-        - [ ] Pros / Cons
+        - [x] List
+        - [ ] Discussion
         - [ ] Upcoming Games
 - [ ] Website Documentation
     - [x] High-level introduction
