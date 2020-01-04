@@ -10,11 +10,12 @@ This is the repository for my personal website. This includes all linked files a
 - [ ] Resume
     - [x] Link to PDF on GitHub
     - [x] Link to LinkedIn Page
+    - [ ] Education
     - [ ] Professional Experience
     - [ ] Research
     - [ ] Projects
     - [x] Coursework
-- [ ] Product Recommendations
+- [ ] Personal Recommendations
     - [x] Software
         - [x] Link
         - [x] Platform(s)
@@ -27,6 +28,11 @@ This is the repository for my personal website. This includes all linked files a
         - [x] List
         - [ ] Discussion
         - [ ] Upcoming Games
+    - [x] Podcasts
+        - [x] List
+        - [x] Discussion
+    - [x] Music
+        - [x] Spotify Playlist
 - [ ] Website Documentation
     - [x] High-level introduction
     - [ ] In-Depth Guide
