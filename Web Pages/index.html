@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--Required meta tags-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script language="javascript" type="text/javascript" src="Templates/header.txt"></script>
 
         <title>Sravan Balaji</title>
     </head>
 
+    <nav>
+        <div class="navbar">
+            <a class="active" href="index.html"><b>Home</b></a>
+            <div class="subnav">
+                <button class="subnavbtn"><b>About &#9660;</b></button>
+                <div class="subnav-content">
+                    <a href="about.html#bio">Bio</a>
+                    <a href="about.html#contact_me">Contact Me</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn"><b>Resume &#9660;</b></button>
+                <div class="subnav-content">
+                    <a href="resume.html#professional_experience">Professional Experience</a>
+                    <a href="resume.html#research">Research</a>
+                    <a href="resume.html#projects">Projects</a>
+                    <a href="resume.html#coursework">Coursework</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn"><b>Personal Recommendations &#9660;</b></button>
+                <div class="subnav-content">
+                    <a href="personal_recommendations.html#software">Software</a>
+                    <a href="personal_recommendations.html#hardware">Hardware</a>
+                    <a href="personal_recommendations.html#video_games">Video Games</a>
+                    <a href="personal_recommendations.html#music">Music</a>
+                </div>
+            </div>
+            <a href="documentation.html"><b>Documentation</b></a>
+        </div>
+    </nav>
+
     <body>
-        <h1>Sravan's Personal Website</h1>
+        <div class="main_content">
+            <h1>Welcome</h1>
+            <p>
+                Welcome to my personal website! For information on how this website was created and hosted,
+                please see the <a href="documentation.html">documentation</a> page.<br><br>
 
-        <hr>
+                This website is currently a work in progress and updates will be made as I find time.
+                You can follow development and make suggestions on <a href="https://github.com/balajsra/personal-website" target="_blank">GitHub</a>.
+            </p>
 
-        <h1>Welcome</h1>
-        <p>
-            Welcome to my personal website! For information on how this website was created and hosted,<br>
-            please see the <a href="documentation.html">documentation</a> page.<br><br>
-
-            This website is currently a work in progress (as you can probably tell from the complete lack of style).<br>
-            Updates will be made as I find time. You can follow development and make suggestions on <a href="https://github.com/balajsra/personal-website" target="_blank">GitHub</a>.
-        </p>
-
-        <hr>
-
-        <h1>Navigation</h1>
-        <h2><ol>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="product_recommendations.html">Product Recommendations</a></li>
-            <li><a href="documentation.html">Documentation</a></li>
-        </ol></h2>
-
-        <hr>
+            <script language="javascript" type="text/javascript" src="Templates/footer.txt"></script>
+        </div>
     </body>
-
-    <footer>
-        &copy; Copyright 2019, Sravan Balaji.
-    </footer>
 </html>

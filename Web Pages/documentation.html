@@ -1,38 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--Required meta tags-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script language="javascript" type="text/javascript" src="Templates/header.txt"></script>
 
         <title>Documentation</title>
     </head>
 
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><b>Home</b></a>
+            <div class="subnav">
+                <button class="subnavbtn"><b>About &#9660;</b></button>
+                <div class="subnav-content">
+                    <a href="about.html#bio">Bio</a>
+                    <a href="about.html#contact_me">Contact Me</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn"><b>Resume &#9660;</b></button>
+                <div class="subnav-content">
+                    <a href="resume.html#professional_experience">Professional Experience</a>
+                    <a href="resume.html#research">Research</a>
+                    <a href="resume.html#projects">Projects</a>
+                    <a href="resume.html#coursework">Coursework</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn"><b>Personal Recommendations &#9660;</b></button>
+                <div class="subnav-content">
+                    <a href="personal_recommendations.html#software">Software</a>
+                    <a href="personal_recommendations.html#hardware">Hardware</a>
+                    <a href="personal_recommendations.html#video_games">Video Games</a>
+                    <a href="personal_recommendations.html#music">Music</a>
+                </div>
+            </div>
+            <a class="active" href="documentation.html"><b>Documentation</b></a>
+        </div>
+    </nav>
+
     <body>
-        <h1><a href="index.html">Home</a> &rarr; Documentation</h1>
+        <div class="main_content">
+            <h1>Introduction</h1>
+            <p>
+                My original intention with this page was to simply save useful links so I could refer back to them, but I thought it might be better to include some of my thoughts
+                on why I made certain decisions (e.g. website hosting) to help anyone else looking to build a website from scratch. You can follow development of my website
+                and make suggestions on <a href="https://github.com/balajsra/personal-website" target="_blank">GitHub</a>. If you have any questions, feel free to <a href="contact.html">contact me</a>.
+            </p>
 
-        <hr>
+            <h1>Website Hosting</h1>
+            <h2>Purchasing a Domain Name</h2>
+            <p>
+                Per <a href="https://vesikar.com/" target="_blank">Yash Vesikar</a>'s recommendation, I used
+                <a href="https://domains.google.com/" target="_blank">Google Domains</a> to purchase the <a href="https://sravanbalaji.com/">sravanbalaji.com</a> domain.
+            </p>
 
-        <h1>Introduction</h1>
-        <p>
-            This website is hosted on U of M Servers. If you are a UMICH student<br>
-            and you are interested in creating and hosting a personal website<br>
-            on U of M servers, read this guide.<br><br>
+            <h2>Hosting Website</h2>
+            <p>
+                There are a couple of options I have found for hosting my website (for free). As a U of M student, I am able to create my own UM Web Page hosted on U of M Servers
+                or create a personal site hosted by Google through the <a href="http://google.umich.edu/" target="_blank">U-M Google collaboration</a>. I have not looked into
+                the Google Sites option, but there is <a href="https://support.google.com/sites/" target="_blank">documentation</a> available if you are interested.
+                I originally opted to create my own site and host it on U of M Servers. Information on how to do this can be found on the
+                <a href="http://www.umich.edu/~umweb/how-to/homepage.html" target="_blank">UMICH Information and Technology Services website</a>. Some limitations I found
+                with this were that I would have to manually upload my website files to the afs directory as the SFTP process described did not work for me. Additionally,
+                the domain name for U of M hosted websites take the form <b>http://www-personal.umich.edu/~youruniqname/</b> which is clearly not ideal.
+            </p>
+
+            <h1>HTML / CSS Features</h1>
+            <h2>Navigation & Subnavigation Bar</h2>
+            <p>
+                I created the navigation bar you see at the top of this page based on the example code provided in
+                <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav" target="_blank">Subnav/dropdown menu inside a Navigation Bar</a>.
+            </p>
+
+            <h2>Common Page Headers and Footers</h2>
+            <p>
+                The easiest way I found to re-use HTML code is via JavaScript as described in
+                <a href="https://www.uvm.edu/~bnelson/computer/javascript/pageheadersandfooters.html" target="_blank">Page Headers And Footers</a>.
+            </p>
+
+            <h1>Color Scheme</h1>
+            <p>
+                I used the color scheme outlined in <a href="https://vpcomm.umich.edu/brand/style-guide/design-principles/colors" target="_blank">University of Michigan - Style Guide: Colors</a>.
+            </p>
+
+            <h1>Inspiration</h1>
+            <p>
+                Content, design, and implementation were inspired by the following sources
+                <ul>
+                    <li><a href="http://www-personal.umich.edu/~prakashk/" target="_blank">Prakash Kumar's Website</a></li>
+                    <li><a href="https://vesikar.com/" target="_blank">Yash Vesikar's Website</a></li>
+                    <li><a href="https://umich.edu/" target="_blank">University of Michigan's Website</a></li>
+                </ul>
+            </p>
             
-            All necessary information can be found on the <a href="http://www.umich.edu/~umweb/how-to/homepage.html" target="_blank">UMICH Information and Technology Services website</a>.<br>
-            To get started, you have 2 options:
-            <ol>
-                <li>Personal Site hosted by Google</li>
-                <li>UM Web Page hosted on U of M Servers</li>
-            </ol>
-            This website was created via option 2 because I wanted to learn how to make my own HTML pages.<br>
-            <h2></h2>
-        </p>
-
-        <hr>
+            <script language="javascript" type="text/javascript" src="Templates/footer.txt"></script>
+        </div>        
     </body>
-
-    <footer>
-        &copy; Copyright 2019, Sravan Balaji.
-    </footer>
 </html>

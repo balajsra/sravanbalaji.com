@@ -13,7 +13,7 @@ This is the repository for my personal website. This includes all linked files a
     - [ ] Professional Experience
     - [ ] Research
     - [ ] Projects
-    - [ ] Coursework
+    - [x] Coursework
 - [ ] Product Recommendations
     - [ ] Software
         - [x] Link
@@ -29,6 +29,7 @@ This is the repository for my personal website. This includes all linked files a
         - [x] Link
         - [ ] Genre
         - [ ] Pros / Cons
+        - [ ] Upcoming Games
 - [ ] Website Documentation
     - [x] High-level introduction
     - [ ] In-Depth Guide
@@ -37,20 +38,25 @@ This is the repository for my personal website. This includes all linked files a
     - [ ] Quality of Life
     - [ ] Interviews / Networking
     - [ ] Undergrad / Grad Applications
-- [ ] Page Restructure
-- [ ] Add Styling w/ CSS
-- [ ] Favicon & Logo w/ Link to Home Page
+- [x] Page Restructure
+- [x] Add Styling w/ CSS
+- [x] Favicon
+- [ ] Logo w/ Link to Home Page
 
 ## Web Page Structure (WIP)
 - Home
-    - About
-    - Resume
-        - Professional Experience
-        - 
-    - Personal
-        - Software
-        - Hardware
-        - Video Games
-            - Favorite List
-            - Modding Guides
-        - Blogs / Articles / Guides
+- About
+    - Bio
+    - Contact Me
+- Resume
+    - Professional Experience
+    - Research
+    - Projects
+    - Coursework
+- Personal Recommendations
+    - Software
+    - Hardware
+    - Video Games
+        - Favorite List
+        - Upcoming Games
+    - Blogs / Articles / Guides
