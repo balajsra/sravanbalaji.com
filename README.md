@@ -39,6 +39,8 @@ This is the repository for my personal website. This includes all linked files a
 - [x] Add Styling w/ CSS
 - [x] Favicon
 - [ ] Logo w/ Link to Home Page
+- [ ] Use a component library to fix formatting issues (especially on phone)
+    - https://getbootstrap.com/
 
 ## Web Page Structure (WIP)
 - Home
