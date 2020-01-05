@@ -20,16 +20,20 @@ This is the repository for my personal website. This includes all linked files a
         - [x] Link
         - [x] Platform(s)
         - [x] Discussion
+        - [x] Images
     - [x] Hardware
         - [x] Device type
         - [x] Specs
         - [x] Discussion
+        - [x] Images
     - [ ] Favorite Games
         - [x] List
+        - [ ] Images
         - [ ] Discussion
         - [ ] Upcoming Games
     - [x] Podcasts
         - [x] List
+        - [x] Images
         - [x] Discussion
     - [x] Music
         - [x] Spotify Playlist
@@ -44,7 +48,7 @@ This is the repository for my personal website. This includes all linked files a
 - [x] Page Restructure
 - [x] Add Styling w/ CSS
 - [x] Favicon
-- [ ] Logo w/ Link to Home Page
+- [x] Logo w/ Link to Home Page
 - [ ] Use a component library to fix formatting issues (especially on phone)
     - https://getbootstrap.com/
 
