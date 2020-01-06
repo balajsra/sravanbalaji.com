@@ -1,1 +1,0 @@
-document.write('<hr><small>Copyright &copy; 2019 Sravan Balaji under <a rel="license" href="../LICENSE" target="_blank">MIT License</a></small>')
