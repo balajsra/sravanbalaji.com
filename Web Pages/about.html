@@ -1,115 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script language="javascript" type="text/javascript" src="Templates/header.txt"></script>
+        <script language="javascript" type="text/javascript" src="Common/header.txt"></script>
+        <title>About</title>
 
         <style>
-            table#bio_table td {
-                padding: 10px;
-                text-align: left;
+            .bio img {
+                max-height: 500px;
             }
 
-            table#bio_table img {
-                width: 250px;
-            }
-
-            table#contact_table td {
-                padding: 10px;
-                text-align: center;
-            }
-
-            table#contact_table img {
-                width: 200px;
+            .contact_me img {
+                max-height: 100px;
             }
         </style>
-
-        <title>About</title>
     </head>
 
-    <nav>
-        <div class="navbar">
-            <a href="index.html"><img src="../Assets/logo.png" height="20px"></a>
-            <div class="subnav">
-                <button class="subnavbtn-active"><b>About &#9660;</b></button>
-                <div class="subnav-content">
-                    <a href="about.html#bio">Bio</a>
-                    <a href="about.html#contact_me">Contact Me</a>
-                </div>
-            </div>
-            <div class="subnav">
-                <button class="subnavbtn"><b>Resume &#9660;</b></button>
-                <div class="subnav-content">
-                    <a href="resume.html#professional_experience">Professional Experience</a>
-                    <a href="resume.html#research">Research</a>
-                    <a href="resume.html#projects">Projects</a>
-                    <a href="resume.html#coursework">Coursework</a>
-                </div>
-            </div>
-            <div class="subnav">
-                <button class="subnavbtn"><b>Personal Recommendations &#9660;</b></button>
-                <div class="subnav-content">
-                    <a href="personal_recommendations.html#software">Software</a>
-                    <a href="personal_recommendations.html#hardware">Hardware</a>
-                    <a href="personal_recommendations.html#video_games">Video Games</a>
-                    <a href="personal_recommendations.html#podcasts">Podcasts</a>
-                    <a href="personal_recommendations.html#music">Music</a>
-                </div>
-            </div>
-            <a href="documentation.html"><b>Documentation</b></a>
-        </div>
-    </nav>
+    <script language="javascript" type="text/javascript" src="Common/navbar.txt"></script>
 
     <body>
-        <div class="main_content">
-            <h1><a name="bio">Bio</a></h1>
-            <table id="bio_table">
-                <tr>
-                    <td><img src="../Assets/About/Profile Picture.jpg"></td>
-                    <td>
-                        I'm a Senior at the <a href="https://umich.edu" target="_blank">University of Michigan</a> pursuing dual B.S.E's in
-                        <a href="https://me.engin.umich.edu/" target="_blank">Mechanical Engineering</a> and
-                        <a href="https://cse.engin.umich.edu/" target="_blank">Computer Science</a>. I expect to graduate with both
-                        Bachelor's degrees in December 2020 and plan on continuing my education with a Master's in Robotics.<br><br>
+        <div class="container-fluid px-md-6">
+            <!---------------------------------
+                BIO
+            ----------------------------------->
+            <div class="bio">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h1><a name="bio">Bio</a></h1>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img class="img-fluid mx-auto d-block" src="../Assets/About/Profile Picture.jpg">
+                    </div>
+                    <div class="col-md-9">
+                        <p>
+                            I'm a Senior at the <a href="https://umich.edu" target="_blank">University of Michigan</a> pursuing dual B.S.E's in
+                            <a href="https://me.engin.umich.edu/" target="_blank">Mechanical Engineering</a> and
+                            <a href="https://cse.engin.umich.edu/" target="_blank">Computer Science</a>. I expect to graduate with both
+                            Bachelor's degrees in December 2020 and plan on continuing my education with a Master's in Robotics.<br><br>
 
-                        My professional and academic interests are in robotics, mechatronics, autonomous systems, and controls. I am currently
-                        looking for robotics related internships for the Summer of 2020.<br><br>
+                            My professional and academic interests are in robotics, mechatronics, autonomous systems, and controls. I am currently
+                            looking for robotics related internships for the Summer (May - August) of 2020.<br><br>
 
-                        My personal interests include video games, podcasts, music, cooking, football, soccer, and personal / project management software. You can
-                        check out some of my favorite <a href="personal_recommendations.html#video_games">video games</a>, <a href="personal_recommendations.html#podcasts">podcasts</a>,
-                        <a href="personal_recommendations.html#music">music</a>, and <a href="personal_recommendations.html#software">software</a> on the <a href="personal_recommendations.html">Personal Recommendations page</a>.<br><br>
-                        
-                        My favorite sports teams, in ranked order, are:                    
-                        <ol>
-                            <li>University of Michigan Sports</li>
-                            <li>Arsenal F.C. (Premier League)</li>
-                            <li>New England Patriots (NFL)</li>
-                            <li>Detroit Sports Teams</li>
-                        </ol>
-                    </td>
-                </tr>
-            </table>
+                            My personal interests include video games, podcasts, music, cooking, football, soccer, and personal / project management software. You can
+                            check out some of my favorite <a href="personal.html#video_games">video games</a>, <a href="personal.html#podcasts">podcasts</a>,
+                            <a href="personal.html#music">music</a>, and <a href="personal.html#software">software</a> on the <a href="personal.html">Personal</a> page.<br><br>
+                            
+                            My favorite sports teams, in ranked order, are:                    
+                            <ol>
+                                <li>University of Michigan Sports</li>
+                                <li>Arsenal F.C. (Premier League)</li>
+                                <li>New England Patriots (NFL)</li>
+                                <li>Detroit Sports Teams</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h1><a name="contact_me">Contact Me</a></h1>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <p>
+                            Feel free to reach out to me via email if you have any questions about my website, college education, professional experience, or anything else.
+                            If you have suggestions for the website or would like to see the source files, check out my <a href="https://github.com/balajsra/balajsra.github.io" target="_blank">
+                            GitHub repository</a>. If you would like to connect with me on LinkedIn, use the link below. I will do my best to respond to any communication
+                            in a timely manner.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-            <h1><a name="contact_me">Contact Me</a></h1>
-            <p>
-                Feel free to reach out to me via email if you have any questions about my website, college education, professional experience, or anything else.
-                If you have suggestions for the website or would like to see the source files, check out my GitHub repository. If you would like to connect with
-                me on LinkedIn, use the link below. I will do my best to respond to any
-                communication in a timely manner.
-            </p>
-            <table id="contact_table">
-                <tr>
-                    <td><a href="mailto:balajsra@umich.edu" target="_blank"><img alt="Email" src="../Assets/About/email.png"></a></td>
-                    <td><a href="https://www.linkedin.com/in/sravan-balaji/" target="_blank"><img alt="LinkedIn" src="../Assets/About/linkedin.png"></a></td>
-                    <td><a href="https://github.com/balajsra" target="_blank"><img alt="GitHub" src="../Assets/About/github.png"></a></td>
-                </tr>
-                <tr>
-                    <td><b>Email:</b> balajsra@umich.edu</td>
-                    <td><b>LinkedIn:</b> sravan-balaji</td>
-                    <td><b>GitHub:</b> balajsra</td>
-                </tr>
-            </table>                
-
-            <script language="javascript" type="text/javascript" src="Templates/footer.txt"></script>
+            <!---------------------------------
+                CONTACT ME
+            ----------------------------------->
+            <div class="contact_me">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <a href="mailto:balajsra@umich.edu" target="_blank">
+                            <img class="img-fluid mx-auto d-block" alt="Email" src="../Assets/About/email.png">
+                        </a>
+                        <p>
+                            <b>Email:</b> balajsra@umich.edu
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="https://www.linkedin.com/in/sravan-balaji/" target="_blank">
+                            <img class="img-fluid mx-auto d-block" alt="LinkedIn" src="../Assets/About/linkedin.png">
+                        </a>
+                        <p>
+                            <b>LinkedIn:</b> sravan-balaji
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="https://github.com/balajsra" target="_blank">
+                            <img class="img-fluid mx-auto d-block" alt="GitHub" src="../Assets/About/github.png">
+                        </a>
+                        <p>
+                            <b>GitHub:</b> balajsra
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
+
+    <footer>
+        <script language="javascript" type="text/javascript" src="Common/footer.txt"></script>
+    </footer>
 </html>

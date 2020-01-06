@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script language="javascript" type="text/javascript" src="Templates/header.txt"></script>
+        <script language="javascript" type="text/javascript" src="Common/header.txt"></script>
+        <title>Documentation</title>
 
         <style>
             table td {
@@ -13,124 +14,188 @@
                 width: 200px;
             }
         </style>
-
-        <title>Documentation</title>
     </head>
 
-    <nav>
-        <div class="navbar">
-            <a href="index.html"><img src="../Assets/logo.png" height="20px"></a>
-            <div class="subnav">
-                <button class="subnavbtn"><b>About &#9660;</b></button>
-                <div class="subnav-content">
-                    <a href="about.html#bio">Bio</a>
-                    <a href="about.html#contact_me">Contact Me</a>
-                </div>
-            </div>
-            <div class="subnav">
-                <button class="subnavbtn"><b>Resume &#9660;</b></button>
-                <div class="subnav-content">
-                    <a href="resume.html#professional_experience">Professional Experience</a>
-                    <a href="resume.html#research">Research</a>
-                    <a href="resume.html#projects">Projects</a>
-                    <a href="resume.html#coursework">Coursework</a>
-                </div>
-            </div>
-            <div class="subnav">
-                <button class="subnavbtn"><b>Personal Recommendations &#9660;</b></button>
-                <div class="subnav-content">
-                    <a href="personal_recommendations.html#software">Software</a>
-                    <a href="personal_recommendations.html#hardware">Hardware</a>
-                    <a href="personal_recommendations.html#video_games">Video Games</a>
-                    <a href="personal_recommendations.html#podcasts">Podcasts</a>
-                    <a href="personal_recommendations.html#music">Music</a>
-                </div>
-            </div>
-            <a class="active" href="documentation.html"><b>Documentation</b></a>
-        </div>
-    </nav>
+    <script language="javascript" type="text/javascript" src="Common/navbar.txt"></script>
 
     <body>
-        <div class="main_content">
-            <h1>Introduction</h1>
-            <p>
-                My original intention with this page was to simply save useful links so I could refer back to them, but I thought it might be better to
-                include some of my thoughts on why I made certain decisions (e.g. website hosting) to help anyone else looking to build a website from
-                scratch. You can follow development of my website and make suggestions on <a href="https://github.com/balajsra/balajsra.github.io" target="_blank">GitHub</a>.
-                If you have any questions, feel free to <a href="about.html#contact_me">contact me</a>.<br><br>
-
-                This website was designed in HTML with some CSS for styling. In it's current state, I have not used any component libraries (such as
-                <a href="https://getbootstrap.com/" target="_blank">bootstrap</a>), but I do have plans to implement more responsive and dynamic features
-                with mobile support when I find the time.
-            </p>
-
-            <h1>Website Hosting</h1>
-            <h2>Purchasing a Domain Name</h2>
-            <p>
-                Per <a href="https://vesikar.com/" target="_blank">Yash Vesikar</a>'s recommendation, I used
-                <a href="https://domains.google.com/" target="_blank">Google Domains</a> to purchase the <a href="https://sravanbalaji.com/">sravanbalaji.com</a> domain.
-            </p>
-
-            <h2>Hosting Website</h2>
-            <p>
-                There are a couple of options I have found for hosting my website (for free). As a U of M student, I am able to create my own UM Web Page hosted on U of M Servers
-                or create a personal site hosted by Google through the <a href="http://google.umich.edu/" target="_blank">U-M Google collaboration</a>. I have not looked into
-                the Google Sites option, but there is <a href="https://support.google.com/sites/" target="_blank">documentation</a> available if you are interested.
-                I originally opted to create my own site and host it on U of M Servers. Information on how to do this can be found on the
-                <a href="http://www.umich.edu/~umweb/how-to/homepage.html" target="_blank">UMICH Information and Technology Services website</a>. Some limitations I found
-                with this were that I would have to manually upload my website files to the afs directory as the SFTP process described did not work for me. Additionally,
-                the domain name for U of M hosted websites take the form <b>http://www-personal.umich.edu/~youruniqname/</b> which is clearly not ideal. You can sort of
-                get around this by enabling <a href="https://support.google.com/domains/answer/4522141?hl=en" target="_blank">web forwarding</a> on Google Domains.
-                All this does is redirect traffic from your custom domain to the U of M domain. This might be ok for you, but I would prefer to have my website show
-                up at the domain I purchased. Per <a href="https://vesikar.com/" target="_blank">Yash Vesikar</a>'s recommendation, I looked into <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
-                to host my website directly from a GitHub repository. This comes with the added benefit that changes are live as soon as you push them to the <b>master</b> branch
-                of your &lt;username&gt;.github.io repository. I found <a href="https://trentyang.com/how-to-setup-google-domain-for-github-pages/" target="_blank">Trent Yang's post</a>
-                about setting up Google Domain for GitHub pages very useful.
-            </p>
-
-            <h1>HTML / CSS Features</h1>
-            <h2>Navigation & Subnavigation Bar</h2>
-            <p>
-                I created the navigation bar you see at the top of this page based on the example code provided in
-                <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav" target="_blank">Subnav/dropdown menu inside a Navigation Bar</a>.
-            </p>
-
-            <h2>Common Page Headers and Footers</h2>
-            <p>
-                The easiest way I found to re-use HTML code is via JavaScript as described in
-                <a href="https://www.uvm.edu/~bnelson/computer/javascript/pageheadersandfooters.html" target="_blank">Page Headers And Footers</a>.
-            </p>
-
-            <h1>Logo & Design</h1>
-            <h2>Color Scheme</h2>
-            <p>
-                I used the color scheme outlined in <a href="https://vpcomm.umich.edu/brand/style-guide/design-principles/colors" target="_blank">University of Michigan - Style Guide: Colors</a>
-                when choosing colors for the various elements of my website such as navbar background, text color, background color, etc.
-            </p>
+        <div class="container-fluid px-md-6">
+            <!---------------------------------
+                INTRODUCTION 
+            ----------------------------------->
+            <div class="introduction">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h1><a name="introduction">Introduction</a></h1>
+                    </div>
+                </div>
+                <div class="row algin-items-center">
+                    <div class="col-md-12">
+                        <p>
+                            My original intention with this page was to simply save useful links so I could refer back to them, but I thought it might be better to
+                            include some of my thoughts on why I made certain decisions (e.g. website hosting) to help anyone else looking to build a website from
+                            scratch. You can follow development of my website and make suggestions on <a href="https://github.com/balajsra/balajsra.github.io" target="_blank">GitHub</a>.
+                            If you have any questions, feel free to <a href="about.html#contact_me">contact me</a>.<br><br>
             
-            <h2>Logo</h2>
-            <table>
-                <tr>
-                    <td><img src="../Assets/logo_with_name.png"></td>
-                    <td><img src="../Assets/logo.png"></td>
-                    <td>
-                        I designed my logo for free on <a href="https://hatchful.shopify.com/" target="_blank">hatchful</a>. My main purpose for this was to have a nice looking
-                        favicon for my website on browsers as well as for the home page icon in the navbar.
-                    </td>
-                </tr>
-            </table>
+                            This website was designed in HTML with some CSS for styling. In it's current state, I have not used any component libraries (such as
+                            <a href="https://getbootstrap.com/" target="_blank">bootstrap</a>), but I do have plans to implement more responsive and dynamic features
+                            with mobile support when I find the time.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-            <h1>Inspiration</h1>
-            <p>
-                Content, design, and implementation were inspired by the following sources
-                <ul>
-                    <li><a href="http://www-personal.umich.edu/~prakashk/" target="_blank">Prakash Kumar's Website</a></li>
-                    <li><a href="https://vesikar.com/" target="_blank">Yash Vesikar's Website</a></li>
-                    <li><a href="https://umich.edu/" target="_blank">University of Michigan's Website</a></li>
-                </ul>
-            </p>
-            
-            <script language="javascript" type="text/javascript" src="Templates/footer.txt"></script>
-        </div>        
+            <!---------------------------------
+                WEBSITE HOSTING 
+            ----------------------------------->
+            <div class="website_hosting">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h1><a name="website_hosting">Website Hosting</a></h1>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2>Purchasing a Domain Name</h2>
+                        <p>
+                            Per <a href="https://vesikar.com/" target="_blank">Yash Vesikar</a>'s recommendation, I used
+                            <a href="https://domains.google.com/" target="_blank">Google Domains</a> to purchase the <a href="https://sravanbalaji.com/">sravanbalaji.com</a> domain.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2>Hosting Website</h2>
+                        <p>
+                            There are a couple of options I have found for hosting my website (for free). As a U of M student, I am able to create my own UM Web Page hosted on U of M Servers
+                            or create a personal site hosted by Google through the <a href="http://google.umich.edu/" target="_blank">U-M Google collaboration</a>. I have not looked into
+                            the Google Sites option, but there is <a href="https://support.google.com/sites/" target="_blank">documentation</a> available if you are interested.
+                            I originally opted to create my own site and host it on U of M Servers. Information on how to do this can be found on the
+                            <a href="http://www.umich.edu/~umweb/how-to/homepage.html" target="_blank">UMICH Information and Technology Services website</a>. Some limitations I found
+                            with this were that I would have to manually upload my website files to the afs directory as the SFTP process described did not work for me. Additionally,
+                            the domain name for U of M hosted websites take the form <b>http://www-personal.umich.edu/~youruniqname/</b> which is clearly not ideal. You can sort of
+                            get around this by enabling <a href="https://support.google.com/domains/answer/4522141?hl=en" target="_blank">web forwarding</a> on Google Domains.
+                            All this does is redirect traffic from your custom domain to the U of M domain. This might be ok for you, but I would prefer to have my website show
+                            up at the domain I purchased. Per <a href="https://vesikar.com/" target="_blank">Yash Vesikar</a>'s recommendation, I looked into <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+                            to host my website directly from a GitHub repository. This comes with the added benefit that changes are live as soon as you push them to the <b>master</b> branch
+                            of your &lt;username&gt;.github.io repository. I found <a href="https://trentyang.com/how-to-setup-google-domain-for-github-pages/" target="_blank">Trent Yang's post</a>
+                            about setting up Google Domain for GitHub pages very useful.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------------------
+                WEB DESIGN 
+            ----------------------------------->
+            <div class="web_design">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h1><a name="web_design">Web Design</a></h1>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2>Bootstrap Framework</h2>
+                        <p>
+                            When I first made this website, it was implemented in HTML and CSS without the use of a framework. This gave me a lot of custom control over every
+                            aspect, but it made some things unnecessarily tedious and difficult. One example of this is the navigation bar. Trying to implement that without
+                            a framework is more difficult than it needs to be. Another issue I ran into was compatibility with mobile browsers. Per
+                            <a href="https://www.linkedin.com/in/tianhongwen/" target="_blank">Tianhong (Sam) Wen</a>'s recommendation, I looked into
+                            <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>. This has built-in "responsive" classes that can auto adjust 
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2>Reusing HTML</h2>
+                        <p>
+                            The easiest way I found to reuse HTML code is via JavaScript as described in
+                            <a href="https://www.uvm.edu/~bnelson/computer/javascript/pageheadersandfooters.html" target="_blank">Page Headers And Footers</a>. This is by no
+                            means the most elegant or automated, but it was the only method I could get to actually work. If you don't want to go through the hassle of manually
+                            removing line breaks, you can use this handy online text converter from <a href="https://www.textfixer.com/tools/remove-line-breaks.php" target="_blank">Text Fixer</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2>Display Resume PDF in Website using GitHub</h2>
+                        <p>
+                            I have the latest version of my <a href="portfolio.html#resume">resume</a> stored in a public <a href="https://github.com/balajsra/resume" target="_blank">
+                            GitHub repository</a>, but I wanted an easy way to share it directly on my website. This led me to look for ways to embed a PDF in HTML.
+                            This works great for local files, but not so great for PDFs stored in a repository. The trick is to get the link to the raw PDF file
+                            from GitHub and to use Google Drive PDF Viewer. This is outlined in
+                            <a href="https://medium.com/@kekayan/display-your-resume-cv-pdf-in-website-using-github-73a088ac961d" target="_blank">Kekayan's Medium post</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------------------
+                AESTHETICS 
+            ----------------------------------->
+            <div class="aesthetics">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h1><a name="aesthetics">Aesthetics</a></h1>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2>Color Scheme</h2>
+                        <p>
+                            I used the color scheme outlined in <a href="https://vpcomm.umich.edu/brand/style-guide/design-principles/colors" target="_blank">University of Michigan - Style Guide: Colors</a>
+                            when choosing colors for the various elements of my website such as navbar background, text color, background color, etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2>Logo</h2>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="../Assets/logo_with_name.png">
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="../Assets/logo.png">
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            I designed my logo for free on <a href="https://hatchful.shopify.com/" target="_blank">hatchful</a>. My main purpose for this was to have a nice looking
+                            favicon for my website on browsers as well as for the home page icon in the navbar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------------------
+                INSPIRATION 
+            ----------------------------------->
+            <div class="inspiration">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h1><a name="inspiration">Inspiration</a></h1>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <p>
+                            Content, design, and implementation were inspired by the following sources
+                            <ul>
+                                <li><a href="http://www-personal.umich.edu/~prakashk/" target="_blank">Prakash Kumar's Website</a></li>
+                                <li><a href="https://vesikar.com/" target="_blank">Yash Vesikar's Website</a></li>
+                                <li><a href="https://umich.edu/" target="_blank">University of Michigan's Website</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>      
     </body>
+
+    <footer>
+        <script language="javascript" type="text/javascript" src="Common/footer.txt"></script>
+    </footer>
 </html>

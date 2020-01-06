@@ -7,15 +7,15 @@ This is the repository for my personal website. This includes all linked files a
 - [x] About
     - [x] Short Bio
     - [x] Contact Info
-- [ ] Resume
-    - [x] Link to PDF on GitHub
-    - [x] Link to LinkedIn Page
+- [ ] Portfolio
+    - [x] Link to Resume PDF on GitHub
     - [ ] Education
+        - [ ] Degrees
+        - [x] Coursework
     - [ ] Professional Experience
     - [ ] Research
     - [ ] Projects
-    - [x] Coursework
-- [ ] Personal Recommendations
+- [ ] Personal
     - [x] Software
         - [x] Link
         - [x] Platform(s)
@@ -26,7 +26,7 @@ This is the repository for my personal website. This includes all linked files a
         - [x] Specs
         - [x] Discussion
         - [x] Images
-    - [ ] Favorite Games
+    - [ ] Video Games
         - [x] List
         - [ ] Images
         - [ ] Discussion
@@ -37,35 +37,37 @@ This is the repository for my personal website. This includes all linked files a
         - [x] Discussion
     - [x] Music
         - [x] Spotify Playlist
-- [ ] Website Documentation
-    - [x] High-level introduction
-    - [ ] In-Depth Guide
 - [ ] Blog Posts / Articles / Guides
     - [ ] Time Management / Handling Workload
     - [ ] Quality of Life
     - [ ] Interviews / Networking
     - [ ] Undergrad / Grad Applications
+- [x] Documentation
 - [x] Page Restructure
 - [x] Add Styling w/ CSS
 - [x] Favicon
 - [x] Logo w/ Link to Home Page
-- [ ] Use a component library to fix formatting issues (especially on phone)
-    - https://getbootstrap.com/
+- [x] Migrate to [Bootstrap](https://getbootstrap.com/)
+- [x] Add padding to sides
 
 ## Web Page Structure (WIP)
 - Home
 - About
     - Bio
     - Contact Me
-- Resume
+- Portfolio
+    - Resume
+    - Education
     - Professional Experience
     - Research
     - Projects
-    - Coursework
-- Personal Recommendations
+- Personal
     - Software
     - Hardware
     - Video Games
         - Favorite List
         - Upcoming Games
-    - Blogs / Articles / Guides
+    - Podcasts
+    - Music
+- Blogs / Articles / Guides
+- Documentation
