@@ -9,8 +9,8 @@ This is the repository for my personal website. This includes all linked files a
     - [x] Contact Info
 - [ ] Portfolio
     - [x] Link to Resume PDF on GitHub
-    - [ ] Education
-        - [ ] Degrees
+    - [x] Education
+        - [x] Degrees
         - [x] Coursework
     - [ ] Professional Experience
     - [ ] Research
