@@ -38,7 +38,7 @@
             <div class="resume">
                 <div class="row align-items-center">
                     <div class="col-md-12">
-                        <div class="bg-dark text-light"><h1><a name="resume">Resume</a></h1></div>
+                        <h1><a name="resume">Resume</a></h1>
                     </div>
                 </div>
                 <div class="row align-items-center">
@@ -54,7 +54,7 @@
             <div class="education">
                 <div class="row align-items-center">
                     <div class="col-md-12">
-                        <div class="bg-dark text-light"><h1><a name="education">Education</a></h1></div>
+                        <h1><a name="education">Education</a></h1>
                     </div>
                 </div>
                 
@@ -74,7 +74,7 @@
                                 </a>
                             </div>
                             <div class="col-md-8">
-                                <h3><abbr title="Bachelor of Science in Engineering">B.S.E.</abbr> in Mechanical Engineering</h3>
+                                <h3>B.S.E. in Mechanical Engineering</h3>
                                 <h5><i>September 2016 - December 2020</i></h5>
                                 <p>
                                     <b>GPA:</b> 3.726<br>
@@ -90,7 +90,7 @@
                                 </a>
                             </div>
                             <div class="col-md-8">
-                                <h3><abbr title="Bachelor of Science in Engineering">B.S.E.</abbr> in Computer Science</h3>
+                                <h3>B.S.E. in Computer Science</h3>
                                 <h5><i>September 2016 - December 2020</i></h5>
                                 <p>
                                     <b>GPA:</b> 3.726<br>
@@ -266,7 +266,7 @@
             <div class="professional_experience">
                 <div class="row align-items-center">
                     <div class="col-md-12">
-                        <div class="bg-dark text-light"><h1><a name="professional_experience">Professional Experience</a></h1></div>
+                        <h1><a name="professional_experience">Professional Experience</a></h1>
                     </div>
                 </div>
 
@@ -293,7 +293,7 @@
                                         <li>Embedded Programming in C</li>
                                         <li>C# and .NET Framework</li>
                                         <ul>
-                                            <li><abbr title="Graphical User Interface">GUI</abbr> Design</li>
+                                            <li>GUI Design</li>
                                             <li><abbr title="REpresentational State Transfer">REST</abbr> Requests & <abbr title="File Transfer Protocol">FTP</abbr></li>
                                         </ul>
                                         <li>Network Communication</li>
@@ -327,9 +327,7 @@
                                         <p>
                                             <p><b>Problem</b></p>
                                             <p>
-                                                Hughes sells mobile satellite terminals that provide internet and phone service to customers.
-                                                Some customers who purchased terminals in bulk (~1000) required non-default settings. The
-                                                configuration process of manually changing settings on each terminal was tedious and error-prone.  
+                                                Hughes sells mobile satellite terminals that provide internet and phone service to customers. Some customers who purchased terminals in bulk (~1000) required non-default settings. The configuration process of manually changing settings on each terminal was tedious and error-prone.
                                             </p>
                                             
                                             <p><b>Task</b></p>
@@ -339,11 +337,7 @@
                                             
                                             <p><b>Result</b></p>
                                             <p>
-                                                I designed and developed a <abbr title="Graphical User Interface">GUI</abbr> program in C# that
-                                                detects which terminal model is connected and uses the available interface
-                                                (<abbr title="REpresentational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr>
-                                                or <abbr title="File Transfer Protocol">FTP</abbr>) to copy the configuration of the "master"
-                                                terminal. This can then be used to automatically configure subsequent terminals.
+                                                I designed and developed a GUI program in C# that detects which terminal model is connected and uses the available interface (<abbr title="REpresentational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> or <abbr title="File Transfer Protocol">FTP</abbr>) to copy the configuration of the <i>master</i> terminal. This can then be used to automatically configure subsequent terminals.
                                             </p>
 
                                             <p><b>Customer Feedback</b></p>
@@ -365,30 +359,17 @@
                                     <div class="card-body">
                                         <p><b>Problem</b></p>
                                         <p>
-                                            Hughes mobile terminals allow customers to have internet and phone access in remote areas via
-                                            a satellite connection. Some customers may find value in a <abbr title="Global Positioning System">GPS</abbr>
-                                            feature built into the terminal. In this situation, the terminal would send <abbr title="Global Positioning System">GPS</abbr>
-                                            coordinates to a server at regular intervals of time, distance, and/or velocity as configured by the end-user. 
+                                            Hughes mobile terminals allow customers to have internet and phone access in remote areas via a satellite connection. Some customers may find value in a GPS feature built into the terminal. In this situation, the terminal would send GPS coordinates to a server at regular intervals of time, distance, and/or velocity as configured by the end-user. 
                                         </p>
 
                                         <p><b>Task</b></p>
                                         <p>
-                                            My task was to investigate a way to minimize the data packet size of <abbr title="Global Positioning System">GPS</abbr>
-                                            coordinates and to update the terminal's software to send these data packets to a server configured by the end-user.
+                                            My task was to investigate a way to minimize the data packet size of GPS coordinates and to update the terminal's software to send these data packets to a server configured by the end-user.
                                         </p>
 
                                         <p><b>Result</b></p>
                                         <p>
-                                            This project was assigned to me after the completion of my previous project, which was intended
-                                            to last the entire internship. I was able to determine that 
-                                            <a href="http://www.mqtt.org/new/wp-content/uploads/2009/06/MQTT-SN_spec_v1.2.pdf" target="_blank"><abbr title="MQ Telemetry Transport for Sensor Networks">MQTT-SN</abbr></a>
-                                            was a good option as it simply sends a data packet to a server without checking for acknowledgement and the packet
-                                            header is sufficiently small. I successfuly implemented the packet structure and delivery to the server on the terminal
-                                            software written in C. However, I was unable to get the server to recognize that it received the packet in my remaining
-                                            time at Hughes. Using <a href="https://www.wireshark.org" target="_blank">Wireshark</a>, I confirmed the reception
-                                            of the packet, but none of the open-source
-                                            <a href="http://www.mqtt.org/new/wp-content/uploads/2009/06/MQTT-SN_spec_v1.2.pdf" target="_blank"><abbr title="MQ Telemetry Transport for Sensor Networks">MQTT-SN</abbr></a>
-                                            brokers I used worked.
+                                            This project was assigned to me after the completion of my previous project, which was intended to last the entire internship. I was able to determine that <a href="http://www.mqtt.org/new/wp-content/uploads/2009/06/MQTT-SN_spec_v1.2.pdf" target="_blank"><abbr title="MQ Telemetry Transport for Sensor Networks">MQTT-SN</abbr></a> was a good option as it simply sends a data packet to a server without checking for acknowledgement and the packet header is sufficiently small. I successfully implemented the packet structure and delivery to the server on the terminal software written in C. However, I was unable to get the server to recognize that it received the packet in my remaining time at Hughes. Using <a href="https://www.wireshark.org" target="_blank">Wireshark</a>, I confirmed the reception of the packet, but none of the open-source <a href="http://www.mqtt.org/new/wp-content/uploads/2009/06/MQTT-SN_spec_v1.2.pdf" target="_blank"><abbr title="MQ Telemetry Transport for Sensor Networks">MQTT-SN</abbr></a> brokers I used worked.
                                         </p>
                                     </div>
                                 </div>
@@ -625,7 +606,7 @@
             <!-- <div class="research">
                 <div class="row align-items-center">
                     <div class="col-md-12">
-                        <div class="bg-dark text-light"><h1><a name="research">Research</a></h1></div>
+                        <h1><a name="research">Research</a></h1>
                     </div>
                 </div>
                 <div class="row align-items-center">
@@ -644,7 +625,7 @@
             <!-- <div class="projects">
                 <div class="row align-items-center">
                     <div class="col-md-12">
-                        <div class="bg-dark text-light"><h1><a name="projects">Projects</a></h1></div>
+                        <h1><a name="projects">Projects</a></h1>
                     </div>
                 </div>
                 <div class="row align-items-center">

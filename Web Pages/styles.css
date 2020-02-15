@@ -2,7 +2,7 @@
  * General *
  ***********/
 body {
-    background-color: #e4e1df;
+    background-color: #E8EEF2;
     padding-top: 65px;
     font-family: Arial, Verdana, Tahoma, sans-serif;
 }
@@ -10,13 +10,28 @@ body {
 /****************
  * Main Content *
  ****************/
+.my-nav {
+    background: #00274C;
+    font-size: 18px;
+}
+
+.my-nav .nav-link {
+    color: #FFCB05;
+}
+
+.my-nav .nav-link:hover {
+    color: #30C5FF;
+}
+
 .container-fluid {
-    color: #333333;
+    color: #000000;
     font-size: 18px;
 }
 
 .container-fluid h1 {
     padding: 10px 10px;
+    background: #00274C;
+    color: #FFCB05;
 }
 
 .row {
@@ -30,8 +45,8 @@ body {
 :target::before {
     content: "";
     display: block;
-    margin-top: -70px;
-    height: 70px;
+    margin-top: -80px;
+    height: 80px;
     width: 1px;
 }
 
