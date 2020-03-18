@@ -42,6 +42,7 @@ This is the repository for my personal website. This includes all linked files a
     - [ ] Quality of Life
     - [ ] Interviews / Networking
     - [ ] Undergrad / Grad Applications
+    - [x] Docker Tutorial
 - [x] Documentation
 - [x] Page Restructure
 - [x] Add Styling w/ CSS
