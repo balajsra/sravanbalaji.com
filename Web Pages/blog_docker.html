@@ -27,7 +27,7 @@
 
                     <!-- Author & Date/Time -->
                     <p class="lead">
-                        Updated on March 17, 2020
+                        Updated on March 18, 2020
                     </p>
                     
                     <!-- Preview Image -->
@@ -38,7 +38,7 @@
                     <!-- Post Content -->
                     <h2><a name="introduction">Introduction</a></h2>
                     <p>
-                        Throughout my college career in computer science, I have found the need to develop applications that will be deployed in a Linux environment. As a windows user, I have usually turned to a couple of different options: virtual machines, <a href="https://docs.microsoft.com/en-us/windows/wsl/about" target="_blank">Windows Subsystem for Linux</a>, or <a href="https://www.cygwin.com" target="_blank">Cygwin</a>. Recently, I discovered an alternative method for building and testing Linux apps that is especially useful for collaboration and deployment. Docker allows you to package an OS and all the necessary dependencies into a <b>docker image</b>. You can then spin up an instance of this image called a <b>docker container</b> in which you can run your source code. The video below was incredibly helpful in my understanding of what docker is, how it's different from virtual machines, and how to use it.
+                        Throughout my college career in computer science, I have found the need to develop applications that will be deployed in a Linux environment. As a windows user, I have usually turned to a couple of different options: virtual machines, <a href="https://docs.microsoft.com/en-us/windows/wsl/about" target="_blank">Windows Subsystem for Linux</a>, or <a href="https://www.cygwin.com" target="_blank">Cygwin</a>. Recently, I discovered an alternative method for building and testing Linux apps that is especially useful for collaboration and deployment. Docker allows you to package an OS and all the necessary dependencies into a <b>docker image</b>. You can then spin up an instance of this image called a <b>docker container</b> in which you can run your source code. Jake Wright's video was incredibly helpful in my understanding of what docker is, how it's different from virtual machines, and how to use it.
                     </p>
 
                     <div class="embed-responsive embed-responsive-16by9">
@@ -47,7 +47,7 @@
 
                     <hr>
 
-                    <h2><a name="installing_docker"></a>Installing Docker</h2>
+                    <h2><a name="installing_docker">Installing Docker</a></h2>
                     <p>
                         Depending on your host machine's operating system, you will install one of the following Docker products. If you have macOS or Windows, your first option should be Docker Desktop. Check if you meet the system requirements. If you do not, Docker Toolbox is the legacy option that uses Oracle VirtualBox rather than Hyper-V or HyperKit for virtualization. I am using a computer with Windows 10 Home, so I use Docker Toolbox for Windows. This blog post will discuss some solutions to edge-case issues with Docker Toolbox that Docker Desktop users will hopefully not have to deal with.
                     </p>
@@ -108,13 +108,66 @@
 
                     <hr>
 
-                    <h2><a name="building_images_and_running_containers"></a>Building Images & Running Containers</h2>
+                    <h2><a name="building_images_and_running_containers">Building Images & Running Containers</a></h2>
                     <p>
-                        To learn about Dockerfiles and a basic example, check out the video in the <a href="#introduction">introduction</a>. To learn about Docker Compose, check out the video below.
+                        To learn about Dockerfiles and a basic example, check out the video in the <a href="#introduction">introduction</a>. To learn about Docker Compose, check out Jake Wright's video on the topic.
                     </p>
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/Qw9zlE3t8Ko" allowfullscreen></iframe>
                     </div>
+
+                    <hr>
+
+                    <h2><a name="x_forwarding">X Forwarding for GUI Applications</a></h2>
+                    <p>
+                        In a virtual machine, you can easily run GUI applications such as a web browser, text editor, etc. In a docker container, the process is a little bit different. You will need to download an X Server such as <a href="https://sourceforge.net/projects/vcxsrv/" target="_blank">VcXsrv Windows X Server</a>. If you are using Chocolatey, you can run <a href="https://chocolatey.org/packages/vcxsrv" target="_blank"><code>choco install vcxsrv</code></a>.
+                    </p>
+                    <p>
+                        <a href="https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde" target="_blank">Run GUI app in linux docker container on windows host</a> provides a great explanation of why you would want to do this and how to run your docker container. The post discusses how to set your IP address as the <code>DISPLAY</code> environment variable that is passed to docker via the <code>-e DISPLAY=$DISPLAY</code> command line argument. You can alternatively pass your IP address as an environment variable in your docker compose file. This is shown in <a href="https://github.com/MAAV-Software/ros-tutorial" target="_blank">MAAV's ROS Tutorial</a> (reproduced below). The main settings to look at below are <code>environment</code> and <code>network_mode</code>. Set the <code>DISPLAY</code> environment variable to <code>[ip_address]:0.0</code> and set <code>network_mode: "host"</code>.
+                    </p>
+                    <pre>
+                        <code>
+# docker-compose.yml
+version: "2"
+
+services:
+ros-demo:
+    image: ros-demo
+    privileged: true
+    volumes:
+    # Mount the current directory do everything in /tutorial within docker
+    - .:/tutorial:rw
+    environment:
+    - DISPLAY=1.1.1.1:0.0 # Change 1.1.1.1 to your IP Address
+    network_mode: "host"
+    container_name: ros-demo
+    command: "/bin/bash --init-file scripts/source-ros.sh" #source ros automatically
+                        </code>
+                    </pre>
+
+                    <hr>
+
+                    <h2><a name="helpful_commands">Helpful Docker Commands</a></h2>
+                    <p>
+                        <ul>
+                            <li>System Prune to clear space on Docker Machine</li>
+                            <ul>
+                                <li><code>docker system prune --volumes</code></li>
+                            </ul>
+
+                            <li>Use Docker Compose to run a container named <i>container_name</i></li>
+                            <ul>
+                                <li><code>docker-compose run --rm <i>container_name</i></code></li>
+                            </ul>                            
+                        </ul>
+                    </p>
+
+                    <hr>
+
+                    <h2><a name="conclusion">Conclusion</a></h2>
+                    <p>
+                        Hopefully by this point, you have a better understanding of what docker is, why you might want to use it, and how to get a docker machine setup so you can build and run docker containers. If you have any questions or suggestions for improvement, feel free to <a href="about.html#contact_me">contact me</a>.
+                    </p>
 
                     <hr>
                 </div>
