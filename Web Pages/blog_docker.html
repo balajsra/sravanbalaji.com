@@ -62,12 +62,12 @@
                         <ul>
                             <li><a href="https://docs.docker.com/docker-for-windows/install/" target="_blank">Docker Desktop for Windows</a></li>
                             <ul>
-                                <li>Chocolatey: <a href="https://chocolatey.org/packages/docker-desktop/2.2.0.4" target="_blank"><code>choco install docker-desktop</code></a></li>
+                                <li><a href="https://chocolatey.org/packages/docker-desktop/2.2.0.4" target="_blank">Chocolatey</a>: <code>choco install docker-desktop</code></li>
                             </ul>
 
                             <li><a href="https://docs.docker.com/toolbox/toolbox_install_windows/" target="_blank">Docker Toolbox for Windows</a> (Legacy)</li>
                             <ul>
-                                <li>Chocolatey: <a href="https://chocolatey.org/packages/docker-toolbox" target="_blank"><code>choco install docker-toolbox</code></a></li>
+                                <li><a href="https://chocolatey.org/packages/docker-toolbox" target="_blank">Chocolatey</a>: <code>choco install docker-toolbox</code></li>
                             </ul>
                         </ul>
                         
@@ -120,7 +120,7 @@
 
                     <h2><a name="x_forwarding">X Forwarding for GUI Applications</a></h2>
                     <p>
-                        In a virtual machine, you can easily run GUI applications such as a web browser, text editor, etc. In a docker container, the process is a little bit different. You will need to download an X Server such as <a href="https://sourceforge.net/projects/vcxsrv/" target="_blank">VcXsrv Windows X Server</a>. If you are using Chocolatey, you can run <a href="https://chocolatey.org/packages/vcxsrv" target="_blank"><code>choco install vcxsrv</code></a>.
+                        In a virtual machine, you can easily run GUI applications such as a web browser, text editor, etc. In a docker container, the process is a little bit different. You will need to download an X Server such as <a href="https://sourceforge.net/projects/vcxsrv/" target="_blank">VcXsrv Windows X Server</a>. If you are using <a href="https://chocolatey.org/packages/vcxsrv" target="_blank">chocolatey</a>, you can run <code>choco install vcxsrv</code>.
                     </p>
                     <p>
                         <a href="https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde" target="_blank">Run GUI app in linux docker container on windows host</a> provides a great explanation of why you would want to do this and how to run your docker container. The post discusses how to set your IP address as the <code>DISPLAY</code> environment variable that is passed to docker via the <code>-e DISPLAY=$DISPLAY</code> command line argument. You can alternatively pass your IP address as an environment variable in your docker compose file. This is shown in <a href="https://github.com/MAAV-Software/ros-tutorial" target="_blank">MAAV's ROS Tutorial</a> (reproduced below). The main settings to look at below are <code>environment</code> and <code>network_mode</code>. Set the <code>DISPLAY</code> environment variable to <code>[ip_address]:0.0</code> and set <code>network_mode: "host"</code>.
