@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script language="javascript" type="text/javascript" src="Common/header.txt"></script>
+        <script language="javascript" type="text/javascript" src="../common/header.txt"></script>
         <title>Docker</title>
 
         <style>
@@ -13,7 +13,7 @@
         </style>
     </head>
 
-    <script language="javascript" type="text/javascript" src="Common/navbar.txt"></script>
+    <script language="javascript" type="text/javascript" src="../common/navbar.txt"></script>
 
     <body>
         <div class="container-fluid px-md-6">
@@ -99,7 +99,7 @@
                     <p>
                         I configured all of my drives as shared folders so I can mount any folders on my host machine to any docker containers I run. In your WSL terminal, run <code>docker-machine.exe start</code> to start the <code>default</code> docker machine created by the Docker Quickstart Terminal. After your docker machine is running, open the shared folder settings as shown in <a href="https://medium.com/@Charles_Stover/fixing-volumes-in-docker-toolbox-4ad5ace0e572" target="_blank">Fixing Volumes in Docker Toolbox</a>. The image below shows how <code>C:\</code> on my host computer is mounted at <code>/</code> in folder <code>c</code> on my docker machine such that <code>C:\</code> maps to <code>/c</code>. Make sure you have enabled <code>Auto-mount</code> and <code>Make Permanent</code>. Click <b>OK</b> to save all settings, then go back to the WSL terminal and run <code>docker-machine.exe restart default</code>. Now your docker machine should be properly configured to allow volume mounting.
                     </p>
-                    <img class="img-fluid mx-auto d-block" src="../Assets/Blog Posts/Docker/virtual_box_shared_folder.jpg">
+                    <img class="img-fluid mx-auto d-block" src="../assets/blog_posts/Docker/virtual_box_shared_folder.jpg">
 
                     <h4>Increase Docker Machine Resources</h4>
                     <p>
@@ -161,7 +161,7 @@ ros-demo:
 
                     <h2><a name="conclusion">Conclusion</a></h2>
                     <p>
-                        Hopefully by this point, you have a better understanding of what docker is, why you might want to use it, and how to get a docker machine setup so you can build and run docker containers. If you have any questions or suggestions for improvement, feel free to <a href="about.html#contact_me">contact me</a>.
+                        Hopefully by this point, you have a better understanding of what docker is, why you might want to use it, and how to get a docker machine setup so you can build and run docker containers. If you have any questions or suggestions for improvement, feel free to <a href="../web_pages/about.html#contact_me">contact me</a>.
                     </p>
 
                     <hr>
@@ -174,6 +174,6 @@ ros-demo:
     </body>
 
     <footer>
-        <script language="javascript" type="text/javascript" src="Common/footer.txt"></script>
+        <script language="javascript" type="text/javascript" src="../common/footer.txt"></script>
     </footer>
 </html>
