@@ -1,74 +1,11 @@
-# About
-This is the repository for my personal website. This includes all linked files and web pages.
+# Sravan Balaji's Personal Website
 
-# Planning / Future Work
+This is the repository for my personal website, which can be found at [sravanbalaji.com](https://sravanbalaji.com). All linked files and web page source code can be found here.
 
-## To Do List
-- [x] About
-    - [x] Short Bio
-    - [x] Contact Info
-- [ ] Portfolio
-    - [x] Link to Resume PDF on GitHub
-    - [x] Education
-        - [x] Degrees
-        - [x] Coursework
-    - [ ] Professional Experience
-    - [ ] Research
-    - [ ] Projects
-- [ ] Personal
-    - [x] Software
-        - [x] Link
-        - [x] Platform(s)
-        - [x] Discussion
-        - [x] Images
-    - [x] Hardware
-        - [x] Device type
-        - [x] Specs
-        - [x] Discussion
-        - [x] Images
-    - [ ] Video Games
-        - [x] List
-        - [ ] Images
-        - [ ] Discussion
-        - [ ] Upcoming Games
-    - [x] Podcasts
-        - [x] List
-        - [x] Images
-        - [x] Discussion
-    - [x] Music
-        - [x] Spotify Playlist
-- [ ] Blog Posts / Articles / Guides
-    - [ ] Time Management / Handling Workload
-    - [ ] Quality of Life
-    - [ ] Interviews / Networking
-    - [ ] Undergrad / Grad Applications
-    - [x] Docker Tutorial
-- [x] Documentation
-- [x] Page Restructure
-- [x] Add Styling w/ CSS
-- [x] Favicon
-- [x] Logo w/ Link to Home Page
-- [x] Migrate to [Bootstrap](https://getbootstrap.com/)
-- [x] Add padding to sides
+## Development Progress
 
-## Web Page Structure (WIP)
-- Home
-- About
-    - Bio
-    - Contact Me
-- Portfolio
-    - Resume
-    - Education
-    - Professional Experience
-    - Research
-    - Projects
-- Personal
-    - Software
-    - Hardware
-    - Video Games
-        - Favorite List
-        - Upcoming Games
-    - Podcasts
-    - Music
-- Blogs / Articles / Guides
-- Documentation
+You can follow my current development plans for this website on my [GitHub project](https://github.com/balajsra/balajsra.github.io/projects/1).
+
+## Feedback & Suggestions
+
+If you find any issues or have suggestions for ways to improve my website, please submit a bug or enhancement request on [GitHub](https://github.com/balajsra/balajsra.github.io/issues).
