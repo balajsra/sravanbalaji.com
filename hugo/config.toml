@@ -100,12 +100,20 @@ preloader = "images/logo.png"
 
 ############################# social icons ##########################
 [[params.social]]
+icon = "ti-email" # themify icon pack : https://themify.me/themify-icons
+link = "mailto:balajsra@umich.edu"
+
+[[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
 link = "https://www.linkedin.com/in/sravan-balaji/"
 
 [[params.social]]
 icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
 link = "https://github.com/balajsra"
+
+[[params.social]]
+icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
+link = "https://www.youtube.com/channel/UC-xFJ4IKdogbpoQdQf2mgaA"
 
 ################################ English Language ########################
 [Languages.en]

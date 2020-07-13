@@ -1,0 +1,12 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/bg-background.webp"
+  bg_image : "images/backgrounds/bg-background.png"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Sravan Balaji"
+  content : "Welcome to my personal website!"
+  button:
+    enable : true
+    label : "Explore"
+    link : "#about"
