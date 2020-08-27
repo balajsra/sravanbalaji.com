@@ -1,0 +1,29 @@
+############################# Portfolio ###################################
+portfolio:
+  enable : true
+  title : Portfolio
+  about_item :
+  - icon : ti-file # themify icon pack : https://themify.me/themify-icons
+    title : Resume
+    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    link: "resume/sravan-balaji"
+
+  - icon : ti-pencil-alt # themify icon pack : https://themify.me/themify-icons
+    title : Education
+    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    link: "portfolio/education"
+
+  - icon : ti-briefcase # themify icon pack : https://themify.me/themify-icons
+    title : Work Experience
+    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    link: "portfolio/work"
+  
+  - icon : ti-search # themify icon pack : https://themify.me/themify-icons
+    title : Research
+    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    link: "portfolio/research"
+  
+  - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
+    title : Projects
+    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    link: "portfolio/projects"

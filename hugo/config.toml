@@ -47,40 +47,25 @@ URL = "about"
 weight = 1
 
 [[menu.main]]
-name = "services"
-URL = "services"
-weight = 2
-
-[[menu.main]]
 name = "portfolio"
 URL = "portfolio"
-weight = 3
-
-[[menu.main]]
-name = "team"
-URL = "team"
-weight = 4
-
-[[menu.main]]
-name = "pricing"
-URL = "pricing"
-weight = 5
+weight = 2
 
 [[menu.main]]
 name = "blog"
 URL = "blog"
-weight = 6
+weight = 3
 
 [[menu.main]]
-name = "contact"
-URL = "contact"
-weight = 7
+name = "documentation"
+URL = "documentation"
+weight = 4
 
 #### external / static link ####
-[[menu.static]]
-name = "themefisher"
-URL = "https://themefisher.com/"
-weight = 8
+# [[menu.static]]
+# name = "themefisher"
+# URL = "https://themefisher.com/"
+# weight = 8
 
 ############################# Default Parameters ##########################
 [params]

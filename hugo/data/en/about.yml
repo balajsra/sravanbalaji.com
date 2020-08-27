@@ -8,22 +8,7 @@ about:
     # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
     link: "author/sravan-balaji"
   
-  - icon : ti-file # themify icon pack : https://themify.me/themify-icons
-    title : Resume
+  - icon : ti-email # themify icon pack : https://themify.me/themify-icons
+    title : Contact Info
     # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
-    # link: "#"
-
-  - icon : ti-pencil-alt # themify icon pack : https://themify.me/themify-icons
-    title : Education
-    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
-    # link: "#"
-
-  - icon : ti-briefcase # themify icon pack : https://themify.me/themify-icons
-    title : Work
-    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
-    # link: "#"
-  
-  - icon : ti-search # themify icon pack : https://themify.me/themify-icons
-    title : Research
-    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
-    # link: "#"
+    link: "contact/sravan-balaji"

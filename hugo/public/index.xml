@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sravan Balaji</title>
+    <link>https://sravanbalaji.com/</link>
+    <description>Recent content on Sravan Balaji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>copyright &amp;copy; 2020 [gethugothemes](https://gethugothemes.com) all right reserved</copyright>
+    
+	<atom:link href="https://sravanbalaji.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contact Info</title>
+      <link>https://sravanbalaji.com/contact/sravan-balaji/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanbalaji.com/contact/sravan-balaji/</guid>
+      <description>Feel free to reach out to me via email, LinkedIn, GitHub, or YouTube via the links below.</description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>https://sravanbalaji.com/portfolio/education/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanbalaji.com/portfolio/education/</guid>
+      <description>University of Michigan (Ann Arbor, MI)     B.S.E. in Mechanical Engineering September 2016 - December 2020  GPA: 3.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://sravanbalaji.com/portfolio/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanbalaji.com/portfolio/projects/</guid>
+      <description>Install this template by following those simple steps: STEP-1 : Hugo installation Check this link below for install hugo on your computer.</description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://sravanbalaji.com/portfolio/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanbalaji.com/portfolio/research/</guid>
+      <description>Install this template by following those simple steps: STEP-1 : Hugo installation Check this link below for install hugo on your computer.</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://sravanbalaji.com/resume/sravan-balaji/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanbalaji.com/resume/sravan-balaji/</guid>
+      <description>Latest version of resume can be found on GitHub or in the embedded PDF viewer below (refresh page if it is not visible).</description>
+    </item>
+    
+    <item>
+      <title>Sravan Balaji</title>
+      <link>https://sravanbalaji.com/author/sravan-balaji/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanbalaji.com/author/sravan-balaji/</guid>
+      <description>Sravan Balaji is a Senior at the University of Michigan pursuing dual B.S.E.&amp;rsquo;s in Mechanical Engineering and Computer Science with an expected graduation of December 2020.</description>
+    </item>
+    
+    <item>
+      <title>Work Experience</title>
+      <link>https://sravanbalaji.com/portfolio/work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanbalaji.com/portfolio/work/</guid>
+      <description>Rivian ADAS Controls Intern Remote June 2020 - August 2020            Hughes Network Systems Software Development Intern San Diego, CA May 2019 - August 2019  Hard Skills:  Embedded Programming in C C# and .</description>
+    </item>
+    
+  </channel>
+</rss>
