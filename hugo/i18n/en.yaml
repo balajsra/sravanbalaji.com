@@ -1,15 +1,15 @@
 - id: blogTitle
   translation: Latest Post
 - id: readMore
-  translation: Read more
+  translation: Read More
 - id: viewAllPost
-  translation: View All Post
+  translation: View All Posts
 - id: share
   translation: Share
 - id: aboutAuthor
-  translation: About author
+  translation: About Author
 - id: authorsPosts
-  translation: Author's posts
+  translation: Author's Posts
 - id: all
   translation: All
 - id: about

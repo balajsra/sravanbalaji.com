@@ -18,12 +18,12 @@ portfolio:
     # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
     link: "portfolio/work"
   
-  - icon : ti-search # themify icon pack : https://themify.me/themify-icons
-    title : Research
-    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
-    link: "portfolio/research"
+  # - icon : ti-search # themify icon pack : https://themify.me/themify-icons
+  #   title : Research
+  #   # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  #   link: "portfolio/research"
   
-  - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
-    title : Projects
-    # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
-    link: "portfolio/projects"
+  # - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
+  #   title : Projects
+  #   # content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  #   link: "portfolio/projects"
