@@ -1,8 +1,29 @@
+/****************
+ * Color Themes *
+ ****************/
+/* Light Mode */
+:root[color-mode="light"] {
+	--primary-color: #ffcb05;
+	--secondary-color: #00274c;
+	--tertiary-color: #30c5ff;
+	--background-color: #e8eef2;
+	--font-color: #000000;
+}
+
+/* Dark Mode */
+:root[color-mode="dark"] {
+	--primary-color: purple;
+	--secondary-color: #00274c;
+	--tertiary-color: #30c5ff;
+	--background-color: #e8eef2;
+	--font-color: #000000;
+}
+
 /***********
  * General *
  ***********/
 body {
-	background-color: #e8eef2;
+	background-color: var(--background-color);
 	padding-top: 65px;
 	font-family: Arial, Verdana, Tahoma, sans-serif;
 }
@@ -11,16 +32,16 @@ body {
  * Main Content *
  ****************/
 .my-nav {
-	background: #00274c;
+	background: var(--secondary-color);
 	font-size: 18px;
 }
 
 .my-nav .nav-link {
-	color: #ffcb05;
+	color: var(--primary-color);
 }
 
 .my-nav .nav-link:hover {
-	color: #30c5ff;
+	color: var(--tertiary-color);
 }
 
 .my-nav .navbar-toggler-icon {
@@ -28,18 +49,18 @@ body {
 }
 
 .my-nav .navbar-toggler {
-	background: #ffcb05; /* pick your color */
+	background: var(--primary-color);
 }
 
 .container-fluid {
-	color: #000000;
+	color: var(--font-color);
 	font-size: 18px;
 }
 
 .container-fluid h1 {
 	padding: 10px 10px;
-	background: #00274c;
-	color: #ffcb05;
+	background: var(--secondary-color);
+	color: var(--primary-color);
 }
 
 .row {
