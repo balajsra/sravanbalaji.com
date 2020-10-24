@@ -12,11 +12,11 @@
 
 /* Dark Mode */
 :root[color-mode="dark"] {
-	--primary-color: purple;
-	--secondary-color: #00274c;
-	--tertiary-color: #30c5ff;
-	--background-color: #e8eef2;
-	--font-color: #000000;
+	--primary-color: #bd93f9;
+	--secondary-color: #44475a;
+	--tertiary-color: #50fa7b;
+	--background-color: #282a36;
+	--font-color: #f8f8f2;
 }
 
 /***********
@@ -136,4 +136,8 @@ body {
 	max-height: 500px;
 	margin: auto;
 	display: block;
+}
+
+label {
+	color: var(--primary-color);
 }
