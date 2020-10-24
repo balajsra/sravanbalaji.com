@@ -5,7 +5,9 @@
 :root[color-mode="light"] {
 	--primary-color: #ffcb05;
 	--secondary-color: #00274c;
-	--tertiary-color: #30c5ff;
+	--tertiary-color: #2f65a7;
+	--quaternary-color: #ffffff;
+	--quinary-color: #e83e8c;
 	--background-color: #e8eef2;
 	--font-color: #000000;
 }
@@ -14,7 +16,9 @@
 :root[color-mode="dark"] {
 	--primary-color: #bd93f9;
 	--secondary-color: #44475a;
-	--tertiary-color: #50fa7b;
+	--tertiary-color: #8be9fd;
+	--quaternary-color: #6272a4;
+	--quinary-color: #ff79c6;
 	--background-color: #282a36;
 	--font-color: #f8f8f2;
 }
@@ -26,6 +30,23 @@ body {
 	background-color: var(--background-color);
 	padding-top: 65px;
 	font-family: Arial, Verdana, Tahoma, sans-serif;
+}
+
+label {
+	color: var(--primary-color);
+}
+
+a {
+	color: var(--tertiary-color);
+}
+
+code {
+	color: var(--quinary-color);
+}
+
+hr {
+	border-color: var(--font-color);
+	opacity: 0.1;
 }
 
 /****************
@@ -138,6 +159,22 @@ body {
 	display: block;
 }
 
-label {
-	color: var(--primary-color);
+.card {
+	background-color: var(--background-color);
+}
+
+.card-header {
+	background-color: var(--secondary-color);
+}
+
+.card-body {
+	background-color: var(--quaternary-color);
+}
+
+.dropdown-menu {
+	background-color: var(--quaternary-color);
+}
+
+.dropdown-item {
+	color: var(--font-color);
 }
