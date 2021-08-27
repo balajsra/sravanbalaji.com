@@ -26,7 +26,7 @@
 					<h1>System76 Oryx Pro 7 Review</h1>
 
 					<!-- Author & Date/Time -->
-					<p class="lead">Updated on August 26, 2021</p>
+					<p class="lead">Updated on August 27, 2021</p>
 
 					<!-- Preview Image -->
 					<div class="blog-cover">
@@ -47,6 +47,15 @@
 					</h2>
 
 					<h3>Oryx Pro 7 Configuration</h3>
+					<p>
+						See the
+						<a
+							href="https://tech-docs.system76.com/models/oryp7/README.html"
+							target="_blank"
+							>System76 Technical Documentation</a
+						>
+						for more information.
+					</p>
 					<ul>
 						<li>
 							<b>OS</b>: Pop!_OS 20.10 (64-bit) with full
@@ -64,7 +73,7 @@
 							<b>Storage</b>: 240 GB Seq Read: 540 MB/s, Seq
 							Write: 465 MB/s
 						</li>
-						<li><b>Display</b>: 15.6" Matte 144Hz Full HD 1080p</li>
+						<li><b>Display</b>: 15.6" 1920x1080@144Hz LCD</li>
 						<li>
 							<b>Warranty</b>: 2 Year Limited Parts and Labor
 							Warranty
@@ -118,73 +127,127 @@
 
 					<hr />
 
-					<h2><a name="general-comments">General Comments</a></h2>
+					<h2><a name="upgradeability">Upgradeability</a></h2>
 					<p>
 						I ended up purchasing the Oryx Pro 7 with base memory
-						and storage, then replaced them with parts I bought from
-						Amazon. The upgrade experience was pretty good. I had
-						some trouble removing the back plate because some screws
-						got stuck, but it was overall not too difficult. Coming
-						from a desktop with a GTX 1070 and a 1440p 60 Hz
-						monitor, I can honestly say that I prefer the higher
-						refresh rate over the resolution bump. Gaming
-						performance has been amazing, and my overall experience
-						with the laptop has been positive. I will mention that I
-						occasionally run into some freezing issues even when not
-						doing anything particularly intensive, but these were
-						largely resolved when I tried some different kernels.
-						The fans did get too loud at times, but this was also
-						resolved by switching kernels.
+						and storage, then upgraded these components with parts I
+						bought from Amazon. The upgrade experience was pretty
+						good. Removing the bottom cover just involves removing a
+						bunch of screws, nothing too difficult. I had a little
+						trouble with this because one of the screws seemed to
+						get stuck, but I eventually got it out. The
+						<a
+							href="https://tech-docs.system76.com/models/oryp7/repairs.html"
+							target="_blank"
+							>Parts & Repairs guide</a
+						>
+						was very clear and helpful in this regard.
 					</p>
 
 					<hr />
 
-					<h2><a name="replacing-pop-os">Replacing Pop!_OS</a></h2>
+					<h2>
+						<a name="experimenting-with-linux-distros"
+							>Experimenting with Linux Distros</a
+						>
+					</h2>
 					<p>
 						Regarding OS, I initially tried to install Arch Linux
 						with dwm like I had on my desktop, but found that
 						switching between the graphics modes (i.e. Integrated,
 						Hybrid, and Discrete) was just a nightmare. I tried
-						installing System76 software through the AUR, but ran
-						into too many issues that I couldn't resolve.
+						installing
+						<a
+							href="https://aur.archlinux.org/packages/system76-power/"
+							target="_blank"
+							>System76 software through the AUR</a
+						>, but could never get it working reliably.
 						Additionally, the laptop speakers did not seem to work
-						either. Eventually got this working after trying the
-						solution in ArchWiki. Thus, I decided to switch to
-						Pop!_OS. The main change I made to the install process
-						was to use btrfs rather than the default (ext4 I think)
-						so I could take snapshots and backup my data with
-						Timeshift. Overall, I'm really happy that System76 and
-						Pop!_OS have come up with a good solution for switchable
-						graphics. Being able to just click on the option in the
-						GNOME menu is so useful. The window management in
-						Pop!_OS is very good too. Coming from a standalone
-						window manager like dwm, this provides a pretty good
-						balance between convenience (having things work out of
-						the box with a desktop environment) and usability
-						(keyboard shortcuts in dwm are very handy).
+						out of the box. I eventually got the audio working
+						thanks to the
+						<a
+							href="https://wiki.archlinux.org/title/System76_Oryx_Pro#Audio"
+							target="_blank"
+							>solution in the ArchWiki</a
+						>, but I ultimately decided to switch to Pop!_OS because
+						of the graphics switching issue. The main change I made
+						to the default Pop!_OS install process was to use
+						<a
+							href="https://btrfs.wiki.kernel.org/index.php/Main_Page"
+							target="_blank"
+							>btrfs</a
+						>
+						rather than the default (ext4 I think) so I could take
+						snapshots and backup my data with
+						<a
+							href="https://github.com/teejee2008/timeshift"
+							target="_blank"
+							>Timeshift</a
+						>.
+					</p>
+					<p>
+						My experience with Pop!_OS was very positive. I'm really
+						happy that System76 and Pop!_OS have come up with a good
+						solution for switchable graphics. Being able to just
+						click on the option in the GNOME menu is so useful. The
+						window management in Pop!_OS's
+						<a
+							href="https://github.com/pop-os/cosmic"
+							target="_blank"
+							>COSMIC</a
+						>
+						desktop environment is very good too. Coming from a
+						standalone tiling window manager like dwm, this provides
+						a pretty good balance between convenience and usability.
 					</p>
 					<p>
 						After some more time with Pop!_OS, I realized that I
-						really missed Arch so I decided to try some other Arch
-						based distros. With Garuda Linux, switchable graphics
-						now works. Couldn't figure out how to get it working on
-						vanilla arch. Integrated speakers didn't work out of the
-						box, but was able to resolve it with the solution listed
-						in the ArchWiki. Garuda linux implements a lot of the
-						customizations I usually do in my vanilla Arch installs
-						anyways (e.g. btrfs, zen kernel, chaotic-aur, backups w/
-						timeshift, etc.), so I'm pretty happy with it. Ran into
-						a bunch of crashing and system break issues with the
-						GNOME edition. Timeshift usually helped me recover from
-						this, but not always. Thus, decided to switch to KDE
-						Dragonized edition as it looks nice, uses KDE plasma
-						instead of GNOME, and comes with a bunch of gaming
-						related apps pre-installed, which saves me time. Still
-						encountered freezing issues with KDE Dragonized edition,
-						so eventually switched to i3 edition, but replaced i3 w/
-						Xmonad. Then replaced Xmonad w/ dwm-flexipatch.
-						Performance is amazing and haven't encountered the
-						freezing issue that I had with GNOME and KDE any more.
+						really missed the package management, customizability,
+						and rolling release of Arch. Since I couldn't get Arch
+						working before, I decided to try some other Arch based
+						distros like
+						<a href="https://manjaro.org/" target="_blank"
+							>Manjaro</a
+						>
+						and
+						<a href="https://garudalinux.org/" target="_blank"
+							>Garuda</a
+						>. With both of these, I found that switchable graphics
+						(via the
+						<a
+							href="https://aur.archlinux.org/packages/system76-power/"
+							target="_blank"
+							>system76-power AUR package</a
+						>, now works. I eventually decided on Garuda because it
+						implements a lot of the customizations I usually do in
+						my vanilla Arch installs anyways (e.g. btrfs, zen
+						kernel, chaotic-aur, backups w/ timeshift, easy options
+						to enable gaming tweaks, etc.). The
+						<a href="https://www.gnome.org/" target="_blank"
+							>GNOME</a
+						>
+						edition immediately ran into crashing and system break
+						issues, so I tried the KDE Dragonized edition. It looks
+						pretty nice and uses
+						<a
+							href="https://kde.org/plasma-desktop/"
+							target="_blank"
+							>KDE plasma</a
+						>
+						instead of GNOME. After still encountered freezing
+						issues, I switched to the
+						<a href="https://i3wm.org/" target="_blank">i3</a>
+						edition, but replaced i3 with
+						<a href="https://xmonad.org/" target="_blank">Xmonad</a>
+						because I was experimenting with it at the time. After
+						realizing that Xmonad would not really fit my needs
+						(mainly gaming), I replaced it with
+						<a
+							href="https://github.com/bakkeby/dwm-flexipatch"
+							target="_blank"
+							>dwm-flexipatch</a
+						>. Now, performance is amazing and I haven't encountered
+						the major freezing issues that I had with GNOME and KDE.
 					</p>
 
 					<hr />
@@ -199,14 +262,26 @@
 							144Hz.
 						</li>
 						<li>
-							Keyboard is pretty good, maybe not as good as my old
-							HP Spectre x360 which was excellent. Having a number
-							pad on a 15" laptop is really good too.
+							Keyboard is not bad at all, but it definitely
+							doesn't match up in terms of quality and
+							satisfaction to the excellent HP Spectre x360
+							keyboard that I used previously. I really don't mind
+							it though and love that it includes a full sized
+							number pad. The layout doesn't feel cramped and it
+							has plenty of keys that can be customized via the
+							<a
+								href="https://github.com/pop-os/keyboard-configurator"
+								target="_blank"
+								>keyboard configurator</a
+							>.
 						</li>
 						<li>
 							Gaming performance is amazing! Recently got Yakuza:
-							Like a Dragon on Steam. Runs at above 60 fps on all
-							of the highest settings.
+							Like a Dragon on Steam. It runs at around 70 to 80
+							fps with all the settings turned up to the max. I
+							love that I can use my favorite operating system
+							without having to compromise too much on gaming
+							performance.
 						</li>
 						<li>
 							Love the keyboard backlighting and color changing on
@@ -214,8 +289,12 @@
 							further in software though.
 						</li>
 						<li>
-							Trackpad is the best I have used in a long time.
-							Love the surface feel, my finger just glides.
+							When I need a mouse, I tend to use an external one,
+							but the trackpad feels excellent to me. My finger
+							just glides across the super smooth surface. I think
+							the overall trackpad size is good as well. Not as
+							large as one you would find on a Macbook, but
+							definitely good enough for my use cases.
 						</li>
 						<li>
 							It was a bit more difficult than I expected to
@@ -224,10 +303,14 @@
 							appreciate the focus on upgradeability in the
 							hardware design.
 						</li>
-						<li>Tons of ports! Extremely useful!</li>
 						<li>
-							General build quality is solid. Really like the
-							feel.
+							I absolutely love the port selection. No need to
+							live the dongle life when the laptop has so many
+							built-in already.
+						</li>
+						<li>
+							The build quality is pretty solid. It definitely
+							feels like a premium device.
 						</li>
 					</ul>
 
@@ -270,14 +353,27 @@
 							though.
 						</li>
 						<li>
-							Fans can get really loud when gaming, but this is an
-							understandable limitation with gaming laptops. I was
-							able to mostly solve this by switching to a custom
-							kernel.
+							Fans can get really loud at times, especially when
+							gaming. I often have to turn up my speakers or wear
+							noise cancelling headphones. This is an
+							understandable limitation with gaming laptops
+							though. Using a custom kernel solved a lot of my
+							complaints with the thermals and fan noise though.
+							Now the fans don't turn on as often. When they do,
+							they don't ramp up to the maximum speed, so noise is
+							kept to a reasonable level.
 						</li>
 						<li>
 							Random freezing is kind of an issue, but is
 							generally resolved by using a custom kernel.
+						</li>
+						<li>
+							While the display itself is great, I really wish the
+							hinge would rotate farther back. It looks like the
+							screen can only rotate about 120 degrees from fully
+							closed, so getting a good viewing angle (especially
+							when the laptop is propped up or really low) can be
+							difficult.
 						</li>
 					</ul>
 
@@ -286,20 +382,27 @@
 					<h2><a name="conclusions">Conclusions</a></h2>
 					<p>
 						It may seem that the cons outweigh the pros, but this is
-						only in number and I am really nitpicking. The things
-						this laptop get right (e.g. gaming, refresh rate,
+						only in number and because I am really nitpicking. The
+						things this laptop get right (e.g. gaming, refresh rate,
 						switchable graphics, general performance) are much more
 						important to me than the other things. Regarding price,
 						you are definitely paying a premium for first-class
 						linux support, but it is well worth it in my opinion. I
 						do not want to use Windows anymore and I am happy to pay
 						extra if it means supporting a company that promotes and
-						sells Linux computers.
+						sells Linux computers and having a device that can be
+						easily upgraded down the line. Overall, I am very happy
+						with my purchase.
 					</p>
 
 					<hr />
 
 					<h2><a name="images">Images</a></h2>
+					<p>
+						These are some images from when I unboxed the laptop,
+						installed the RAM & SSD, and customized my setup a
+						little.
+					</p>
 
 					<div class="container-fluid">
 						<div class="row align-items-center">
