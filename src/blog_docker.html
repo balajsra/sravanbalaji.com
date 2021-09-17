@@ -1,345 +1,321 @@
 <!DOCTYPE html>
 <html lang="en" color-mode="light">
-	<head>
-		<script
-			language="javascript"
-			type="text/javascript"
-			src="common/header.txt"
-		></script>
-		<title>Docker</title>
-	</head>
+  <head>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="common/header.txt"
+    ></script>
+    <title>Docker</title>
+  </head>
 
-	<script
-		language="javascript"
-		type="text/javascript"
-		src="common/navbar.txt"
-	></script>
+  <script
+    language="javascript"
+    type="text/javascript"
+    src="common/navbar.txt"
+  ></script>
 
-	<body>
-		<div class="container-fluid px-md-6">
-			<div class="row align-items-center">
-				<div class="col-md-2">
-					<!-- Nothing -->
-				</div>
-				<div class="col-md-8">
-					<!-- Title -->
-					<h1>Getting Started with Docker</h1>
+  <body>
+    <div class="container-fluid px-md-6">
+      <div class="row align-items-center">
+        <div class="col-md-2">
+          <!-- Nothing -->
+        </div>
+        <div class="col-md-8">
+          <!-- Title -->
+          <h1>Getting Started with Docker</h1>
 
-					<!-- Author & Date/Time -->
-					<p class="lead">Updated on March 18, 2020</p>
+          <!-- Author & Date/Time -->
+          <p class="lead">Updated on March 18, 2020</p>
 
-					<!-- Preview Image -->
-					<div class="blog-cover">
-						<img
-							class="img-fluid rounded"
-							src="./assets/blog_posts/Docker/cover_docker.png"
-							alt=""
-						/>
-					</div>
+          <!-- Preview Image -->
+          <div class="blog-cover">
+            <img
+              class="img-fluid rounded"
+              src="./assets/blog_posts/Docker/cover_docker.png"
+              alt=""
+            />
+          </div>
 
-					<hr />
+          <hr />
 
-					<!-- Post Content -->
-					<h2><a name="introduction">Introduction</a></h2>
-					<p>
-						Throughout my college career in computer science, I have
-						found the need to develop applications that will be
-						deployed in a Linux environment. When I previously used
-						Windows 10 as my daily driver, I have usually turned to
-						a couple of different options: virtual machines,
-						<a
-							href="https://docs.microsoft.com/en-us/windows/wsl/about"
-							target="_blank"
-							>Windows Subsystem for Linux</a
-						>, or
-						<a href="https://www.cygwin.com" target="_blank"
-							>Cygwin</a
-						>. Recently, I discovered an alternative method for
-						building and testing Linux apps that is especially
-						useful for collaboration and deployment. Docker allows
-						you to package an OS and all the necessary dependencies
-						into a <b>docker image</b>. You can then spin up an
-						instance of this image called a
-						<b>docker container</b> in which you can run your source
-						code. Jake Wright's video was incredibly helpful in my
-						understanding of what docker is, how it's different from
-						virtual machines, and how to use it.
-					</p>
+          <!-- Post Content -->
+          <h2><a name="introduction">Introduction</a></h2>
+          <p>
+            Throughout my college career in computer science, I have found the
+            need to develop applications that will be deployed in a Linux
+            environment. When I previously used Windows 10 as my daily driver, I
+            have usually turned to a couple of different options: virtual
+            machines,
+            <a
+              href="https://docs.microsoft.com/en-us/windows/wsl/about"
+              target="_blank"
+              >Windows Subsystem for Linux</a
+            >, or <a href="https://www.cygwin.com" target="_blank">Cygwin</a>.
+            Recently, I discovered an alternative method for building and
+            testing Linux apps that is especially useful for collaboration and
+            deployment. Docker allows you to package an OS and all the necessary
+            dependencies into a <b>docker image</b>. You can then spin up an
+            instance of this image called a <b>docker container</b> in which you
+            can run your source code. Jake Wright's video was incredibly helpful
+            in my understanding of what docker is, how it's different from
+            virtual machines, and how to use it.
+          </p>
 
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube-nocookie.com/embed/YFl2mCHdv24"
-							allowfullscreen
-						></iframe>
-					</div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube-nocookie.com/embed/YFl2mCHdv24"
+              allowfullscreen
+            ></iframe>
+          </div>
 
-					<hr />
+          <hr />
 
-					<h2><a name="installing_docker">Installing Docker</a></h2>
-					<p>
-						Depending on your host machine's operating system, you
-						will install one of the following Docker products. If
-						you have macOS or Windows, your first option should be
-						Docker Desktop. Check if you meet the system
-						requirements. If you do not, Docker Toolbox is the
-						legacy option that uses Oracle VirtualBox rather than
-						Hyper-V or HyperKit for virtualization. For a computer
-						with Windows 10 Home, you would use Docker Toolbox for
-						Windows. This blog post will discuss some solutions to
-						edge-case issues with Docker Toolbox that Docker Desktop
-						users will hopefully not have to deal with.
-					</p>
-					<ul>
-						<li>macOS</li>
-						<ul>
-							<li>
-								<a
-									href="https://docs.docker.com/docker-for-mac/install/"
-									target="_blank"
-									>Docker Desktop for Mac</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://docs.docker.com/toolbox/toolbox_install_mac/"
-									target="_blank"
-									>Docker Toolbox for macOS</a
-								>
-								(Legacy)
-							</li>
-						</ul>
+          <h2><a name="installing_docker">Installing Docker</a></h2>
+          <p>
+            Depending on your host machine's operating system, you will install
+            one of the following Docker products. If you have macOS or Windows,
+            your first option should be Docker Desktop. Check if you meet the
+            system requirements. If you do not, Docker Toolbox is the legacy
+            option that uses Oracle VirtualBox rather than Hyper-V or HyperKit
+            for virtualization. For a computer with Windows 10 Home, you would
+            use Docker Toolbox for Windows. This blog post will discuss some
+            solutions to edge-case issues with Docker Toolbox that Docker
+            Desktop users will hopefully not have to deal with.
+          </p>
+          <ul>
+            <li>macOS</li>
+            <ul>
+              <li>
+                <a
+                  href="https://docs.docker.com/docker-for-mac/install/"
+                  target="_blank"
+                  >Docker Desktop for Mac</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.docker.com/toolbox/toolbox_install_mac/"
+                  target="_blank"
+                  >Docker Toolbox for macOS</a
+                >
+                (Legacy)
+              </li>
+            </ul>
 
-						<li>Windows</li>
-						<ul>
-							<li>
-								<a
-									href="https://docs.docker.com/docker-for-windows/install/"
-									target="_blank"
-									>Docker Desktop for Windows</a
-								>
-							</li>
+            <li>Windows</li>
+            <ul>
+              <li>
+                <a
+                  href="https://docs.docker.com/docker-for-windows/install/"
+                  target="_blank"
+                  >Docker Desktop for Windows</a
+                >
+              </li>
 
-							<li>
-								<a
-									href="https://docs.docker.com/toolbox/toolbox_install_windows/"
-									target="_blank"
-									>Docker Toolbox for Windows</a
-								>
-								(Legacy)
-							</li>
-						</ul>
+              <li>
+                <a
+                  href="https://docs.docker.com/toolbox/toolbox_install_windows/"
+                  target="_blank"
+                  >Docker Toolbox for Windows</a
+                >
+                (Legacy)
+              </li>
+            </ul>
 
-						<li>Linux</li>
-						<ul>
-							<li>
-								<a
-									href="https://docs.docker.com/install/linux/docker-ce/centos/"
-									target="_blank"
-									>Docker Engine - Community for CentOS</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://docs.docker.com/install/linux/docker-ce/debian/"
-									target="_blank"
-									>Docker Engine - Community for Debian</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://docs.docker.com/install/linux/docker-ce/fedora/"
-									target="_blank"
-									>Docker Engine - Community for Fedora</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://docs.docker.com/install/linux/docker-ce/ubuntu/"
-									target="_blank"
-									>Docker Engine - Community for Ubuntu</a
-								>
-							</li>
-						</ul>
-					</ul>
+            <li>Linux</li>
+            <ul>
+              <li>
+                <a
+                  href="https://docs.docker.com/install/linux/docker-ce/centos/"
+                  target="_blank"
+                  >Docker Engine - Community for CentOS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.docker.com/install/linux/docker-ce/debian/"
+                  target="_blank"
+                  >Docker Engine - Community for Debian</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.docker.com/install/linux/docker-ce/fedora/"
+                  target="_blank"
+                  >Docker Engine - Community for Fedora</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.docker.com/install/linux/docker-ce/ubuntu/"
+                  target="_blank"
+                  >Docker Engine - Community for Ubuntu</a
+                >
+              </li>
+            </ul>
+          </ul>
 
-					<h3>Docker Toolbox & WSL</h3>
-					<p>
-						As mentioned previously, I am using Docker Toolbox since
-						Windows 10 Home does not support Hyper-V for
-						virtualization with Docker Desktop. You can run docker
-						toolbox in a command prompt or powershell terminal, but
-						I personally prefer to use WSL because I am more
-						familiar with bash terminal commands. If you are
-						interested in this setup, continue reading this section.
-						Otherwise, you can skip ahead.
-					</p>
+          <h3>Docker Toolbox & WSL</h3>
+          <p>
+            As mentioned previously, I am using Docker Toolbox since Windows 10
+            Home does not support Hyper-V for virtualization with Docker
+            Desktop. You can run docker toolbox in a command prompt or
+            powershell terminal, but I personally prefer to use WSL because I am
+            more familiar with bash terminal commands. If you are interested in
+            this setup, continue reading this section. Otherwise, you can skip
+            ahead.
+          </p>
 
-					<h4>Installing WSL</h4>
-					<p>
-						The default way to install WSL is through the
-						<a
-							href="https://docs.microsoft.com/en-us/windows/wsl/about"
-							target="_blank"
-							>Microsoft Store</a
-						>. This will install WSL on your system drive (e.g.
-						C:\). If you are like me and don't want to install it on
-						your system drive, follow the instructions
-						<a
-							href="https://kontext.tech/column/tools/308/how-to-install-windows-subsystem-for-linux-on-a-non-c-drive"
-							target="_blank"
-							>here</a
-						>.
-					</p>
+          <h4>Installing WSL</h4>
+          <p>
+            The default way to install WSL is through the
+            <a
+              href="https://docs.microsoft.com/en-us/windows/wsl/about"
+              target="_blank"
+              >Microsoft Store</a
+            >. This will install WSL on your system drive (e.g. C:\). If you are
+            like me and don't want to install it on your system drive, follow
+            the instructions
+            <a
+              href="https://kontext.tech/column/tools/308/how-to-install-windows-subsystem-for-linux-on-a-non-c-drive"
+              target="_blank"
+              >here</a
+            >.
+          </p>
 
-					<h4>Setting Up Docker Toolbox with WSL</h4>
-					<p>
-						After installing WSL, follow the instructions in
-						<a
-							href="https://medium.com/@joaoh82/setting-up-docker-toolbox-for-windows-home-10-and-wsl-to-work-perfectly-2fd34ed41d51"
-							target="_blank"
-							>Setting Up Docker Toolbox for Windows Home 10 and
-							WSL to Work Perfectly!</a
-						>
-						starting with
-						<b>Install Docker and Docker Compose within WSL</b>. As
-						you will have seen near the end of that post, there are
-						some extra steps needed to ensure that volume mounts
-						work. After setting <code>root = /</code>, you will need
-						to configure shared folders for the
-						<code>default</code> docker machine in VirtualBox.
-					</p>
+          <h4>Setting Up Docker Toolbox with WSL</h4>
+          <p>
+            After installing WSL, follow the instructions in
+            <a
+              href="https://medium.com/@joaoh82/setting-up-docker-toolbox-for-windows-home-10-and-wsl-to-work-perfectly-2fd34ed41d51"
+              target="_blank"
+              >Setting Up Docker Toolbox for Windows Home 10 and WSL to Work
+              Perfectly!</a
+            >
+            starting with
+            <b>Install Docker and Docker Compose within WSL</b>. As you will
+            have seen near the end of that post, there are some extra steps
+            needed to ensure that volume mounts work. After setting
+            <code>root = /</code>, you will need to configure shared folders for
+            the <code>default</code> docker machine in VirtualBox.
+          </p>
 
-					<h4>Shared Folder Configuration for Volume Mounting</h4>
-					<p>
-						I configured all of my drives as shared folders so I can
-						mount any folders on my host machine to any docker
-						containers I run. In your WSL terminal, run
-						<code>docker-machine.exe start</code> to start the
-						<code>default</code> docker machine created by the
-						Docker Quickstart Terminal. After your docker machine is
-						running, open the shared folder settings as shown in
-						<a
-							href="https://medium.com/@Charles_Stover/fixing-volumes-in-docker-toolbox-4ad5ace0e572"
-							target="_blank"
-							>Fixing Volumes in Docker Toolbox</a
-						>. The image below shows how <code>C:\</code> on my host
-						computer is mounted at <code>/</code> in folder
-						<code>c</code> on my docker machine such that
-						<code>C:\</code> maps to <code>/c</code>. Make sure you
-						have enabled <code>Auto-mount</code> and
-						<code>Make Permanent</code>. Click <b>OK</b> to save all
-						settings, then go back to the WSL terminal and run
-						<code>docker-machine.exe restart default</code>. Now
-						your docker machine should be properly configured to
-						allow volume mounting.
-					</p>
-					<img
-						class="img-fluid mx-auto d-block"
-						src="./assets/blog_posts/Docker/virtual_box_shared_folder.jpg"
-					/>
+          <h4>Shared Folder Configuration for Volume Mounting</h4>
+          <p>
+            I configured all of my drives as shared folders so I can mount any
+            folders on my host machine to any docker containers I run. In your
+            WSL terminal, run
+            <code>docker-machine.exe start</code> to start the
+            <code>default</code> docker machine created by the Docker Quickstart
+            Terminal. After your docker machine is running, open the shared
+            folder settings as shown in
+            <a
+              href="https://medium.com/@Charles_Stover/fixing-volumes-in-docker-toolbox-4ad5ace0e572"
+              target="_blank"
+              >Fixing Volumes in Docker Toolbox</a
+            >. The image below shows how <code>C:\</code> on my host computer is
+            mounted at <code>/</code> in folder <code>c</code> on my docker
+            machine such that <code>C:\</code> maps to <code>/c</code>. Make
+            sure you have enabled <code>Auto-mount</code> and
+            <code>Make Permanent</code>. Click <b>OK</b> to save all settings,
+            then go back to the WSL terminal and run
+            <code>docker-machine.exe restart default</code>. Now your docker
+            machine should be properly configured to allow volume mounting.
+          </p>
+          <img
+            class="img-fluid mx-auto d-block"
+            src="./assets/blog_posts/Docker/virtual_box_shared_folder.jpg"
+          />
 
-					<h4>Increase Docker Machine Resources</h4>
-					<p>
-						One issue I ran into with the default settings for the
-						<code>default</code> docker machine is the amount of RAM
-						allocated to it. I attempted to build the
-						<a
-							href="https://github.com/borglab/gtsam"
-							target="_blank"
-							>GTSAM</a
-						>
-						library inside a docker container and ran into an
-						<i>internal compiler error: Killed (program cc1plus)</i
-						>. As mentioned
-						<a
-							href="https://github.com/docker/for-win/issues/403"
-							target="_blank"
-							>here</a
-						>, the solution is to increase the RAM allocated to the
-						docker machine in VirtualBox. In the WSL terminal, run
-						<code>docker-machine.exe stop</code> to shutdown the
-						docker machine. When this is complete, right click on
-						the <code>default</code> docker machine in VirtualBox
-						and open <b>Settings</b>. In the <b>System</b> tab,
-						increase <i>Base Memory</i>. Similar to virtual
-						machines, I would not recommend allocating more than
-						half of your system's RAM. For example, my computer has
-						16 GB of RAM, so I would only recommend allocating up to
-						8 GB of RAM to the docker machine. You can look through
-						the other options, such as number of allocated processor
-						cores, as well if you wish.
-					</p>
+          <h4>Increase Docker Machine Resources</h4>
+          <p>
+            One issue I ran into with the default settings for the
+            <code>default</code> docker machine is the amount of RAM allocated
+            to it. I attempted to build the
+            <a href="https://github.com/borglab/gtsam" target="_blank">GTSAM</a>
+            library inside a docker container and ran into an
+            <i>internal compiler error: Killed (program cc1plus)</i>. As
+            mentioned
+            <a
+              href="https://github.com/docker/for-win/issues/403"
+              target="_blank"
+              >here</a
+            >, the solution is to increase the RAM allocated to the docker
+            machine in VirtualBox. In the WSL terminal, run
+            <code>docker-machine.exe stop</code> to shutdown the docker machine.
+            When this is complete, right click on the
+            <code>default</code> docker machine in VirtualBox and open
+            <b>Settings</b>. In the <b>System</b> tab, increase
+            <i>Base Memory</i>. Similar to virtual machines, I would not
+            recommend allocating more than half of your system's RAM. For
+            example, my computer has 16 GB of RAM, so I would only recommend
+            allocating up to 8 GB of RAM to the docker machine. You can look
+            through the other options, such as number of allocated processor
+            cores, as well if you wish.
+          </p>
 
-					<hr />
+          <hr />
 
-					<h2>
-						<a name="building_images_and_running_containers"
-							>Building Images & Running Containers</a
-						>
-					</h2>
-					<p>
-						To learn about Dockerfiles and a basic example, check
-						out the video in the
-						<a href="#introduction">introduction</a>. To learn about
-						Docker Compose, check out Jake Wright's video on the
-						topic.
-					</p>
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube-nocookie.com/embed/Qw9zlE3t8Ko"
-							allowfullscreen
-						></iframe>
-					</div>
+          <h2>
+            <a name="building_images_and_running_containers"
+              >Building Images & Running Containers</a
+            >
+          </h2>
+          <p>
+            To learn about Dockerfiles and a basic example, check out the video
+            in the
+            <a href="#introduction">introduction</a>. To learn about Docker
+            Compose, check out Jake Wright's video on the topic.
+          </p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube-nocookie.com/embed/Qw9zlE3t8Ko"
+              allowfullscreen
+            ></iframe>
+          </div>
 
-					<hr />
+          <hr />
 
-					<h2>
-						<a name="x_forwarding"
-							>X Forwarding for GUI Applications</a
-						>
-					</h2>
-					<p>
-						In a virtual machine, you can easily run GUI
-						applications such as a web browser, text editor, etc. In
-						a docker container, the process is a little bit
-						different. You will need to download an X Server such as
-						<a
-							href="https://sourceforge.net/projects/vcxsrv/"
-							target="_blank"
-							>VcXsrv Windows X Server</a
-						>.
-					</p>
-					<p>
-						<a
-							href="https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde"
-							target="_blank"
-							>Run GUI app in linux docker container on windows
-							host</a
-						>
-						provides a great explanation of why you would want to do
-						this and how to run your docker container. The post
-						discusses how to set your IP address as the
-						<code>DISPLAY</code> environment variable that is passed
-						to docker via the
-						<code>-e DISPLAY=$DISPLAY</code> command line argument.
-						You can alternatively pass your IP address as an
-						environment variable in your docker compose file. This
-						is shown in
-						<a
-							href="https://github.com/MAAV-Software/ros-tutorial"
-							target="_blank"
-							>MAAV's ROS Tutorial</a
-						>
-						(reproduced below). The main settings to look at below
-						are <code>environment</code> and
-						<code>network_mode</code>. Set the
-						<code>DISPLAY</code> environment variable to
-						<code>[ip_address]:0.0</code> and set
-						<code>network_mode: "host"</code>.
-					</p>
-					<pre>
+          <h2>
+            <a name="x_forwarding">X Forwarding for GUI Applications</a>
+          </h2>
+          <p>
+            In a virtual machine, you can easily run GUI applications such as a
+            web browser, text editor, etc. In a docker container, the process is
+            a little bit different. You will need to download an X Server such
+            as
+            <a href="https://sourceforge.net/projects/vcxsrv/" target="_blank"
+              >VcXsrv Windows X Server</a
+            >.
+          </p>
+          <p>
+            <a
+              href="https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde"
+              target="_blank"
+              >Run GUI app in linux docker container on windows host</a
+            >
+            provides a great explanation of why you would want to do this and
+            how to run your docker container. The post discusses how to set your
+            IP address as the
+            <code>DISPLAY</code> environment variable that is passed to docker
+            via the <code>-e DISPLAY=$DISPLAY</code> command line argument. You
+            can alternatively pass your IP address as an environment variable in
+            your docker compose file. This is shown in
+            <a
+              href="https://github.com/MAAV-Software/ros-tutorial"
+              target="_blank"
+              >MAAV's ROS Tutorial</a
+            >
+            (reproduced below). The main settings to look at below are
+            <code>environment</code> and <code>network_mode</code>. Set the
+            <code>DISPLAY</code> environment variable to
+            <code>[ip_address]:0.0</code> and set
+            <code>network_mode: "host"</code>.
+          </p>
+          <pre>
                         <code class="yml">
 # docker-compose.yml
 version: "2"
@@ -359,44 +335,43 @@ ros-demo:
                         </code>
                     </pre>
 
-					<hr />
+          <hr />
 
-					<h2>
-						<a name="helpful_commands">Helpful Docker Commands</a>
-					</h2>
-					<ul>
-						<li>System Prune to clear space on Docker Machine</li>
-						<ul>
-							<li><code>docker system prune --volumes</code></li>
-						</ul>
-					</ul>
+          <h2>
+            <a name="helpful_commands">Helpful Docker Commands</a>
+          </h2>
+          <ul>
+            <li>System Prune to clear space on Docker Machine</li>
+            <ul>
+              <li><code>docker system prune --volumes</code></li>
+            </ul>
+          </ul>
 
-					<hr />
+          <hr />
 
-					<h2><a name="conclusion">Conclusion</a></h2>
-					<p>
-						Hopefully by this point, you have a better understanding
-						of what docker is, why you might want to use it, and how
-						to get a docker machine setup so you can build and run
-						docker containers. If you have any questions or
-						suggestions for improvement, feel free to
-						<a href="./about.html#contact_me">contact me</a>.
-					</p>
+          <h2><a name="conclusion">Conclusion</a></h2>
+          <p>
+            Hopefully by this point, you have a better understanding of what
+            docker is, why you might want to use it, and how to get a docker
+            machine setup so you can build and run docker containers. If you
+            have any questions or suggestions for improvement, feel free to
+            <a href="./about.html#contact_me">contact me</a>.
+          </p>
 
-					<hr />
-				</div>
-				<div class="col-md-2">
-					<!-- Nothing -->
-				</div>
-			</div>
-		</div>
-	</body>
+          <hr />
+        </div>
+        <div class="col-md-2">
+          <!-- Nothing -->
+        </div>
+      </div>
+    </div>
+  </body>
 
-	<footer>
-		<script
-			language="javascript"
-			type="text/javascript"
-			src="common/footer.txt"
-		></script>
-	</footer>
+  <footer>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="common/footer.txt"
+    ></script>
+  </footer>
 </html>

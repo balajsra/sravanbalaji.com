@@ -1,404 +1,341 @@
 <!DOCTYPE html>
 <html lang="en" color-mode="light">
-	<head>
-		<script
-			language="javascript"
-			type="text/javascript"
-			src="common/header.txt"
-		></script>
-		<title>Switching from Windows to Linux</title>
-	</head>
+  <head>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="common/header.txt"
+    ></script>
+    <title>Switching from Windows to Linux</title>
+  </head>
 
-	<script
-		language="javascript"
-		type="text/javascript"
-		src="common/navbar.txt"
-	></script>
+  <script
+    language="javascript"
+    type="text/javascript"
+    src="common/navbar.txt"
+  ></script>
 
-	<body>
-		<div class="container-fluid px-md-6">
-			<div class="row align-items-center">
-				<div class="col-md-2">
-					<!-- Nothing -->
-				</div>
-				<div class="col-md-8">
-					<!-- Title -->
-					<h1>Switching from Windows to Linux</h1>
+  <body>
+    <div class="container-fluid px-md-6">
+      <div class="row align-items-center">
+        <div class="col-md-2">
+          <!-- Nothing -->
+        </div>
+        <div class="col-md-8">
+          <!-- Title -->
+          <h1>Switching from Windows to Linux</h1>
 
-					<!-- Author & Date/Time -->
-					<p class="lead">Updated on August 27, 2021</p>
+          <!-- Author & Date/Time -->
+          <p class="lead">Updated on August 27, 2021</p>
 
-					<!-- Preview Image -->
-					<div class="blog-cover">
-						<img
-							class="img-fluid rounded"
-							src="./assets/blog_posts/windows_to_linux/cover_windows_to_linux.jpeg"
-							alt="Windows to Linux"
-						/>
-					</div>
+          <!-- Preview Image -->
+          <div class="blog-cover">
+            <img
+              class="img-fluid rounded"
+              src="./assets/blog_posts/windows_to_linux/cover_windows_to_linux.jpeg"
+              alt="Windows to Linux"
+            />
+          </div>
 
-					<hr />
+          <hr />
 
-					<!-- Post Content -->
-					<h2><a name="introduction">Introduction</a></h2>
-					<p>
-						Around the summer of 2020, I started experimenting with
-						Linux to see if it could replace Windows as my daily
-						driver operating system. I had a little bit of
-						experience with
-						<a
-							href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
-							target="_blank"
-							>Red Hat Enterprise Linux</a
-						>
-						and
-						<a href="https://ubuntu.com" target="_blank">Ubuntu</a>
-						through my Computer Science course work, but I had never
-						really used it as my daily driver desktop / laptop
-						operating system. I really wanted to see if it could
-						handle development, general productivity, and gaming.
-					</p>
+          <!-- Post Content -->
+          <h2><a name="introduction">Introduction</a></h2>
+          <p>
+            Around the summer of 2020, I started experimenting with Linux to see
+            if it could replace Windows as my daily driver operating system. I
+            had a little bit of experience with
+            <a
+              href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
+              target="_blank"
+              >Red Hat Enterprise Linux</a
+            >
+            and
+            <a href="https://ubuntu.com" target="_blank">Ubuntu</a>
+            through my Computer Science course work, but I had never really used
+            it as my daily driver desktop / laptop operating system. I really
+            wanted to see if it could handle development, general productivity,
+            and gaming.
+          </p>
 
-					<h3>Development</h3>
-					<p>
-						Development is definitely where Linux shines because of
-						its superior package management. For example, Ubuntu
-						(and its derivatives) use the apt package manager which
-						allows you to easily install most development packages
-						like Python, gcc, Git, etc. On Windows, you have to go
-						to a website, click on a download link, run an
-						executable, and walk through the steps in an installer.
-						On Linux, it is as simple as a couple terminal commands.
-						There's a reason even Microsoft felt it needed to
-						improve the developer experience on Windows via the
-						<a
-							href="https://docs.microsoft.com/en-us/windows/wsl/install-win10"
-							target="_blank"
-							>Windows Subsystem for Linux</a
-						>.
-					</p>
+          <h3>Development</h3>
+          <p>
+            Development is definitely where Linux shines because of its superior
+            package management. For example, Ubuntu (and its derivatives) use
+            the apt package manager which allows you to easily install most
+            development packages like Python, gcc, Git, etc. On Windows, you
+            have to go to a website, click on a download link, run an
+            executable, and walk through the steps in an installer. On Linux, it
+            is as simple as a couple terminal commands. There's a reason even
+            Microsoft felt it needed to improve the developer experience on
+            Windows via the
+            <a
+              href="https://docs.microsoft.com/en-us/windows/wsl/install-win10"
+              target="_blank"
+              >Windows Subsystem for Linux</a
+            >.
+          </p>
 
-					<h3>Productivity</h3>
-					<p>
-						General productivity is no different on Linux than
-						Windows, other than the lack of Microsoft Office and
-						some proprietary software like Adobe's products. This
-						wasn't a big deal for me because there are plenty of
-						free and open-source alternatives as well as web-based
-						options if I ever needed to write documents, create
-						presentations, edit pictures, etc. If you rely on
-						software that only works on Windows for daily
-						productivity work, you might want to look into free and
-						open-source alternatives before switching to Linux.
-					</p>
+          <h3>Productivity</h3>
+          <p>
+            General productivity is no different on Linux than Windows, other
+            than the lack of Microsoft Office and some proprietary software like
+            Adobe's products. This wasn't a big deal for me because there are
+            plenty of free and open-source alternatives as well as web-based
+            options if I ever needed to write documents, create presentations,
+            edit pictures, etc. If you rely on software that only works on
+            Windows for daily productivity work, you might want to look into
+            free and open-source alternatives before switching to Linux.
+          </p>
 
-					<h3>Gaming</h3>
-					<p>
-						Gaming was really the main concern I had when thinking
-						about moving away from Windows. Luckily, there has been
-						a lot of progress on this front in recent years. Per
-						<a href="https://www.protondb.com" target="_blank"
-							>ProtonDB</a
-						>:
-					</p>
-					<blockquote cite="https://www.protondb.com">
-						"Proton is a new tool released by Valve Software that
-						has been integrated with Steam Play to make playing
-						Windows games on Linux as simple as hitting the Play
-						button within Steam. Underneath the hood, Proton
-						comprises other popular tools like Wine and DXVK among
-						others that a gamer would otherwise have to install and
-						maintain themselves. This greatly eases the burden for
-						users to switch to Linux without having to learn the
-						underlying systems or losing access to a large part of
-						their library of games. Proton is still in its infancy
-						so support is inconsistent, but regularly improving."
-					</blockquote>
-					<p>
-						Looking at ProtonDB, a lot of the games I play (mostly
-						single-player) have gold or above ratings, meaning they
-						generally work by just pressing the play button,
-						possibly with a few tweaks. After trying this out
-						myself, I have come to the same conclusion. Gaming on
-						Linux is as good as it has ever been and will only get
-						better, especially after the announcement and release of
-						the Linux powered
-						<a
-							href="https://store.steampowered.com/steamdeck"
-							target="_blank"
-							>Steam Deck</a
-						>
-						from Valve. If you play a lot of online multiplayer
-						games, you may need to wait as popular anti-cheat
-						software doesn't currently work through Proton.
-					</p>
+          <h3>Gaming</h3>
+          <p>
+            Gaming was really the main concern I had when thinking about moving
+            away from Windows. Luckily, there has been a lot of progress on this
+            front in recent years. Per
+            <a href="https://www.protondb.com" target="_blank">ProtonDB</a>:
+          </p>
+          <blockquote cite="https://www.protondb.com">
+            "Proton is a new tool released by Valve Software that has been
+            integrated with Steam Play to make playing Windows games on Linux as
+            simple as hitting the Play button within Steam. Underneath the hood,
+            Proton comprises other popular tools like Wine and DXVK among others
+            that a gamer would otherwise have to install and maintain
+            themselves. This greatly eases the burden for users to switch to
+            Linux without having to learn the underlying systems or losing
+            access to a large part of their library of games. Proton is still in
+            its infancy so support is inconsistent, but regularly improving."
+          </blockquote>
+          <p>
+            Looking at ProtonDB, a lot of the games I play (mostly
+            single-player) have gold or above ratings, meaning they generally
+            work by just pressing the play button, possibly with a few tweaks.
+            After trying this out myself, I have come to the same conclusion.
+            Gaming on Linux is as good as it has ever been and will only get
+            better, especially after the announcement and release of the Linux
+            powered
+            <a href="https://store.steampowered.com/steamdeck" target="_blank"
+              >Steam Deck</a
+            >
+            from Valve. If you play a lot of online multiplayer games, you may
+            need to wait as popular anti-cheat software doesn't currently work
+            through Proton.
+          </p>
 
-					<hr />
+          <hr />
 
-					<h2><a name="distro-hopping">Distro Hopping</a></h2>
-					<p>
-						After trying out a bunch of distros like
-						<a href="https://ubuntu.com" target="_blank">Ubuntu</a>,
-						<a href="https://pop.system76.com" target="_blank"
-							>Pop!_OS</a
-						>, and
-						<a href="https://getfedora.org" target="_blank"
-							>Fedora</a
-						>, I eventually landed on
-						<a href="https://archlinux.org" target="_blank"
-							>Arch Linux</a
-						>. As someone who likes to tinker with their computer a
-						lot, Arch felt like the best option because I could
-						literally build my OS from the ground up. I essentially
-						have complete control over which packages get installed
-						on my system. This means there is a steep learning curve
-						and things can break if you are not careful, but the
-						<a href="https://wiki.archlinux.org" target="_blank"
-							>ArchWiki</a
-						>
-						is possibly the greatest Linux resource I have ever
-						seen. The main reasons I decided on Arch are:
-					</p>
-					<ul>
-						<li>
-							<b>Rolling Release</b>: I don't have to re-install
-							my OS every 6 months. My system and the kernel get
-							updated through my package manager.
-						</li>
-						<li>
-							<b>Package Management</b>: Pacman and AUR helpers
-							(e.g.
-							<a
-								href="https://github.com/Morganamilo/paru"
-								target="_blank"
-								>paru</a
-							>) are by far the best package management solution I
-							have seen in Linux. Pretty much any piece of
-							software you might want to use is available in
-							either the
-							<a
-								href="https://archlinux.org/packages/"
-								target="_blank"
-								>main Arch repos</a
-							>
-							or the
-							<a href="https://aur.archlinux.org" target="_blank"
-								>AUR</a
-							>. I wanted my packages to be up to date without
-							relying on universal package formats like
-							<a href="https://snapcraft.io" target="_blank"
-								>snap</a
-							>, <a href="flathub" target="_blank">flatpak</a>, or
-							<a href="https://appimage.org" target="_blank"
-								>AppImage</a
-							>. While these are great in that they can run on any
-							Linux distro, they don't integrate into the system
-							as well as I would like. AppImages have to be
-							updated manually and don't integrate well with the
-							desktop experience by default. Flatpaks are
-							sandboxed applications, which means they require
-							manual intervention to access certain parts of the
-							OS. The main issue I found here was with theming.
-							For lots of open source applications, they may not
-							have a snap, flatpak, or AppImage package, but they
-							almost always have an AUR package. This means it is
-							extremely rare to have to manually install any
-							application or program on my system.
-						</li>
-						<li>
-							<b>Customizability</b>: Everything on my system was
-							either installed by me or a dependency for something
-							I installed. There is little to no bloatware.
-						</li>
-					</ul>
-					<p>
-						After running Arch on my gaming desktop and ultrabook
-						laptop for around a year, I decided to buy a Linux
-						gaming laptop. I wanted to have one system that I could
-						get work done and play games on. After doing some
-						research, I landed on the
-						<a
-							href="https://system76.com/laptops/oryx"
-							target="_blank"
-							>System76 Oryx Pro 7</a
-						>
-						because it is made by a U.S. based company with
-						excellent customer service and has first-class Linux
-						support. System76 also makes Pop!_OS, which I tried for
-						a couple of weeks, but I just had to go back to Arch for
-						the reasons mentioned above. Luckily, the ArchWiki has a
-						<a
-							href="https://wiki.archlinux.org/title/System76_Oryx_Pro"
-							target="_blank"
-							>page for the System76 Oryx Pro</a
-						>. Unfortunately, I had some issue with NVIDIA's Linux
-						drivers and
-						<a
-							href="https://github.com/pop-os/system76-power"
-							target="_blank"
-							>System76's graphics switching tool</a
-						>
-						on Arch. I was able to resolve the issue by switching to
-						<a href="https://garudalinux.org" target="_blank"
-							>Garuda Linux</a
-						>, which is based on Arch, but provides an easy to use
-						installer and some nice GUI tools for configuring your
-						system. As of the time of writing, I don't see myself
-						switching from Garuda because it provides all the
-						benefits of Arch without the initial hassle of
-						installing the system from scratch.
-					</p>
+          <h2><a name="distro-hopping">Distro Hopping</a></h2>
+          <p>
+            After trying out a bunch of distros like
+            <a href="https://ubuntu.com" target="_blank">Ubuntu</a>,
+            <a href="https://pop.system76.com" target="_blank">Pop!_OS</a>, and
+            <a href="https://getfedora.org" target="_blank">Fedora</a>, I
+            eventually landed on
+            <a href="https://archlinux.org" target="_blank">Arch Linux</a>. As
+            someone who likes to tinker with their computer a lot, Arch felt
+            like the best option because I could literally build my OS from the
+            ground up. I essentially have complete control over which packages
+            get installed on my system. This means there is a steep learning
+            curve and things can break if you are not careful, but the
+            <a href="https://wiki.archlinux.org" target="_blank">ArchWiki</a>
+            is possibly the greatest Linux resource I have ever seen. The main
+            reasons I decided on Arch are:
+          </p>
+          <ul>
+            <li>
+              <b>Rolling Release</b>: I don't have to re-install my OS every 6
+              months. My system and the kernel get updated through my package
+              manager.
+            </li>
+            <li>
+              <b>Package Management</b>: Pacman and AUR helpers (e.g.
+              <a href="https://github.com/Morganamilo/paru" target="_blank"
+                >paru</a
+              >) are by far the best package management solution I have seen in
+              Linux. Pretty much any piece of software you might want to use is
+              available in either the
+              <a href="https://archlinux.org/packages/" target="_blank"
+                >main Arch repos</a
+              >
+              or the
+              <a href="https://aur.archlinux.org" target="_blank">AUR</a>. I
+              wanted my packages to be up to date without relying on universal
+              package formats like
+              <a href="https://snapcraft.io" target="_blank">snap</a>,
+              <a href="flathub" target="_blank">flatpak</a>, or
+              <a href="https://appimage.org" target="_blank">AppImage</a>. While
+              these are great in that they can run on any Linux distro, they
+              don't integrate into the system as well as I would like. AppImages
+              have to be updated manually and don't integrate well with the
+              desktop experience by default. Flatpaks are sandboxed
+              applications, which means they require manual intervention to
+              access certain parts of the OS. The main issue I found here was
+              with theming. For lots of open source applications, they may not
+              have a snap, flatpak, or AppImage package, but they almost always
+              have an AUR package. This means it is extremely rare to have to
+              manually install any application or program on my system.
+            </li>
+            <li>
+              <b>Customizability</b>: Everything on my system was either
+              installed by me or a dependency for something I installed. There
+              is little to no bloatware.
+            </li>
+          </ul>
+          <p>
+            After running Arch on my gaming desktop and ultrabook laptop for
+            around a year, I decided to buy a Linux gaming laptop. I wanted to
+            have one system that I could get work done and play games on. After
+            doing some research, I landed on the
+            <a href="https://system76.com/laptops/oryx" target="_blank"
+              >System76 Oryx Pro 7</a
+            >
+            because it is made by a U.S. based company with excellent customer
+            service and has first-class Linux support. System76 also makes
+            Pop!_OS, which I tried for a couple of weeks, but I just had to go
+            back to Arch for the reasons mentioned above. Luckily, the ArchWiki
+            has a
+            <a
+              href="https://wiki.archlinux.org/title/System76_Oryx_Pro"
+              target="_blank"
+              >page for the System76 Oryx Pro</a
+            >. Unfortunately, I had some issue with NVIDIA's Linux drivers and
+            <a href="https://github.com/pop-os/system76-power" target="_blank"
+              >System76's graphics switching tool</a
+            >
+            on Arch. I was able to resolve the issue by switching to
+            <a href="https://garudalinux.org" target="_blank">Garuda Linux</a>,
+            which is based on Arch, but provides an easy to use installer and
+            some nice GUI tools for configuring your system. As of the time of
+            writing, I don't see myself switching from Garuda because it
+            provides all the benefits of Arch without the initial hassle of
+            installing the system from scratch.
+          </p>
 
-					<hr />
+          <hr />
 
-					<h2>
-						<a name="desktop-environments">Desktop Environments</a>
-					</h2>
-					<p>
-						While I was in the process of switching between Linux
-						distros, I was also switching between desktop
-						environments. I was most familiar with
-						<a href="https://www.gnome.org" target="_blank"
-							>GNOME</a
-						>
-						from Ubuntu and Red Hat Enterprise Linux (RHEL), but it
-						felt kind of slow and lacked customizability. This is
-						when I discovered
-						<a href="https://kde.org" target="_blank">KDE Plasma</a
-						>. Coming from Windows, I was much more comfortable with
-						the look and feel of KDE Plasma. Additionally, it has
-						many (perhaps too many) customizability options. After
-						using this for a while, I eventually ran into some
-						system freezing issues that I didn't expect to see given
-						my hardware and felt that I could go for something a bit
-						more minimal.
-					</p>
+          <h2>
+            <a name="desktop-environments">Desktop Environments</a>
+          </h2>
+          <p>
+            While I was in the process of switching between Linux distros, I was
+            also switching between desktop environments. I was most familiar
+            with
+            <a href="https://www.gnome.org" target="_blank">GNOME</a>
+            from Ubuntu and Red Hat Enterprise Linux (RHEL), but it felt kind of
+            slow and lacked customizability. This is when I discovered
+            <a href="https://kde.org" target="_blank">KDE Plasma</a>. Coming
+            from Windows, I was much more comfortable with the look and feel of
+            KDE Plasma. Additionally, it has many (perhaps too many)
+            customizability options. After using this for a while, I eventually
+            ran into some system freezing issues that I didn't expect to see
+            given my hardware and felt that I could go for something a bit more
+            minimal.
+          </p>
 
-					<hr />
+          <hr />
 
-					<h2><a name="window-managers">Window Managers</a></h2>
-					<p>
-						This is when I learned about window managers from
-						YouTubers like
-						<a
-							href="https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg"
-							target="_blank"
-							>DistroTube</a
-						>. Desktop environments are generally a combination of a
-						window manager and a bunch of utility programs and
-						pre-installed apps. A standalone window manager just
-						controls where windows show up on your screen and the
-						decorations that appear around them. The most suggested
-						window manager for beginners is generally
-						<a href="https://i3wm.org" target="_blank">i3</a>. This
-						is a tiling window manager with a configuration file
-						that is written in an easy to use syntax. I tried i3 for
-						a while, but it never really stuck, so I went back to
-						KDE Plasma. After doing some more research, I eventually
-						landed on
-						<a href="https://dwm.suckless.org" target="_blank"
-							>dwm</a
-						>. Given my experience with C/C++, this seemed like a
-						better window manager for my needs. One of the main
-						downsides of dwm is that it is meant to be super minimal
-						where features you might expect to see need to be added
-						through patches. The process of patching can be slow,
-						annoying, and prone to error. One solution, that I ended
-						up going with, is to use
-						<a
-							href="https://github.com/bakkeby/dwm-flexipatch"
-							target="_blank"
-							>dwm-flexipatch</a
-						>. This includes a bunch of commonly used patches that
-						can be enabled or disabled very easily. You can see my
-						configuration of dwm-flexipatch on
-						<a
-							href="https://github.com/balajsra/dwm-flexipatch"
-							target="_blank"
-							>GitHub</a
-						>.
-					</p>
+          <h2><a name="window-managers">Window Managers</a></h2>
+          <p>
+            This is when I learned about window managers from YouTubers like
+            <a
+              href="https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg"
+              target="_blank"
+              >DistroTube</a
+            >. Desktop environments are generally a combination of a window
+            manager and a bunch of utility programs and pre-installed apps. A
+            standalone window manager just controls where windows show up on
+            your screen and the decorations that appear around them. The most
+            suggested window manager for beginners is generally
+            <a href="https://i3wm.org" target="_blank">i3</a>. This is a tiling
+            window manager with a configuration file that is written in an easy
+            to use syntax. I tried i3 for a while, but it never really stuck, so
+            I went back to KDE Plasma. After doing some more research, I
+            eventually landed on
+            <a href="https://dwm.suckless.org" target="_blank">dwm</a>. Given my
+            experience with C/C++, this seemed like a better window manager for
+            my needs. One of the main downsides of dwm is that it is meant to be
+            super minimal where features you might expect to see need to be
+            added through patches. The process of patching can be slow,
+            annoying, and prone to error. One solution, that I ended up going
+            with, is to use
+            <a href="https://github.com/bakkeby/dwm-flexipatch" target="_blank"
+              >dwm-flexipatch</a
+            >. This includes a bunch of commonly used patches that can be
+            enabled or disabled very easily. You can see my configuration of
+            dwm-flexipatch on
+            <a href="https://github.com/balajsra/dwm-flexipatch" target="_blank"
+              >GitHub</a
+            >.
+          </p>
 
-					<hr />
+          <hr />
 
-					<h2><a name="current-setup">Current Setup</a></h2>
-					<p>
-						My
-						<a
-							href="https://github.com/balajsra/dotfiles"
-							target="_blank"
-							>current setup</a
-						>
-						involves these main components:
-					</p>
-					<ul>
-						<li>
-							<b>Window Manager</b>:
-							<a
-								href="https://github.com/bakkeby/dwm-flexipatch"
-								target="_blank"
-								>dwm-flexipatch</a
-							>
-						</li>
-						<li>
-							<b>Status Bar</b>:
-							<a
-								href="https://github.com/polybar/polybar"
-								target="_blank"
-								>polybar</a
-							>
-						</li>
-						<li>
-							<b>Terminal</b>:
-							<a
-								href="https://sw.kovidgoyal.net/kitty/"
-								target="_blank"
-								>kitty</a
-							>
-						</li>
-						<li>
-							<b>Color Theme</b>:
-							<a href="https://draculatheme.com" target="_blank"
-								>Dracula</a
-							>
-							/
-							<a
-								href="https://draculatheme.com/pro"
-								target="_blank"
-								>Dracula Pro</a
-							>
-						</li>
-						<li>
-							<b>Application Launcher</b>:
-							<a
-								href="https://github.com/davatorium/rofi"
-								target="_blank"
-								>Rofi</a
-							>
-						</li>
-					</ul>
-					<p>
-						<img
-							class="img-fluid rounded"
-							src="./assets/blog_posts/windows_to_linux/dwm_flexipatch_screenshot.png"
-							alt="dwm flexipatch desktop setup"
-						/>
-					</p>
+          <h2><a name="current-setup">Current Setup</a></h2>
+          <p>
+            My
+            <a href="https://github.com/balajsra/dotfiles" target="_blank"
+              >current setup</a
+            >
+            involves these main components:
+          </p>
+          <ul>
+            <li>
+              <b>Window Manager</b>:
+              <a
+                href="https://github.com/bakkeby/dwm-flexipatch"
+                target="_blank"
+                >dwm-flexipatch</a
+              >
+            </li>
+            <li>
+              <b>Status Bar</b>:
+              <a href="https://github.com/polybar/polybar" target="_blank"
+                >polybar</a
+              >
+            </li>
+            <li>
+              <b>Terminal</b>:
+              <a href="https://sw.kovidgoyal.net/kitty/" target="_blank"
+                >kitty</a
+              >
+            </li>
+            <li>
+              <b>Color Theme</b>:
+              <a href="https://draculatheme.com" target="_blank">Dracula</a>
+              /
+              <a href="https://draculatheme.com/pro" target="_blank"
+                >Dracula Pro</a
+              >
+            </li>
+            <li>
+              <b>Application Launcher</b>:
+              <a href="https://github.com/davatorium/rofi" target="_blank"
+                >Rofi</a
+              >
+            </li>
+          </ul>
+          <p>
+            <img
+              class="img-fluid rounded"
+              src="./assets/blog_posts/windows_to_linux/dwm_flexipatch_screenshot.png"
+              alt="dwm flexipatch desktop setup"
+            />
+          </p>
 
-					<hr />
-				</div>
-				<div class="col-md-2">
-					<!-- Nothing -->
-				</div>
-			</div>
-		</div>
-	</body>
+          <hr />
+        </div>
+        <div class="col-md-2">
+          <!-- Nothing -->
+        </div>
+      </div>
+    </div>
+  </body>
 
-	<footer>
-		<script
-			language="javascript"
-			type="text/javascript"
-			src="common/footer.txt"
-		></script>
-	</footer>
+  <footer>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="common/footer.txt"
+    ></script>
+  </footer>
 </html>
