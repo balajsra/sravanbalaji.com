@@ -26,7 +26,7 @@
           <h1>System76 Oryx Pro 7 Review</h1>
 
           <!-- Author & Date/Time -->
-          <p class="lead">Updated on August 27, 2021</p>
+          <p class="lead">Updated on December 7, 2021</p>
 
           <!-- Preview Image -->
           <div class="blog-cover">
@@ -160,8 +160,8 @@
               target="_blank"
               >btrfs</a
             >
-            rather than the default (ext4 I think) so I could take snapshots and
-            backup my data with
+            rather than the default (ext4) so I could take snapshots and backup
+            my data with
             <a href="https://github.com/teejee2008/timeshift" target="_blank"
               >Timeshift</a
             >.
@@ -191,18 +191,25 @@
               href="https://aur.archlinux.org/packages/system76-power/"
               target="_blank"
               >system76-power AUR package</a
-            >, now works. I eventually decided on Garuda because it implements a
-            lot of the customizations I usually do in my vanilla Arch installs
-            anyways (e.g. btrfs, zen kernel, chaotic-aur, backups w/ timeshift,
-            easy options to enable gaming tweaks, etc.). The
+            >), now works. I eventually decided on Garuda because it implements
+            a lot of the customizations I usually do in my vanilla Arch installs
+            anyways (e.g., btrfs, zen kernel, chaotic-aur, backups w/ timeshift,
+            easy options to enable gaming tweaks, etc.).
+          </p>
+          <p>
+            I started with the
             <a href="https://www.gnome.org/" target="_blank">GNOME</a>
-            edition immediately ran into crashing and system break issues, so I
-            tried the KDE Dragonized edition. It looks pretty nice and uses
+            edition since I was used to it from Pop!_OS. Unfortunately, I
+            immediately ran into crashing and system break issues. This led me
+            to try the KDE Dragonized edition because it looks pretty nice and
+            uses
             <a href="https://kde.org/plasma-desktop/" target="_blank"
               >KDE plasma</a
             >
-            instead of GNOME. After still encountered freezing issues, I
-            switched to the
+            instead of GNOME. After running KDE for a while, I felt like I
+            wanted something that is more easily customizable and lightweight. I
+            decided to dive into the realm of standalone window managers with
+            the
             <a href="https://i3wm.org/" target="_blank">i3</a>
             edition, but replaced i3 with
             <a href="https://xmonad.org/" target="_blank">Xmonad</a>
@@ -211,8 +218,50 @@
             replaced it with
             <a href="https://github.com/bakkeby/dwm-flexipatch" target="_blank"
               >dwm-flexipatch</a
-            >. Now, performance is amazing and I haven't encountered the major
-            freezing issues that I had with GNOME and KDE.
+            >. Now, performance is amazing and I absolutely love the keyboard
+            based workflow I have configured.
+          </p>
+
+          <hr />
+
+          <h2>
+            <a name="reducing-fan-noise-and-application-freezing"
+              >Reducing Fan Noise & Application Freezing</a
+            >
+          </h2>
+          <p>
+            One major complaint I had with the laptop was the loud fan noise and
+            random application freezing. After some experimentation and
+            searching, I finally found a solution. Switching to the performance
+            profile using
+            <a href="https://github.com/pop-os/system76-power" target="_blank"
+              >system76-power</a
+            >
+            immediately resolved both issues. Just run
+            <code> sudo system76-power profile performance </code> in a terminal
+            or use
+            <a
+              href="https://github.com/pop-os/gnome-shell-extension-system76-power"
+              target="_blank"
+              >gnome-shell-extension-system76-power</a
+            >
+            if you are running GNOME.
+          </p>
+          <p>
+            I also found that using a custom kernel improved general system
+            performance and thermals. I'm currently using the
+            <a
+              href="https://github.com/Frogging-Family/linux-tkg"
+              target="_blank"
+              >linux-tkg</a
+            >
+            kernel with PDS scheduler which is available as a pre-compiled
+            binary in the
+            <a href="https://aur.chaotic.cx/" target="_blank">chaotic-aur</a>
+            package
+            <a href="https://pkgs.org/download/linux-tkg-pds" target="_blank"
+              >linux-tkg-pds</a
+            >.
           </p>
 
           <hr />
@@ -239,11 +288,10 @@
               >.
             </li>
             <li>
-              Gaming performance is amazing! Recently got Yakuza: Like a Dragon
-              on Steam. It runs at around 70 to 80 fps with all the settings
-              turned up to the max. I love that I can use my favorite operating
-              system without having to compromise too much on gaming
-              performance.
+              Gaming performance is amazing! I can run Yakuza: Like a Dragon at
+              around 70 or 80 fps with all the settings turned up to the max. I
+              love that I can use my favorite operating system without having to
+              compromise too much on gaming performance.
             </li>
             <li>
               Love the keyboard backlighting and color changing on the fly.
@@ -297,25 +345,14 @@
               Battery life is really bad when the discrete graphics card is on
               (as expected). Maybe a little more than an hour a time, sometimes
               more depending on how willing I am to lower CPU frequency and
-              stuff. As a desktop replacement, that is to be expected through.
+              stuff. As a desktop replacement type laptop, that is to be
+              expected through.
             </li>
             <li>
-              Mouse click buttons are not great. Regularly left click on
-              something in GNOME and nothing happens. "Tapping" with the
-              mousepad works very reliably though.
-            </li>
-            <li>
-              Fans can get really loud at times, especially when gaming. I often
-              have to turn up my speakers or wear noise cancelling headphones.
-              This is an understandable limitation with gaming laptops though.
-              Using a custom kernel solved a lot of my complaints with the
-              thermals and fan noise though. Now the fans don't turn on as
-              often. When they do, they don't ramp up to the maximum speed, so
-              noise is kept to a reasonable level.
-            </li>
-            <li>
-              Random freezing is kind of an issue, but is generally resolved by
-              using a custom kernel.
+              Fans can get really loud at times, especially when pushing the GPU
+              in games. I often have to turn up my speakers or wear noise
+              cancelling headphones. This is an understandable physical
+              limitation of thin and light gaming laptops though.
             </li>
             <li>
               While the display itself is great, I really wish the hinge would
@@ -330,16 +367,16 @@
 
           <h2><a name="conclusions">Conclusions</a></h2>
           <p>
-            It may seem that the cons outweigh the pros, but this is only in
-            number and because I am really nitpicking. The things this laptop
-            get right (e.g. gaming, refresh rate, switchable graphics, general
-            performance) are much more important to me than the other things.
-            Regarding price, you are definitely paying a premium for first-class
-            linux support, but it is well worth it in my opinion. I do not want
-            to use Windows anymore and I am happy to pay extra if it means
-            supporting a company that promotes and sells Linux computers and
-            having a device that can be easily upgraded down the line. Overall,
-            I am very happy with my purchase.
+            It may seem that the cons outweigh the pros, but this is only
+            because I am really nitpicking. The things this laptop gets right
+            (e.g., gaming, refresh rate, switchable graphics, general
+            performance) are much more important to me than the other things
+            (e.g., mic / webcam quality). Regarding price, you are definitely
+            paying a premium for first-class linux support, but it is well worth
+            it in my opinion. I do not want to use Windows anymore and I am
+            happy to pay extra if it means supporting a company that promotes
+            and sells Linux computers and having a device that can be easily
+            upgraded down the line. Overall, I am very happy with my purchase.
           </p>
 
           <hr />
