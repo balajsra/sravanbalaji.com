@@ -26,7 +26,7 @@
           <h1>System76 Oryx Pro 7 Review</h1>
 
           <!-- Author & Date/Time -->
-          <p class="lead">Updated on December 7, 2021</p>
+          <p class="lead">Updated on July 1, 2022</p>
 
           <!-- Preview Image -->
           <div class="blog-cover">
@@ -115,12 +115,12 @@
 
           <h2><a name="upgradeability">Upgradeability</a></h2>
           <p>
-            I ended up purchasing the Oryx Pro 7 with base memory and storage,
-            then upgraded these components with parts I bought from Amazon. The
-            upgrade experience was pretty good. Removing the bottom cover just
-            involves removing a bunch of screws, nothing too difficult. I had a
-            little trouble with this because one of the screws seemed to get
-            stuck, but I eventually got it out. The
+            I ended up purchasing the Oryx Pro 7 with base memory and storage in
+            March of 2021, then upgraded these components with parts I bought
+            from Amazon. The upgrade experience was pretty good. Removing the
+            bottom cover just involves removing a bunch of screws, nothing too
+            difficult. I had a little trouble with this because one of the
+            screws seemed to get stuck, but I eventually got it out. The
             <a
               href="https://tech-docs.system76.com/models/oryp7/repairs.html"
               target="_blank"
@@ -137,52 +137,26 @@
             >
           </h2>
           <p>
-            Regarding OS, I initially tried to install Arch Linux with dwm like
-            I had on my desktop, but found that switching between the graphics
-            modes (i.e. Integrated, Hybrid, and Discrete) was just a nightmare.
-            I tried installing
-            <a
-              href="https://aur.archlinux.org/packages/system76-power/"
-              target="_blank"
-              >System76 software through the AUR</a
-            >, but could never get it working reliably. Additionally, the laptop
-            speakers did not seem to work out of the box. I eventually got the
-            audio working thanks to the
-            <a
-              href="https://wiki.archlinux.org/title/System76_Oryx_Pro#Audio"
-              target="_blank"
-              >solution in the ArchWiki</a
-            >, but I ultimately decided to switch to Pop!_OS because of the
-            graphics switching issue. The main change I made to the default
-            Pop!_OS install process was to use
-            <a
-              href="https://btrfs.wiki.kernel.org/index.php/Main_Page"
-              target="_blank"
-              >btrfs</a
-            >
-            rather than the default (ext4) so I could take snapshots and backup
-            my data with
-            <a href="https://github.com/teejee2008/timeshift" target="_blank"
-              >Timeshift</a
-            >.
-          </p>
-          <p>
-            My experience with Pop!_OS was very positive. I'm really happy that
-            System76 and Pop!_OS have come up with a good solution for
-            switchable graphics. Being able to just click on the option in the
-            GNOME menu is so useful. The window management in Pop!_OS's
+            I initially decided to give
+            <a href="https://pop.system76.com/" target="_blank">Pop!_OS</a> a
+            chance since it came pre-installed on the Oryx Pro and was developed
+            by System76. My experience was very positive. I'm really happy that
+            System76 and Pop!_OS have come up with a good and reliable solution
+            for switching between the integrated graphics and discrete NVIDIA
+            graphics. Being able to just click on the option in the GNOME menu
+            is so useful. The window management in Pop!_OS's
             <a href="https://github.com/pop-os/cosmic" target="_blank"
               >COSMIC</a
             >
             desktop environment is very good too. Coming from a standalone
-            tiling window manager like dwm, this provides a pretty good balance
-            between convenience and usability.
+            tiling window manager like dwm, I found that this provides a pretty
+            good balance between convenience and usability.
           </p>
           <p>
             After some more time with Pop!_OS, I realized that I really missed
             the package management, customizability, and rolling release of
-            Arch. Since I couldn't get Arch working before, I decided to try
-            some other Arch based distros like
+            Arch. For the longest time, I couldn't get Arch working reliably, so
+            I decided to try some other Arch based distros like
             <a href="https://manjaro.org/" target="_blank">Manjaro</a>
             and
             <a href="https://garudalinux.org/" target="_blank">Garuda</a>. With
@@ -191,77 +165,96 @@
               href="https://aur.archlinux.org/packages/system76-power/"
               target="_blank"
               >system76-power AUR package</a
-            >), now works. I eventually decided on Garuda because it implements
-            a lot of the customizations I usually do in my vanilla Arch installs
-            anyways (e.g., btrfs, zen kernel, chaotic-aur, backups w/ timeshift,
-            easy options to enable gaming tweaks, etc.).
+            >) works very well. I eventually decided on Garuda because it
+            implements a lot of the customizations I usually do in my vanilla
+            Arch installs anyways (e.g., btrfs, zen kernel, chaotic-aur, backups
+            w/ timeshift, easy options to enable gaming tweaks, etc.).
           </p>
           <p>
-            I started with the
-            <a href="https://www.gnome.org/" target="_blank">GNOME</a>
-            edition since I was used to it from Pop!_OS. Unfortunately, I
-            immediately ran into crashing and system break issues. This led me
-            to try the KDE Dragonized edition because it looks pretty nice and
-            uses
-            <a href="https://kde.org/plasma-desktop/" target="_blank"
-              >KDE plasma</a
+            Later, I started noticing some issues with suspending and
+            hibernating as well as switching graphics. I couldn't rely on my
+            laptop to stay awake or suspend when I expected it to. Sometimes the
+            computer would just freeze up randomly and I would need to hard
+            reboot. It seemed that there was something interfering with the
+            graphics card. This is when I noticed that the
+            <a
+              href="https://wiki.archlinux.org/title/System76_Oryx_Pro"
+              target="_blank"
+              >Oryx Pro ArchWiki page</a
             >
-            instead of GNOME. After running KDE for a while, I felt like I
-            wanted something that is more easily customizable and lightweight. I
-            decided to dive into the realm of standalone window managers with
-            the
-            <a href="https://i3wm.org/" target="_blank">i3</a>
-            edition, but replaced i3 with
-            <a href="https://xmonad.org/" target="_blank">Xmonad</a>
-            because I was experimenting with it at the time. After realizing
-            that Xmonad would not really fit my needs (mainly gaming), I
-            replaced it with
-            <a href="https://github.com/bakkeby/dwm-flexipatch" target="_blank"
-              >dwm-flexipatch</a
-            >. Now, performance is amazing and I absolutely love the keyboard
-            based workflow I have configured.
+            had been updated and I noticed an
+            <a
+              href="https://github.com/pop-os/system76-power/issues/299"
+              target="_blank"
+              >issue on GitHub</a
+            >. These finally led me to a stable install with Arch Linux.
+          </p>
+          <p>
+            Install the following packages from the
+            <a href="https://aur.archlinux.org/" target="_blank">AUR</a>:
+          </p>
+          <ul>
+            <li>system76-dkms</li>
+            <li>system76-acpi-dkms</li>
+            <li>system76-io-dkms</li>
+            <li>system76-driver</li>
+            <li>system76-power</li>
+            <li>system76-firmware-daemon</li>
+            <li>system76-firmware</li>
+            <li>firmware-manager</li>
+          </ul>
+          <p>
+            Then add your user to the <code>adm</code> group and enable the
+            following services:
+          </p>
+          <ul>
+            <li><code>sudo gpasswd -a $USER adm</code></li>
+            <li><code>sudo systemctl enable --now system76</code></li>
+            <li>
+              <code>sudo systemctl enable --now system76-firmware-daemon</code>
+            </li>
+            <li>
+              <code
+                >sudo systemctl enable --now
+                com.system76.PowerDaemon.service</code
+              >
+            </li>
+          </ul>
+
+          <p>
+            Finally, disable the Power Profiles Daemon which was interfering
+            with system76-power and enable the NVIDIA services for suspending
+            (and optionally hibernating & resuming if you want that):
+          </p>
+          <ul>
+            <li><code>sudo systemctl mask power-profiles-daemon</code></li>
+            <li>
+              <code
+                >sudo systemctl enable nvidia-{suspend,resume,hibernate}</code
+              >
+            </li>
+          </ul>
+
+          <p>
+            To get the speakers working, you will probably need to create a file
+            called <code>/etc/modprobe.d/clevo-p950.conf</code> and put the
+            following inside:
+            <code>options snd-hda-intel model=clevo-p950</code>.
           </p>
 
-          <hr />
-
-          <h2>
-            <a name="reducing-fan-noise-and-application-freezing"
-              >Reducing Fan Noise & Application Freezing</a
-            >
-          </h2>
           <p>
-            One major complaint I had with the laptop was the loud fan noise and
-            random application freezing. After some experimentation and
-            searching, I finally found a solution. Switching to the performance
-            profile using
-            <a href="https://github.com/pop-os/system76-power" target="_blank"
-              >system76-power</a
-            >
-            immediately resolved both issues. Just run
-            <code> sudo system76-power profile performance </code> in a terminal
-            or use
+            If you encounter any other issues, be sure to check out the
             <a
-              href="https://github.com/pop-os/gnome-shell-extension-system76-power"
+              href="https://wiki.archlinux.org/title/System76_Oryx_Pro"
               target="_blank"
-              >gnome-shell-extension-system76-power</a
-            >
-            if you are running GNOME.
-          </p>
-          <p>
-            I also found that using a custom kernel improved general system
-            performance and thermals. I'm currently using the
-            <a
-              href="https://github.com/Frogging-Family/linux-tkg"
-              target="_blank"
-              >linux-tkg</a
-            >
-            kernel with PDS scheduler which is available as a pre-compiled
-            binary in the
-            <a href="https://aur.chaotic.cx/" target="_blank">chaotic-aur</a>
-            package
-            <a href="https://pkgs.org/download/linux-tkg-pds" target="_blank"
-              >linux-tkg-pds</a
+              >Oryx Pro ArchWiki page</a
             >.
+          </p>
+
+          <p>
+            Now your laptop should be able to run Arch with all the same
+            graphics switching goodness and functional speakers of Pop!_OS
+            without any of the random freezing or crashing!
           </p>
 
           <hr />
@@ -326,8 +319,8 @@
             <li>
               Speakers are really sub-par. I understand that System76 doesn't
               design the hardware, but this was my main disappointment. I have
-              bluetooth bookshelf speakers and bluetooth headphones I can use,
-              so this isn't an unsolvable problem, but just generally annoying.
+              external bookshelf speakers and bluetooth headphones I can use, so
+              this isn't an unsolvable problem, but just generally annoying.
             </li>
             <li>
               Webcam is functional, but not good at all. Definitely need to use
@@ -377,6 +370,9 @@
             happy to pay extra if it means supporting a company that promotes
             and sells Linux computers and having a device that can be easily
             upgraded down the line. Overall, I am very happy with my purchase.
+            Especially now that I have a stable installation of Arch Linux that
+            has all the functionality I expect without random freezing or
+            crashing.
           </p>
 
           <hr />
