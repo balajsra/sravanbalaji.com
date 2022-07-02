@@ -26,7 +26,7 @@
           <h1>Switching from Windows to Linux</h1>
 
           <!-- Author & Date/Time -->
-          <p class="lead">Updated on December 7, 2021</p>
+          <p class="lead">Updated on July 1, 2022</p>
 
           <!-- Preview Image -->
           <div class="blog-cover">
@@ -62,11 +62,11 @@
           <p>
             Development is definitely where Linux shines because of its superior
             package management. For example, Ubuntu (and its derivatives) use
-            the apt package manager which allows you to easily install most
-            development packages like Python, gcc, Git, etc. On Windows, you
-            have to go to a website, click on a download link, run an
-            executable, and walk through the steps in an installer. On Linux, it
-            is as simple as a couple terminal commands. There's a reason even
+            the <code>apt</code> package manager which allows you to easily
+            install most development packages like Python, gcc, Git, etc. On
+            Windows, you have to go to a website, click on a download link, run
+            an executable, and walk through the steps in an installer. On Linux,
+            it is as simple as a couple terminal commands. There's a reason even
             Microsoft felt it needed to improve the developer experience on
             Windows via the
             <a
@@ -112,14 +112,25 @@
             work by just pressing the play button, possibly with a few tweaks.
             After trying this out myself, I have come to the same conclusion.
             Gaming on Linux is as good as it has ever been and will only get
-            better, especially after the announcement and release of the Linux
-            powered
+            better, especially after the launch of the SteamOS 3.0 powered
             <a href="https://store.steampowered.com/steamdeck" target="_blank"
               >Steam Deck</a
             >
-            from Valve. If you play a lot of online multiplayer games, you may
-            need to wait as popular anti-cheat software doesn't currently work
-            through Proton.
+            from Valve.
+          </p>
+          <p>
+            If you play a lot of online multiplayer games, you may need to wait.
+            Not all anti-cheat software currently works through Proton.
+            <a href="https://areweanticheatyet.com" target="_blank"
+              >Are We Anti-Cheat Yet?</a
+            >
+            provides "a comprehensive and crowd-sourced list of games using
+            anti-cheats and their compatibility with GNU/Linux or Wine/Proton".
+            <a href="https://www.ea.com/games/apex-legends" target="_blank"
+              >Apex Legends</a
+            >
+            is one notable example that enabled Linux support for Easy
+            Anti-Cheat shortly after the launch of the Steam Deck.
           </p>
 
           <hr />
@@ -206,17 +217,9 @@
               href="https://wiki.archlinux.org/title/System76_Oryx_Pro"
               target="_blank"
               >page for the System76 Oryx Pro</a
-            >. Unfortunately, I had some issue with NVIDIA's Linux drivers and
-            <a href="https://github.com/pop-os/system76-power" target="_blank"
-              >System76's graphics switching tool</a
-            >
-            on Arch. I was able to resolve the issue by switching to
-            <a href="https://garudalinux.org" target="_blank">Garuda Linux</a>,
-            which is based on Arch, but provides an easy to use installer and
-            some nice GUI tools for configuring your system. As of the time of
-            writing, I don't see myself switching from Garuda because it
-            provides all the benefits of Arch without the initial hassle of
-            installing the system from scratch.
+            >. By following the suggestions there, I was able to resolve issues
+            like the audio not working, graphics switching, suspend/hibernate,
+            etc.
           </p>
 
           <hr />
@@ -235,9 +238,8 @@
             from Windows, I was much more comfortable with the look and feel of
             KDE Plasma. Additionally, it has many (perhaps too many)
             customizability options. After using this for a while, I eventually
-            ran into some system freezing issues that I didn't expect to see
-            given my hardware and felt that I could go for something a bit more
-            minimal.
+            felt that I wanted something more minimal that I could tweak exactly
+            to my liking.
           </p>
 
           <hr />
@@ -264,8 +266,7 @@
             my needs. One of the main downsides of dwm is that it is meant to be
             super minimal where features you might expect to see need to be
             added through patches. The process of patching can be slow,
-            annoying, and prone to error. One solution, that I ended up going
-            with, is to use
+            annoying, and prone to error. A great solution to this problem is
             <a href="https://github.com/bakkeby/dwm-flexipatch" target="_blank"
               >dwm-flexipatch</a
             >. This includes a bunch of commonly used patches that can be
