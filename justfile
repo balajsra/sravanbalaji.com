@@ -1,7 +1,8 @@
 set shell := ["bash", "-c"]
 
+# List just commands by default
 default:
-    @just -l
+    @just --list
 
 # Build website in public folder
 hugo-build:
