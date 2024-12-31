@@ -10,4 +10,4 @@ build:
 
 # Run development server
 dev: build
-    docker run -p 1280:8080 11ty:latest npx @11ty/eleventy --serve
+    docker run -it -p 1280:8080 11ty:latest npx @11ty/eleventy --serve
