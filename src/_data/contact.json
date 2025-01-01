@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "label": "Email",
+      "icon": "/assets/about/email.png",
+      "link": "mailto:balajsra@umich.edu",
+      "displayText": "balajsra@umich.edu"
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "/assets/about/linkedin.png",
+      "link": "https://www.linkedin.com/in/sravan-balaji",
+      "displayText": "sravan-balaji"
+    },
+    {
+      "label": "GitHub",
+      "icon": "/assets/about/github.png",
+      "link": "https://github.com/balajsra",
+      "displayText": "balajsra"
+    },
+    {
+      "label": "YouTube",
+      "icon": "/assets/about/youtube.png",
+      "link": "https://www.youtube.com/channel/UC-xFJ4IKdogbpoQdQf2mgaA",
+      "displayText": "Sravan Balaji"
+    }
+  ]
+}
