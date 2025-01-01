@@ -1,6 +1,6 @@
 ---
 title: Sravan Balaji
-layout: "base.html"
+layout: "layouts/home.html"
 ---
 
 # Welcome!

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+  <head>
+    {% include "partials/site-head.html" %}
+    {% include "partials/navigation.html" %}
+  </head>
+
+  <body>
+    <main tabindex="-1" id="main-content">{% block content %}{% endblock %}</main>
+  </body>
+
+  <footer>
+    {% include "partials/footer.html" %}
+  </footer>
+</html>

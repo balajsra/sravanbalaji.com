@@ -19,7 +19,6 @@ dev:
         -it \
         -p {{HOST_PORT}}:8080 \
         -v ./src:/opt/app/src \
-        -v ./public:/opt/app/public \
         -v ./.eleventy.js:/opt/app/.eleventy.js \
         11ty:latest \
         npx @11ty/eleventy --serve
@@ -29,7 +28,7 @@ build-site:
     docker run \
         -it \
         -v ./src:/opt/app/src \
-        -v ./public:/opt/app/public \
+        -v ./dist:/opt/app/dist \
         -v ./.eleventy.js:/opt/app/.eleventy.js \
         11ty:latest \
         npx @11ty/eleventy

@@ -1,0 +1,11 @@
+<!doctype html>
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container-fluid px-md-6">
+  <div class="row align-items-center">
+    <div class="col-md-12">
+      {{ content | safe }}
+    </div>
+  </div>
+</div>
+{% endblock %}
