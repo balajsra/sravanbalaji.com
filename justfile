@@ -1,13 +1,35 @@
 set shell := ["bash", "-c"]
 
+HOST_PORT := "1280"
+
 # List just commands by default
 default:
     @just --list
 
-# Build image
-build:
-    docker buildx build -f ./docker/Dockerfile --tag 11ty:latest .
+# Build the docker image
+docker-build:
+    docker buildx build \
+        -f ./docker/Dockerfile \
+        --tag 11ty:latest \
+        .
 
 # Run development server
-dev: build
-    docker run -it -p 1280:8080 11ty:latest npx @11ty/eleventy --serve
+dev:
+    docker run \
+        -it \
+        -p {{HOST_PORT}}:8080 \
+        -v ./src:/opt/app/src \
+        -v ./public:/opt/app/public \
+        -v ./.eleventy.js:/opt/app/.eleventy.js \
+        11ty:latest \
+        npx @11ty/eleventy --serve
+
+# Build static site files
+build-site:
+    docker run \
+        -it \
+        -v ./src:/opt/app/src \
+        -v ./public:/opt/app/public \
+        -v ./.eleventy.js:/opt/app/.eleventy.js \
+        11ty:latest \
+        npx @11ty/eleventy
