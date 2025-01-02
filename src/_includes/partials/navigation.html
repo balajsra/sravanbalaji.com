@@ -1,55 +1,58 @@
 <!doctype html>
 <header role="banner" class="site-head">
     <nav class="navbar my-nav navbar-expand-md fixed-top">
-        <!-- Brand -->
-        <a class="navbar-brand" href="/">
-            <img
-                src="/assets/branding/logo.png"
-                alt="Icon"
-                width="30px"
-                height="30px"
-                class="d-inline-block align-top"
-            />
-            <img
-                src="/assets/branding/name.png"
-                alt="Name"
-                height="30px"
-                class="d-inline-block align-center"
-            />
-        </a>
-        
-        <!-- Toggler/collapsible Button -->
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavbar"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                {% for item in navigation.items %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ item.url }}"><b>{{ item.text }}</b></a>
-                </li>
-                {% endfor %}
-            </ul>
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand" href="/">
+                <img
+                    src="/assets/branding/logo.png"
+                    alt="Icon"
+                    width="30px"
+                    height="30px"
+                    class="d-inline-block align-top"
+                />
+                <img
+                    src="/assets/branding/name.png"
+                    alt="Name"
+                    height="30px"
+                    class="d-inline-block align-center"
+                />
+            </a>
+            
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar"
+                    aria-controls="collapsibleNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    {% for item in navigation.items %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ item.url }}"><b>{{ item.text }}</b></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <!-- Dark Mode Toggle -->
+            <!-- Reference: https://github.com/coliff/dark-mode-switch -->
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="darkSwitch" />
+                <label
+                    class="form-check-label"
+                    for="darkSwitch"
+                    id="darkSwitchLabel"
+                >Dark Mode</label
+                          >
+            </div>
+            <script src="/scripts/dark-mode-switch.min.js"></script>
         </div>
-        
-        <!-- Dark Mode Toggle -->
-        <!-- Reference: https://github.com/coliff/dark-mode-switch -->
-        <div class="form-check form-switch">
-            <input type="checkbox" class="form-check-input" id="darkSwitch" />
-            <label
-                class="form-check-label"
-                for="darkSwitch"
-                id="darkSwitchLabel"
-            >Dark Mode</label
-                      >
-        </div>
-        <script src="/scripts/dark-mode-switch.min.js"></script>
     </nav>
 </header>
