@@ -163,16 +163,25 @@ hr {
   display: block;
 }
 
-.card {
+.accordion {
   background-color: var(--background-color);
+  --bs-accordion-border-color: var(--background-color);
+  --bs-accordion-active-color: var(--primary-color);
 }
 
-.card-header {
+.accordion-button {
   background-color: var(--secondary-color);
+  color: var(--primary-color)
 }
 
-.card-body {
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: var(--secondary-color)
+}
+
+.accordion-body {
   background-color: var(--quaternary-color);
+  color: var(--font-color)
 }
 
 .dropdown-menu {

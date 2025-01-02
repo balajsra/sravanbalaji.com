@@ -25,31 +25,23 @@
   </div>
   {% if collections.professionalExperienceProjects.length > 0 %}
   <div class="col-md-6">
-      <div id="{{ profExp.data.id }}">
-          {% for project in (collections.professionalExperienceProjects | findProjectAssociatedWithExperience(profExp.data.id)) %}
-          {% set projectSlug = (profExp.data.id + '-' + project.data.name | slugify) %}
-          <div class="card section-bg">
-              <div class="card-header">
-                  <a
-                      class="card-link"
-                      data-toggle="collapse"
-                      href="#{{ projectSlug }}"
-                  >
-                      <b>{{ project.data.name }}</b>
-                  </a>
-              </div>
-              <div
-                  id="{{ projectSlug }}"
-                  class="collapse"
-                  data-parent="#{{ profExp.data.id }}"
-              >
-                  <div class="card-body">
-                      {{ project.content | safe }}
-                  </div>
-              </div>
+    <div class="accordion accordion-flush" id="{{ profExp.data.id }}">
+      {% for project in (collections.professionalExperienceProjects | findProjectAssociatedWithExperience(profExp.data.id)) %}
+      {% set projectSlug = (profExp.data.id + '-' + project.data.name | slugify) %}
+      <div class="accordion-item">
+        <div class="accordion-header"">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ projectSlug }}">
+            <b>{{ project.data.name }}</b>
+          </button>
+        </div>
+        <div id="{{ projectSlug }}" class="accordion-collapse collapse" data-bs-parent="#{{ profExp.data.id }}">
+          <div class="accordion-body">
+            {{ project.content | safe }}
           </div>
-          {% endfor %}
+        </div>
       </div>
+      {% endfor %}
+    </div>
   </div>
   {% endif %}
 </div>
