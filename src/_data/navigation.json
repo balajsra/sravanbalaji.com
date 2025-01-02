@@ -1,24 +1,37 @@
 {
-  "items": [
-    {
-      "text": "About",
-      "url": "/about/"
-    },
-    {
-      "text": "Portfolio",
-      "url": "/portfolio/"
-    },
-    {
-      "text": "Personal",
-      "url": "/personal/"
-    },
-    {
-      "text": "Blog",
-      "url": "/blog/"
-    },
-    {
-      "text": "Documentation",
-      "url": "/documentation/"
-    }
-  ]
+    "items": [
+        {
+            "text": "About",
+            "url": "/about/",
+            "sections": [
+                "Bio",
+                "Contact Me"
+            ]
+        },
+        {
+            "text": "Portfolio",
+            "url": "/portfolio/",
+            "sections": [
+                "Resume",
+                "Professional Experience",
+                "Education",
+                "Research"
+            ]
+        },
+        {
+            "text": "Personal",
+            "url": "/personal/",
+            "sections": []
+        },
+        {
+            "text": "Blog",
+            "url": "/blog/",
+            "sections": []
+        },
+        {
+            "text": "Documentation",
+            "url": "/documentation/",
+            "sections": []
+        }
+    ]
 }

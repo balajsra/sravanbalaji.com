@@ -18,9 +18,20 @@
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             {% for item in navigation.items %}
+            {% if item.sections.length > 0 %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="{{ item.text | slugify }}" role="button" data-bs-toggle="dropdown" href="{{ item.url }}"><b>{{ item.text }}</b></a>
+              <ul class="dropdown-menu">
+                {% for section in item.sections %}
+                <li><a class="dropdown-item" href="{{ item.url }}#{{ section | slugify }}">{{ section }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% else %}
             <li class="nav-item">
               <a class="nav-link" href="{{ item.url }}"><b>{{ item.text }}</b></a>
             </li>
+            {% endif %}
             {% endfor %}
         </ul>
       </div>
