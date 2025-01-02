@@ -14,7 +14,7 @@ docker-build:
         .
 
 # Run development server
-dev:
+dev: docker-build
     docker run \
         -it \
         -p {{HOST_PORT}}:8080 \
@@ -24,7 +24,7 @@ dev:
         npx @11ty/eleventy --serve
 
 # Build static site files
-build-site:
+build-site: docker-build
     docker run \
         -it \
         -v ./src:/opt/app/src \
