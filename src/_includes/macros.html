@@ -1,0 +1,10 @@
+<!doctype html>
+{% macro sectionHeading(name) %}
+<div class="row align-items-center">
+  <div class="col-md-12">
+    <h1>
+      <a name="{{ name | slugify }}">{{ name }}</a>
+    </h1>
+  </div>
+</div>
+{% endmacro %}
