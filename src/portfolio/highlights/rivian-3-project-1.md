@@ -1,5 +1,5 @@
 ---
-associatedExperience: "rivian-3"
+associatedEntry: "rivian-3"
 name: "Model-In-Loop Test Case Generation"
 displayOrder: 1
 ---

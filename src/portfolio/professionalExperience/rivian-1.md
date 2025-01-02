@@ -1,11 +1,11 @@
 ---
 displayOrder: 1
 id: "rivian-1"
-companyUrl: "https://rivian.com"
-companyLogo: "/assets/professional_experience/logo-rivian.png"
-companyName: "Rivian"
-jobTitle: "Vehicle Integration Intern"
-workLocation: "Livonia, MI"
+url: "https://rivian.com"
+logo: "/assets/professional_experience/logo-rivian.png"
+association: "Rivian"
+entryTitle: "Vehicle Integration Intern"
+location: "Livonia, MI"
 startDate: "May 30, 2017"
 endDate: "August 25, 2017"
 ---

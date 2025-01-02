@@ -1,5 +1,5 @@
 ---
-associatedExperience: "rivian-2"
+associatedEntry: "rivian-2"
 name: "Internal Website"
 displayOrder: 2
 ---

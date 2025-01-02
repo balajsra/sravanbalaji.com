@@ -1,11 +1,11 @@
 ---
 displayOrder: 2
 id: "rivian-2"
-companyUrl: "https://rivian.com"
-companyLogo: "/assets/professional_experience/logo-rivian.png"
-companyName: "Rivian"
-jobTitle: "Business Technology Intern"
-workLocation: "Plymouth, MI"
+url: "https://rivian.com"
+logo: "/assets/professional_experience/logo-rivian.png"
+association: "Rivian"
+entryTitle: "Business Technology Intern"
+location: "Plymouth, MI"
 startDate: "May 7, 2018"
 endDate: "December 7, 2018"
 ---

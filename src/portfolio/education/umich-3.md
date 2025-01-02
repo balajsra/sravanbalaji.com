@@ -1,10 +1,11 @@
 ---
 displayOrder: 3
-degreeUrl: "https://robotics.umich.edu"
-degreeLogo: "/assets/education/logo-robotics.png"
-schoolName: "University of Michigan"
-degreeName: "M.S. in Robotics"
-schoolLocation: "Ann Arbor, MI"
+id: "umich-3"
+url: "https://robotics.umich.edu"
+logo: "/assets/education/logo-robotics.png"
+association: "University of Michigan"
+entryTitle: "M.S. in Robotics"
+location: "Ann Arbor, MI"
 startDate: "January 2021"
 endDate: "December 2021"
 ---

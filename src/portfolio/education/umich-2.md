@@ -1,10 +1,11 @@
 ---
 displayOrder: 2
-degreeUrl: "https://me.engin.umich.edu"
-degreeLogo: "/assets/education/logo-mechanical-engineering.jpg"
-schoolName: "University of Michigan"
-degreeName: "B.S.E. in Mechanical Engineering"
-schoolLocation: "Ann Arbor, MI"
+id: "umich-2"
+url: "https://me.engin.umich.edu"
+logo: "/assets/education/logo-mechanical-engineering.jpg"
+association: "University of Michigan"
+entryTitle: "B.S.E. in Mechanical Engineering"
+location: "Ann Arbor, MI"
 startDate: "September 2016"
 endDate: "December 2020"
 ---

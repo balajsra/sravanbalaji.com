@@ -1,5 +1,5 @@
 ---
-associatedExperience: "rivian-1"
+associatedEntry: "rivian-1"
 name: "Simulation Data Analysis Tool"
 displayOrder: 2
 ---

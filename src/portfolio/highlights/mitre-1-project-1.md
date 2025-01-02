@@ -1,5 +1,5 @@
 ---
-associatedExperience: "mitre-1"
+associatedEntry: "mitre-1"
 name: "PNT Defense & Threat Library"
 displayOrder: 1
 ---

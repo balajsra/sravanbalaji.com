@@ -8,3 +8,51 @@
   </div>
 </div>
 {% endmacro %}
+
+{% macro portfolioWithHighlights(portfolio, highlights) %}
+{% for entry in portfolio %}
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="{{ entry.data.url }}" target="_blank">
+          <img
+            class="img-fluid mx-auto d-block"
+            src="{{ entry.data.logo }}"
+          />
+        </a>
+      </div>
+      <div class="col-md-8">
+        <h2><b>{{ entry.data.association }}</b></h2>
+        <h3>{{ entry.data.entryTitle }}</h3>
+        <h4>{{ entry.data.location }}</h4>
+        <h5><i>{{ entry.data.startDate }} - {{ entry.data.endDate }}</i></h5>
+        {{ entry.content | safe }}
+      </div>
+    </div>
+  </div>
+  {% set associatedHighlights = (highlights | findAssociation(entry.data.id)) %}
+  {% if associatedHighlights.length > 0 %}
+  <div class="col-md-6">
+    <div class="accordion accordion-flush" id="{{ entry.data.id }}">
+      {% for highlight in associatedHighlights %}
+      {% set highlightSlug = (entry.data.id + '-' + highlight.data.name | slugify) %}
+      <div class="accordion-item">
+        <div class="accordion-header"">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ highlightSlug }}">
+            <b>{{ highlight.data.name }}</b>
+          </button>
+        </div>
+        <div id="{{ highlightSlug }}" class="accordion-collapse collapse" data-bs-parent="#{{ entry.data.id }}">
+          <div class="accordion-body">
+            {{ highlight.content | safe }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+{% endmacro %}

@@ -1,5 +1,5 @@
 ---
-associatedExperience: "rivian-2"
+associatedEntry: "rivian-2"
 name: "IT Service Desk"
 displayOrder: 3
 ---

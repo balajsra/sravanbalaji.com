@@ -1,11 +1,11 @@
 ---
 displayOrder: 5
 id: "mitre-1"
-companyUrl: "https://www.mitre.org"
-companyLogo: "/assets/professional_experience/logo-mitre.jpeg"
-companyName: "MITRE"
-jobTitle: "Graduate Navigation Intern"
-workLocation: "Remote"
+url: "https://www.mitre.org"
+logo: "/assets/professional_experience/logo-mitre.jpeg"
+association: "MITRE"
+entryTitle: "Graduate Navigation Intern"
+location: "Remote"
 startDate: "May 10, 2021"
 endDate: "August 20, 2021"
 ---

@@ -1,5 +1,5 @@
 ---
-associatedExperience: "rivian-2"
+associatedEntry: "rivian-2"
 name: "Bill of Materials Analysis"
 displayOrder: 1
 ---

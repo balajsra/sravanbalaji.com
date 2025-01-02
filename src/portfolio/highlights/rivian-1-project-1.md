@@ -1,5 +1,5 @@
 ---
-associatedExperience: "rivian-1"
+associatedEntry: "rivian-1"
 name: "Requirements Management and System Diagrams"
 displayOrder: 1
 ---

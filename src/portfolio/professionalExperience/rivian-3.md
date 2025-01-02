@@ -1,11 +1,11 @@
 ---
 displayOrder: 4
 id: "rivian-3"
-companyUrl: "https://rivian.com"
-companyLogo: "/assets/professional_experience/logo-rivian.png"
-companyName: "Rivian"
-jobTitle: "ADAS Controls Intern"
-workLocation: "Remote"
+url: "https://rivian.com"
+logo: "/assets/professional_experience/logo-rivian.png"
+association: "Rivian"
+entryTitle: "ADAS Controls Intern"
+location: "Remote"
 startDate: "June 1, 2020"
 endDate: "August 21, 2020"
 ---

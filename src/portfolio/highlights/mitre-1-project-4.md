@@ -1,5 +1,5 @@
 ---
-associatedExperience: "mitre-1"
+associatedEntry: "mitre-1"
 name: "AWS DeepRacer"
 displayOrder: 4
 ---

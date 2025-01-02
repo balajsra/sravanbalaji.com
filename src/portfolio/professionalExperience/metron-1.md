@@ -1,10 +1,11 @@
 ---
 displayOrder: 8
-companyUrl: "https://www.metsci.com"
-companyLogo: "/assets/professional_experience/logo-metron.jpeg"
-companyName: "Metron"
-jobTitle: "Software Engineer I"
-workLocation: "Reston, VA"
+id: "metron-1"
+url: "https://www.metsci.com"
+logo: "/assets/professional_experience/logo-metron.jpeg"
+assocation: "Metron"
+entryTitle: "Software Engineer I"
+location: "Reston, VA"
 startDate: "April 3, 2023"
 endDate: "Present"
 ---

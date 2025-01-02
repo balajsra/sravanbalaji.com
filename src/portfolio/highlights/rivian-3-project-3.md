@@ -1,5 +1,5 @@
 ---
-associatedExperience: "rivian-3"
+associatedEntry: "rivian-3"
 name: "Testing Data Processing"
 displayOrder: 3
 ---

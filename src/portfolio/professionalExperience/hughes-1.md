@@ -1,11 +1,11 @@
 ---
 displayOrder: 3
 id: "hughes-1"
-companyUrl: "https://www.hughes.com"
-companyLogo: "/assets/professional_experience/logo-hughes.jpg"
-companyName: "Hughes Network Systems"
-jobTitle: "Software Development Intern"
-workLocation: "San Diego, CA"
+url: "https://www.hughes.com"
+logo: "/assets/professional_experience/logo-hughes.jpg"
+association: "Hughes Network Systems"
+entryTitle: "Software Development Intern"
+location: "San Diego, CA"
 startDate: "May 20, 2019"
 endDate: "August 23, 2019"
 ---

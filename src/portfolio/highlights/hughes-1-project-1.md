@@ -1,5 +1,5 @@
 ---
-associatedExperience: "hughes-1"
+associatedEntry: "hughes-1"
 name: "Mobile Terminal Configuration Tool"
 displayOrder: 1
 ---

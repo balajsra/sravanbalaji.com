@@ -2,47 +2,5 @@
 {% from "macros.html" import sectionHeading %}
 {{ sectionHeading("Professional Experience") }}
 
-{% for profExp in collections.professionalExperience %}
-<div class="row">
-  <div class="col-md-6">
-    <div class="row">
-      <div class="col-md-4">
-        <a href="{{ profExp.data.companyUrl }}" target="_blank">
-          <img
-            class="img-fluid mx-auto d-block"
-            src="{{ profExp.data.companyLogo }}"
-          />
-        </a>
-      </div>
-      <div class="col-md-8">
-        <h2><b>{{ profExp.data.companyName }}</b></h2>
-        <h3>{{ profExp.data.jobTitle }}</h3>
-        <h4>{{ profExp.data.workLocation }}</h4>
-        <h5><i>{{ profExp.data.startDate }} - {{ profExp.data.endDate }}</i></h5>
-        {{ profExp.content | safe }}
-      </div>
-    </div>
-  </div>
-  {% if collections.professionalExperienceProjects.length > 0 %}
-  <div class="col-md-6">
-    <div class="accordion accordion-flush" id="{{ profExp.data.id }}">
-      {% for project in (collections.professionalExperienceProjects | findProjectAssociatedWithExperience(profExp.data.id)) %}
-      {% set projectSlug = (profExp.data.id + '-' + project.data.name | slugify) %}
-      <div class="accordion-item">
-        <div class="accordion-header"">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ projectSlug }}">
-            <b>{{ project.data.name }}</b>
-          </button>
-        </div>
-        <div id="{{ projectSlug }}" class="accordion-collapse collapse" data-bs-parent="#{{ profExp.data.id }}">
-          <div class="accordion-body">
-            {{ project.content | safe }}
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  {% endif %}
-</div>
-{% endfor %}
+{% from "macros.html" import portfolioWithHighlights %}
+{{ portfolioWithHighlights(collections.professionalExperience, collections.highlights) }}
