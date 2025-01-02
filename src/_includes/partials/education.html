@@ -1,3 +1,27 @@
 <!doctype html>
 {% from "macros.html" import sectionHeading %}
 {{ sectionHeading("Education") }}
+
+{% for degree in collections.degrees %}
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="{{ degree.data.degreeUrl }}" target="_blank">
+          <img
+            class="img-fluid mx-auto d-block"
+            src="{{ degree.data.degreeLogo }}"
+          />
+        </a>
+      </div>
+      <div class="col-md-8">
+        <h2><b>{{ degree.data.schoolName }}</b></h2>
+        <h3>{{ degree.data.degreeName }}</h3>
+        <h4>{{ degree.data.schoolLocation }}</h4>
+        <h5><i>{{ degree.data.startDate }} - {{ degree.data.endDate }}</i></h5>
+        {{ degree.content | safe }}
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

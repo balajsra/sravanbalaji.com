@@ -21,6 +21,12 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
   });
 
+  eleventyConfig.addCollection('degrees', (collection) => {
+    return collection
+      .getFilteredByGlob('./src/portfolio/education/*.md')
+      .sort((a, b) => (Number(a.data.displayOrder) < Number(b.data.displayOrder) ? 1 : -1));
+  });
+
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
