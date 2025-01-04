@@ -57,3 +57,23 @@
 </div>
 {% endfor %}
 {% endmacro %}
+
+{% macro personalItems(personal) %}
+{% for entry in personal %}
+<div class="row">
+  <div class="col-md-2">
+    <a href="{{ entry.data.url }}" target="_blank">
+    <img
+      class="img-fluid mx-auto d-block"
+      width="50%"
+      src="{{ entry.data.logo }}"
+    />
+    </a>
+  </div>
+  <div class="col-md-10">
+    <h2><b>{{ entry.data.category }}: <a href="{{ entry.data.url }}" target="_blank">{{ entry.data.application }}</a></b></h2>
+    {{ entry.content | safe }}
+  </div>
+</div>
+{% endfor %}
+{% endmacro %}

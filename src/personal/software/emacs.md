@@ -1,0 +1,11 @@
+---
+displayOrder: 1
+url: "https://github.com/doomemacs/doomemacs"
+logo: "/assets/software/logo-emacs.png"
+category: "IDE / Text Editor"
+application: "Doom Emacs"
+---
+
+I originally tried Emacs because I had heard it is highly configurable and has amazing features like [Org Mode](https://orgmode.org) and [Magit](https://magit.vc). My initial impression was that it was extremely difficult to use due to its unintuitive design and high reliance on keybindings. After watching some videos by [System Crafters](https://www.youtube.com/c/SystemCrafters), I slowly picked up on these keybindings and how to go about configuring Emacs to my liking. I especially liked the [Emacs from Scratch](https://www.youtube.com/playlist?list=PLEoMzSkcN8oPH1au7H6B7bBJ4ZO7BXjSZ) series which helped me build up my [personal configuration](https://github.com/balajsra/emacs). After using this configuration for a couple months, I came to realize that there are just too many missing features and issues that I kept having to find resolutions for.
+
+This is why I decided to switch to [Doom Emacs](https://github.com/hlissner/doom-emacs), which is a distribution of Emacs that comes pre-configured with stability, performance, and vim keybindings in mind. The [DoomCasts](https://www.youtube.com/playlist?list=PLhXZp00uXBk4np17N39WvB80zgxlZfVwj) series by [Zaiste Programming](https://www.youtube.com/c/ZaisteProgramming) provides a good introduction to Doom Emacs in video form. My experience with Doom so far has been great. It works a lot more like what I expected my personal Emacs configuration to be, but is much easier to use and configure. Startup time is significantly faster, editing files is faster, vim-like keybindings are already setup, and it is functional out of the box. You can checkout my Doom Emacs configuration on [GitHub](https://github.com/balajsra/doom-emacs-config). I have been using [Chemacs 2](https://github.com/plexus/chemacs2) to easily switch between my personal and Doom configurations so I can compare and make improvements.

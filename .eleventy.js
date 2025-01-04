@@ -28,6 +28,12 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
   });
 
+  eleventyConfig.addCollection('software', (collection) => {
+    return collection
+      .getFilteredByGlob('./src/personal/software/*.md')
+      .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
+  });
+
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
