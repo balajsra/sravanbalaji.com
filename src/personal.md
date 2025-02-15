@@ -2,50 +2,6 @@
 title: Personal
 layout: "layouts/personal.html"
 ---
-      <!---------------------------------
-				HARDWARE
-			----------------------------------->
-      <div id="hardware">
-        <div class="row align-items-center">
-          <div class="col-md-12">
-            <h1><a name="hardware">Hardware</a></h1>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-md-3">
-            <a href="https://system76.com/laptops/oryx" target="_blank">
-              <img
-                class="img-fluid mx-auto d-block"
-                src="./assets/hardware/oryx-pro-7.png"
-              />
-            </a>
-          </div>
-          <div class="col-md-9">
-            <h2>Laptop: System76 Oryx Pro 7</h2>
-            <p>
-              I was looking for a Linux laptop that I could use for development,
-              general productivity, and gaming over the next couple of years.
-              While I love my desktop and my ultrabook laptop, I really wanted
-              one device that could fill both roles. After doing some research,
-              I landed on
-              <a href="https://system76.com" target="_blank">System76</a>. They
-              are a U.S. based company that specializes in selling Linux
-              laptops, desktops, and servers. They also make their own Linux
-              distribution in
-              <a href="https://pop.system76.com" target="_blank">Pop!_OS</a>. Of
-              their available laptops, the
-              <a href="https://system76.com/laptops/oryx" target="_blank"
-                >Oryx Pro</a
-              >
-              lineup seemed to be the best balance of portability, power, and
-              hybrid graphics. The last point is especially important to me
-              because I want to be able to extend battery life by turning off
-              the discrete GPU when I don't need it. Overall, I am very happy
-              with my purchase. For more information, check out my
-              <a href="./blog_oryx_pro_review.html">review</a>.
-            </p>
-          </div>
-        </div>
         <div class="row align-items-center">
           <div class="col-md-3">
             <img

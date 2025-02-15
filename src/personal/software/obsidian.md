@@ -3,7 +3,7 @@ displayOrder: 2
 url: "https://obsidian.md/"
 logo: "/assets/software/logo-obsidian.png"
 category: "Personal Knowledge Management"
-application: "Obsidian"
+name: "Obsidian"
 ---
 
 [Notion](https://www.notion.com) was my previous favorite, but I started looking for alternatives due to the lack of an offline mode. The always online model has let me down a few times and I also didn't like the idea of handing over all of my data to a 3rd party company. Security and privacy are extremely important for personal notes.

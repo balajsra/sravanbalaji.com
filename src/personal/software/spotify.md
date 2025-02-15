@@ -3,7 +3,7 @@ displayOrder: 5
 url: "https://spotify.com"
 logo: "/assets/software/logo-spotify.png"
 category: "Music & Audiobooks"
-application: "Spotify"
+name: "Spotify"
 ---
 
 This is my preferred music app. I love having access to streaming music on all devices I use and integration with many smart home devices. Overall an excellent product and very reasonable prices, especially with the [student pricing plan](https://www.spotify.com/us/student).

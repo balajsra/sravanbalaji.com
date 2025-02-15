@@ -44,6 +44,14 @@ module.exports = function (eleventyConfig) {
       );
   });
 
+  eleventyConfig.addCollection("hardware", (collection) => {
+    return collection
+      .getFilteredByGlob("./src/personal/hardware/*.md")
+      .sort((a, b) =>
+        Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1,
+      );
+  });
+
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",

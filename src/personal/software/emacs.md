@@ -3,7 +3,7 @@ displayOrder: 1
 url: "https://github.com/doomemacs/doomemacs"
 logo: "/assets/software/logo-emacs.png"
 category: "IDE / Text Editor"
-application: "Doom Emacs"
+name: "Doom Emacs"
 ---
 
 I originally tried Emacs because I had heard it is highly configurable and has amazing features like [Org Mode](https://orgmode.org) and [Magit](https://magit.vc). My initial impression was that it was extremely difficult to use due to its unintuitive design and high reliance on keybindings. After watching some videos by [System Crafters](https://www.youtube.com/c/SystemCrafters), I slowly picked up on these keybindings and how to go about configuring Emacs to my liking. I especially liked the [Emacs from Scratch](https://www.youtube.com/playlist?list=PLEoMzSkcN8oPH1au7H6B7bBJ4ZO7BXjSZ) series which helped me build up my [personal configuration](https://github.com/balajsra/emacs). After using this configuration for a couple months, I came to realize that there are just too many missing features and issues that I kept having to find resolutions for.

@@ -3,7 +3,7 @@ displayOrder: 4
 url: "https://pocketcasts.com"
 logo: "/assets/software/logo-pocket-casts.png"
 category: "Podcasts"
-application: "Pocket Casts"
+name: "Pocket Casts"
 ---
 
 Pocket Casts is by far my favorite app for listening to podcasts. It has all the features you could ask for like automatically downloading new episodes and adding them to your queue, boosting the volume of dialogue, cutting out silence, and more! They support mobile apps, wearables, and a web player.
