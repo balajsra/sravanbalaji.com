@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container-fluid px-md-6">
+  {% from "macros.html" import sectionHeading %}
+  {{ sectionHeading("Blog Posts") }}
+
+  {% from "macros.html" import blogPostList %}
+  {{ blogPostList(collections.blogPosts) }}
+</div>
+{% endblock %}
