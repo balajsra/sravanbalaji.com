@@ -94,7 +94,10 @@
         <b>{{ entry.data.title }}</b>
       </a>
     </h2>
-    <h3>Updated: {{ entry.data.updated }}</h3>
+
+    {% if entry.data.updated %}
+      <h3>Updated: {{ entry.data.updated }}</h3>
+    {% endif %}
   </div>
 </div>
 {% endfor %}
