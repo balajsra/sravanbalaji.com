@@ -20,11 +20,14 @@
   ];
 
   # https://devenv.sh/languages/
-  # languages.rust.enable = true;
   languages.javascript = {
     enable = true;
-    npm.enable = true;
-    npm.install.enable = true;
+    package = pkgs.nodejs_22;
+    npm = {
+      enable = true;
+      install.enable = true;
+    };
   };
+
   languages.nix.enable = true;
 }
