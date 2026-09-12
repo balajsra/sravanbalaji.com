@@ -1,6 +1,5 @@
 ---
 displayOrder: 1
-id: "docker"
 title: Getting Started with Docker
 updated: "March 18, 2020"
 banner: "/assets/blog_posts/Docker/cover_docker.png"
@@ -130,33 +129,17 @@ Compose, check out Jake Wright's video on the topic.
 In a virtual machine, you can easily run GUI applications such as a
 web browser, text editor, etc. In a docker container, the process is
 a little bit different. You will need to download an X Server such
-as
-<a href="https://sourceforge.net/projects/vcxsrv/" target="_blank"
-  >VcXsrv Windows X Server</a
->.
+as [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/).
 
-<a
-  href="https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde"
-  target="_blank"
-  >Run GUI app in linux docker container on windows host</a
->
-provides a great explanation of why you would want to do this and
-how to run your docker container. The post discusses how to set your
-IP address as the
-<code>DISPLAY</code> environment variable that is passed to docker
-via the <code>-e DISPLAY=$DISPLAY</code> command line argument. You
-can alternatively pass your IP address as an environment variable in
-your docker compose file. This is shown in
-<a
-  href="https://github.com/MAAV-Software/ros-tutorial"
-  target="_blank"
-  >MAAV's ROS Tutorial</a
->
-(reproduced below). The main settings to look at below are
-<code>environment</code> and <code>network_mode</code>. Set the
-<code>DISPLAY</code> environment variable to
-<code>[ip_address]:0.0</code> and set
-<code>network_mode: "host"</code>.
+[Run GUI app in linux docker container on windows host](https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde)
+provides a great explanation of why you would want to do this and how
+to run your docker container. The post discusses how to set your IP address
+as the `DISPLAY` environment variable that is passed to docker via the
+`-e DISPLAY=$DISPLAY` command line argument. You can alternatively pass your
+IP address as an environment variable in your docker compose file. This is shown in
+[MAAV's ROS Tutorial](https://github.com/MAAV-Software/ros-tutorial) (reproduced below).
+The main settings to look at below are `environment` and `network_mode`. Set the
+`DISPLAY` environment variable to `[ip_address]:0.0` and set `network_mode: "host"`.
 
 ```yaml
 # docker-compose.yml
@@ -187,4 +170,4 @@ Hopefully by this point, you have a better understanding of what
 docker is, why you might want to use it, and how to get a docker
 machine setup so you can build and run docker containers. If you
 have any questions or suggestions for improvement, feel free to
-<a href="./about.html#contact_me">contact me</a>.
+[contact me](/about/#contact_me).
