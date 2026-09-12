@@ -8,14 +8,12 @@ default:
 
 # Update development environment
 update:
-    devenv update && \
+    devenv update
     npm update
 
 # Run development server
 dev:
-    npx @11ty/eleventy \
-        --serve \
-        --port={{ PORT }};
+    npx @11ty/eleventy --serve --port={{ PORT }};
 
 # Build static site files
 build-site:
