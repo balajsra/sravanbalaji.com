@@ -1,7 +1,15 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const pluginTOC = require("eleventy-plugin-nesting-toc");
 
 module.exports = function (eleventyConfig) {
+  // Add TOC plugin
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ["h1", "h2", "h3"], // Headings to include
+    wrapper: "nav",
+    wrapperClass: "toc",
+  });
+
   const mdLib = markdownIt({
     html: true,
     breaks: true,

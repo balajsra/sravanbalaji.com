@@ -220,3 +220,57 @@ h6:hover .header-anchor,
   opacity: 1;
   text-decoration: underline;
 }
+
+/******************************
+ * Floating Table of Contents *
+ ******************************/
+/* Sticky Sidebar positioning */
+.toc-sidebar {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.toc-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: inherit;
+  opacity: 0.8;
+}
+
+/* TOC Navigation List Styling */
+.toc nav ol,
+.toc nav ul {
+  list-style-type: none;
+  padding-left: 0.75rem;
+  margin-bottom: 0;
+  border-left: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+.toc nav > ol,
+.toc nav > ul {
+  padding-left: 0;
+  border-left: none;
+}
+
+.toc li {
+  margin-bottom: 0.4rem;
+  font-size: 0.875rem;
+}
+
+.toc a {
+  color: inherit;
+  opacity: 0.75;
+  text-decoration: none;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.toc a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}

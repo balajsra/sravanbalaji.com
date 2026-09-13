@@ -2,8 +2,16 @@
 {% extends "layouts/base.html" %} {% from "macros.html" import sectionHeading %}
 {% block content %}
 <div class="container-fluid px-md-6">
-  <div class="row align-items-center">
-    <div class="col-md-12">{{ content | safe }}</div>
+  <div class="row">
+    <!-- Floating Sidebar TOC (visible on lg screens and up) -->
+    <div class="col-lg-2 d-none d-lg-block">
+      <aside class="toc-sidebar">
+        <h5 class="toc-title">On this page</h5>
+        {{ content | toc | safe }}
+      </aside>
+    </div>
+
+    <div class="col-md-10">{{ content | safe }}</div>
   </div>
 </div>
 {% endblock %}
