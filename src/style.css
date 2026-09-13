@@ -191,3 +191,32 @@ hr {
 .dropdown-item {
   color: var(--font-color);
 }
+
+
+/******************
+ * Header Anchors *
+ ******************/
+/* Styling for the header link symbol */
+.header-anchor {
+  margin-left: 0.4em;
+  color: inherit;
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity 0.15s ease-in-out;
+}
+
+/* Reveal anchor symbol when hovering over the heading or the anchor itself */
+h1:hover .header-anchor,
+h2:hover .header-anchor,
+h3:hover .header-anchor,
+h4:hover .header-anchor,
+h5:hover .header-anchor,
+h6:hover .header-anchor,
+.header-anchor:focus {
+  opacity: 0.6;
+}
+
+.header-anchor:hover {
+  opacity: 1;
+  text-decoration: underline;
+}

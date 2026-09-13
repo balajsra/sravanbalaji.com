@@ -7,7 +7,11 @@ module.exports = function (eleventyConfig) {
     breaks: true,
     linkify: true,
   }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.headerLink(),
+    permalink: markdownItAnchor.permalink.ariaHidden({
+      placement: "after",
+      symbol: "#",
+      class: "header-anchor",
+    }),
   });
 
   eleventyConfig.setLibrary("md", mdLib);
