@@ -1,8 +1,8 @@
 ---
 displayOrder: 1
 title: Getting Started with Docker
-updated: "March 18, 2020"
-banner: "/assets/blog_posts/getting_started_with_docker/cover_docker.png"
+updated: March 18, 2020
+banner: /assets/blog_posts/getting_started_with_docker/cover_docker.png
 layout: layouts/blog_post.html
 ---
 

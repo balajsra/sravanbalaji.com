@@ -1,8 +1,8 @@
 ---
 displayOrder: 2
 title: System76 Oryx Pro 7 Review
-updated: "July 1, 2022"
-banner: "/assets/blog_posts/oryx_pro_review/oryx-pro-7.png"
+updated: July 1, 2022
+banner: /assets/blog_posts/oryx_pro_review/oryx-pro-7.png
 layout: layouts/blog_post.html
 ---
 
