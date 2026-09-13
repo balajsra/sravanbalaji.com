@@ -13,7 +13,7 @@ endDate: "August 20, 2021"
 **Hard Skills**
 
 - [Julia](https://julialang.org)
-- [Python](https://www.python.org")
+- [Python](https://www.python.org)
 - Satellite Navigation
 - Signal Processing
 - Machine Learning

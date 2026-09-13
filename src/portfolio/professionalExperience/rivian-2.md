@@ -12,7 +12,7 @@ endDate: "December 7, 2018"
 
 **Hard Skills**
 
-- [Python](https://www.python.org") and [Django Web Framework](https://www.djangoproject.com)
+- [Python](https://www.python.org) and [Django Web Framework](https://www.djangoproject.com)
 - <abbr title="REpresentational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr>
 - Excel <abbr title="Visual Basic for Applications">VBA</abbr>
 - Bill of Materials Analysis
