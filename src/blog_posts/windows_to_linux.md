@@ -20,9 +20,11 @@ General productivity is no different on Linux than Windows, other than the lack 
 
 ### Gaming
 
-Gaming was really the main concern I had when thinking about moving away from Windows. Luckily, there has been a lot of progress on this front in recent years. Per [ProtonDB](https://www.protondb.com):
+Gaming was really the main concern I had when thinking about moving away from Windows. Luckily, there has been a lot of progress on this front in recent years.
 
 > "Proton is a new tool released by Valve Software that has been integrated with Steam Play to make playing Windows games on Linux as simple as hitting the Play button within Steam. Underneath the hood, Proton comprises other popular tools like Wine and DXVK among others that a gamer would otherwise have to install and maintain themselves. This greatly eases the burden for users to switch to Linux without having to learn the underlying systems or losing access to a large part of their library of games. Proton is still in its infancy so support is inconsistent, but regularly improving."
+>
+> &mdash; <cite>[ProtonDB](https://www.protondb.com)</cite>
 
 Looking at ProtonDB, a lot of the games I play (mostly single-player) have gold or above ratings, meaning they generally work by just pressing the play button, possibly with a few tweaks.  After trying this out myself, I have come to the same conclusion.  Gaming on Linux is as good as it has ever been and will only get better, especially after the launch of the SteamOS 3.0 powered [Steam Deck](https://store.steampowered.com/steamdeck) from Valve.
 
