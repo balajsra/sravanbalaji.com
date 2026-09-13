@@ -61,7 +61,7 @@ module.exports = function (eleventyConfig) {
     return collection
       .getFilteredByGlob("./src/blog_posts/*.md")
       .sort((a, b) =>
-        Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1,
+        Number(a.data.displayOrder) < Number(b.data.displayOrder) ? 1 : -1,
       );
   });
 
