@@ -2,7 +2,7 @@
 displayOrder: 1
 title: Getting Started with Docker
 updated: "March 18, 2020"
-banner: "/assets/blog_posts/Docker/cover_docker.png"
+banner: "/assets/blog_posts/getting_started_with_docker/cover_docker.png"
 layout: layouts/blog_post.html
 ---
 
@@ -92,7 +92,7 @@ configured to allow volume mounting.
 
 <img
   class="img-fluid mx-auto d-block"
-  src="/assets/blog_posts/Docker/virtual_box_shared_folder.jpg"
+  src="/assets/blog_posts/getting_started_with_docker/virtual_box_shared_folder.jpg"
 />
 
 #### Increase Docker Machine Resources
