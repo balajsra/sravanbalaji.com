@@ -17,4 +17,5 @@ dev:
 
 # Build static site files
 build-site:
+    npm ci
     npx @11ty/eleventy

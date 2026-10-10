@@ -1,0 +1,39 @@
+name: Build and Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual trigger from the Forgejo UI
+
+jobs:
+  deploy:
+    runs-on: debian
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+
+      - name: Build Site
+        run: |
+          nix run .#devenv -- just build-site
+
+      - name: Deploy to LXC Container via rsync
+        env:
+          BUILD_DIR: ./dist/
+          DEPLOY_PATH: /var/www/html/
+          PRIVATE_KEY_PATH: ~/.ssh/id_ed25519
+        run: |
+          # Setup SSH access
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}" > ${PRIVATE_KEY_PATH}
+          chmod 600 ${PRIVATE_KEY_PATH}
+          ssh-keyscan -H "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
+
+          # Sync built site to deploy host
+          rsync -avz --delete \
+            -e "ssh -i ${PRIVATE_KEY_PATH}" \
+            ${BUILD_DIR} ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${DEPLOY_PATH}
