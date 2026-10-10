@@ -6,8 +6,8 @@ logo: "/assets/professional_experience/logo-rivian.png"
 association: "Rivian"
 entryTitle: "Vehicle Integration Intern"
 location: "Livonia, MI"
-startDate: "May 30, 2017"
-endDate: "August 25, 2017"
+startDate: "May 2017"
+endDate: "August 2017"
 ---
 
 **Hard Skills**

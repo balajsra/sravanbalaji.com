@@ -6,8 +6,8 @@ logo: "/assets/professional_experience/logo-rivian.png"
 association: "Rivian"
 entryTitle: "Business Technology Intern"
 location: "Plymouth, MI"
-startDate: "May 7, 2018"
-endDate: "December 7, 2018"
+startDate: "May 2018"
+endDate: "December 2018"
 ---
 
 **Hard Skills**
