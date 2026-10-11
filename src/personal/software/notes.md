@@ -1,8 +1,8 @@
 ---
-displayOrder: 2
+displayOrder: 5
 url: "https://obsidian.md/"
 logo: "/assets/software/logo-obsidian.png"
-category: "Personal Knowledge Management"
+category: "Notes"
 name: "Obsidian"
 ---
 

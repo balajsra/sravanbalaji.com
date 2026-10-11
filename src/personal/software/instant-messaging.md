@@ -1,5 +1,5 @@
 ---
-displayOrder: 3
+displayOrder: 1
 url: "https://www.beeper.com"
 logo: "/assets/software/logo-beeper.png"
 category: "Instant Messaging"

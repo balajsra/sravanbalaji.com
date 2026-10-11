@@ -1,5 +1,5 @@
 ---
-displayOrder: 7
+displayOrder: 2
 url: "https://bitwarden.com/"
 logo: "/assets/software/logo-bitwarden.png"
 category: "Password Manager"
