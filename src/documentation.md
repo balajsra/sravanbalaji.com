@@ -13,17 +13,15 @@ This website was originally designed in HTML with some CSS for styling. However,
 
 ## Purchasing a Domain Name
 
-Per [Yash Vesikar](https://vesikar.com/)'s recommendation, I used [Google Domains](https://domains.google.com/) to purchase the [sravanbalaji.com](https://sravanbalaji.com/) domain for $12 per year.
-
-More recently, I found that [namecheap](https://www.namecheap.com/), as the name implies, is cheaper. I was able to transfer the domain to their service for about $8 per year.
+There are plenty of sites where you can purchase a domain. I have used [Google Domains](https://domains.google.com/) and [namecheap](https://www.namecheap.com/) in the past. I'm currently using [Cloudflare Registrar](https://www.cloudflare.com/domains/) because it's widely used and comes with [Cloudflare DNS](https://www.cloudflare.com/products/dns/), which offers a ton of great features.
 
 ## Hosting Website
 
-There are a couple of options I have found for hosting my website (for free). As a U of M student, I am able to create my own UM Web Page hosted on U of M Servers or create a personal site hosted by Google through the [U-M Google collaboration](http://google.umich.edu/). I have not looked into the Google Sites option, but there is [documentation](https://support.google.com/sites/) available if you are interested. I originally opted to create my own site and host it on U of M Servers. Information on how to do this can be found on the [UMICH Information and Technology Services website](http://www.umich.edu/~umweb/how-to/homepage.html). Some limitations I found with this were that I would have to manually upload my website files to the afs directory as the SFTP process described did not work for me. Additionally, the domain name for U of M hosted websites take the form `http://www-personal.umich.edu/~youruniqname/` which is clearly not ideal. You can sort of get around this by enabling [web forwarding](https://support.google.com/domains/answer/4522141?hl=en) on Google Domains. All this does is redirect traffic from your custom domain to the U of M domain. This might be ok for you, but I would prefer to have my website show up at the domain I purchased.
+There are plenty of ways to host a website. As a University of Michigan student, you have the option to create a personal site hosted by Google or hosted on U of M servers as documented [here](https://websites.umich.edu/~umweb/how-to/homepage.html). Otherwise, there's [GitHub Pages](https://pages.github.com/) to host my website directly from a GitHub repository. This comes with the added benefit that changes are live as soon as you push them to the `main` branch of your `<username>.github.io` repository. I found [Trent Yang's post](https://trentyang.com/how-to-setup-google-domain-for-github-pages/) about setting up Google Domains for GitHub pages very useful.
 
-Per [Yash Vesikar](https://vesikar.com/)'s recommendation, I looked into [GitHub Pages](https://pages.github.com/) to host my website directly from a GitHub repository. This comes with the added benefit that changes are live as soon as you push them to the `master` branch of your `<username>.github.io` repository. I found [Trent Yang's post](https://trentyang.com/how-to-setup-google-domain-for-github-pages/) about setting up Google Domains for GitHub pages very useful.
+After watching [Chris Titus](https://christitus.com/)'s [video](https://www.youtube.com/watch?v=Nz0c4d1lbMk) on website hosting, I decided to give [netlify](https://www.netlify.com/) a chance. You get the same benefit as GitHub pages with automated deployment of the website upon pushes to the git repo. A summary of the differences can be found [here](https://www.netlify.com/github-pages-vs-netlify/). The free tier was more than good enough for my use, but I eventually decided to self host the website.
 
-After watching [Chris Titus](https://christitus.com/)'s [video](https://www.youtube.com/watch?v=Nz0c4d1lbMk) on website hosting, I decided to give [netlify](https://www.netlify.com/) a chance. You get the same benefit as GitHub pages with automated deployment of the website upon pushes to the git repo. A summary of the differences can be found [here](https://www.netlify.com/github-pages-vs-netlify/). For me, having the ability to preview deployments on development branches and rollback the site if I ever need to made this the obvious choice. Especially when considering that netlify also offers a generous free tier.
+This basically involves running a [web server](https://nginx.org/) on my own computer, using [Dynamic DNS](https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/) to keep my DNS record updated, allowing public https traffic through my firewall, and making my website publicly accessible in my [reverse proxy](https://nginxproxymanager.com/).
 
 # Web Design
 
@@ -31,9 +29,9 @@ After watching [Chris Titus](https://christitus.com/)'s [video](https://www.yout
 
 When I first made this website, it was implemented in HTML and CSS without the use of a framework. This gave me a lot of custom control over every aspect, but it made some things unnecessarily tedious and difficult. One example of this is the navigation bar. Trying to implement that without a framework is more difficult than it needs to be. Another issue I ran into was compatibility with mobile browsers. Per [Tianhong (Sam) Wen](https://www.linkedin.com/in/tianhongwen/)'s recommendation, I looked into [Bootstrap](https://getbootstrap.com/). This has built-in *responsive* classes that can auto adjust the size and placement of elements based on the screen size. It also provides an easy way to implement some cool features like the navbar, accordion-like cards, and a grid layout to easily place images and text around your website's viewport.
 
-## Reusing HTML
+## 11ty
 
-The easiest way I found to reuse HTML code is via JavaScript as described in [Page Headers and Footers](https://www.uvm.edu/~bnelson/computer/javascript/pageheadersandfooters.html). This is by no means the most elegant or automated, but it was the only method I could get to actually work. If you don't want to go through the hassle of manually removing line breaks, you can use this handy online text converter from [Text Fixer](https://www.textfixer.com/tools/remove-line-breaks.php).
+I soon realized that I didn't want to spend so much time writing HTML when the main thing I care about is the content of the website. Thus, I discovered [11ty](https://www.11ty.dev/). It's a very simple static site generate that allows you to write content in Markdown and setup HTML templates you can reuse that define where the content goes and how it is formatted.
 
 # Aesthetics
 
