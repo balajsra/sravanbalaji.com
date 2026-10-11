@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "text": "About",
+            "url": "/about/",
+            "sections": [
+                "Bio",
+                "Contact Me"
+            ]
+        },
+        {
+            "text": "Portfolio",
+            "url": "/portfolio/",
+            "sections": [
+                "Resume",
+                "Professional Experience",
+                "Education"
+            ]
+        },
+        {
+            "text": "Personal",
+            "url": "/personal/",
+            "sections": []
+        },
+        {
+            "text": "Blog",
+            "url": "/blog/",
+            "sections": []
+        },
+        {
+            "text": "Documentation",
+            "url": "/documentation/",
+            "sections": []
+        }
+    ]
+}

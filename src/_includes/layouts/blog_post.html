@@ -1,0 +1,37 @@
+<!doctype html>
+{% extends "layouts/base.html" %} {% from "macros.html" import sectionHeading %}
+{% block content %}
+<div class="container-fluid px-md-6">
+  <div class="row">
+    <!-- Floating Sidebar TOC (visible on lg screens and up) -->
+    <div class="col-lg-3 d-none d-lg-block">
+      <aside class="toc-sidebar">
+        <h5 class="toc-title">On this page</h5>
+        {{ content | toc | safe }}
+      </aside>
+    </div>
+
+    <!-- Main Content Column -->
+    <div class="col-lg-6 col-md-9">
+      <h1>{{ title }}</h1>
+
+      {% if updated %}
+      <p>Updated: {{ updated }}</p>
+      {% endif %} {% if banner %}
+      <img
+        class="img-fluid mx-auto d-block"
+        src="{{ banner }}"
+        alt="{{ title }}"
+      />
+      {% endif %}
+
+      <hr />
+
+      {{ content | safe }}
+    </div>
+
+    <!-- Right Spacer Column -->
+    <div class="col-lg-3 col-md-3"></div>
+  </div>
+</div>
+{% endblock %}

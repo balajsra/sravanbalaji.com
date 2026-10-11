@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@11ty/eleventy": "latest",
+    "eleventy-plugin-nesting-toc": "latest",
+    "markdown-it": "latest",
+    "markdown-it-anchor": "latest"
+  }
+}
